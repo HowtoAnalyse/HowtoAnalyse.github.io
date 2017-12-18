@@ -1,0 +1,36 @@
+- title: Home
+  url: "/"
+  side: left
+
+- title: "Data Science"
+  url: "/ds/"
+  side: left
+  dropdown:
+  - title: "Feature Engineering"
+    url: "/ds/featEngineering/"
+  - title: "Classification"
+    url: "/ds/clf/"
+  - title: "Model Validation"
+    url: "/ds/validation/"
+
+- title: "Programming Tricks"
+  url: "/coding/"
+  side: left
+  dropdown:
+  - title: "sql"
+    url: "/coding/sql/"
+
+- title: Blog
+  url: "/blog/"
+  side: left
+  dropdown:
+  - title: "Blog Archive"
+    url: "/blog/archive/"
+
+- title: "Search"
+  url: "/search/"
+  side: right
+
+- title: "Contact"
+  url: "/contact/"
+  side: right

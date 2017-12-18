@@ -1,0 +1,39 @@
+---
+layout: default
+format: page-fullwidth
+---
+{% if page.image.title %}
+<div class="row t30">
+	<div class="small-12 columns">
+		<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}">
+		{% if page.image.caption_url and page.image.caption %}
+		<p class="text-right caption">
+			<a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
+		</p>
+		{% endif %}
+	</div><!-- /.small-12.columns -->
+</div><!-- /.row -->
+{% endif %}
+
+
+<div class="row t30">
+	<div class="medium-12 columns">
+		<article>
+			<header>
+				{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+				<h1>{{ page.title }}</h1>
+			</header>
+
+			{% if page.teaser %}
+			<p class="teaser">
+				{{ page.teaser }}
+			</p>
+			{% endif %}
+
+			{{ content }}
+		</article>
+	</div><!-- /.medium-12.columns -->
+	<div id="amzn-assoc-ad-69d6c5a2-a62a-49c8-b0ab-9caaeffa9b73"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=69d6c5a2-a62a-49c8-b0ab-9caaeffa9b73"></script>
+</div><!-- /.row -->
+
+
