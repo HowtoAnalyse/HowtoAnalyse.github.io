@@ -6,19 +6,17 @@
   url: "/ds/"
   side: left
   dropdown:
-  - title: "Feature Engineering"
-    url: "/ds/featEngineering/"
-  - title: "Classification"
-    url: "/ds/clf/"
   - title: "Model Validation"
     url: "/ds/validation/"
+  - title: "Model Related"
+    url: "/ds/modelRelated/"
 
-- title: "Programming Tricks"
-  url: "/coding/"
-  side: left
-  dropdown:
-  - title: "sql"
-    url: "/coding/sql/"
+# - title: "Programming Tricks"
+#   url: "/coding/"
+#   side: left
+#   dropdown:
+#   - title: "sql"
+#     url: "/coding/sql/"
 
 - title: Blog
   url: "/blog/"
@@ -31,6 +29,6 @@
   url: "/search/"
   side: right
 
-- title: "Contact"
-  url: "/contact/"
+- title: "About Me"
+  url: "/about/"
   side: right

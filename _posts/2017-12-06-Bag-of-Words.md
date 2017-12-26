@@ -7,7 +7,7 @@ teaser: ""
 tags:
   - overview
 categories:
-  - Machine Learning
+  - Machine-Learning
 ---
 
 If text and images are the only data we got, it's more convenient to apply specific approach for these types of data. 

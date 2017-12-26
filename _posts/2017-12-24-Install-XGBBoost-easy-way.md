@@ -10,15 +10,7 @@ categories:
   - Machine Learning
 ---
 
-## Datetime
-
-- Periodicity
-- Time since row-independent / row-dependent event
-- Difference between dates
-
-## Coordinates
-
-- Interesting places from training/test set or external data
-- Centers of clusters
-- Aggregated statistics
-
+```shell
+brew install gcc5 # gcc6 would not work
+sudo pip install xgboost
+```
