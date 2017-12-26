@@ -124,7 +124,9 @@ defaults:
 #
 #  Open _data/navigation.yml to adjust the left and right topbar navigation
 #
-
+gems:
+    - jekyll-seo-tag
+    # - jekyll-sitemap
 
 
 #     _____ __________
