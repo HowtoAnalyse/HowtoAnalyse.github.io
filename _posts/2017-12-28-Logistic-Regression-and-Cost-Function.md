@@ -1,14 +1,36 @@
 ---
 layout: page
 sidebar: right
-title: "Sigmoid"
+title: "Logistic Regression and Cost Function"
 categories:
   - Deep Learning
 tags:
   - logistic function
   - gradient
-last_modified_at: 2017-03-09T14:25:52-05:00
 ---
+
+## Logistic Regression
+
+For binary classification, we want $\hat{y}$(`y_hat`) to be the chance that y equals to 1. 
+
+Linear function like $\hat{y}=W^Tx+b$ does not work because $W^Tx+b$ can be out of the range of [0,1].
+
+In logistic regression, $\hat{y}=\sigma(W^Tx+b)$
+
+where `W` is an $n_x$ dimensional vector, `b` is a real number
+
+
+## Cost Function
+
+To train the parameters `W` and `b` of the logistic regression model, we need a cost function to measure how well the current algorithm is doing on the entire training set.
+
+So the cost function applied to parameters W and b is going to be $J(W,b)=\frac{1}{m}\sum_{i=1}^{m}L(\hat{y},y)$.
+
+$L(\hat[y],y)$ refers to the loss function, which measures how well we are doing on one individual training sample. We don't use squred error $L(\hat{y},y)=(y-\hat{y})^2$ because it leads to an optimization problem that is non-convex. So gradient descent may not find the global optimum.
+
+Instead, we define loss function as $L(\hat{y},y)=-(y\log\hat{y}+(1-y)\log(1-\hat{y}))$.
+
+## Sigmoid Function in Detail
 
 ```python
 import numpy as np
