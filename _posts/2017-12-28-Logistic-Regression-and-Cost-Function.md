@@ -3,7 +3,7 @@ layout: page
 sidebar: right
 title: "Logistic Regression and Cost Function"
 categories:
-  - Deep Learning
+  - Deep-Learning
 tags:
   - logistic function
   - gradient

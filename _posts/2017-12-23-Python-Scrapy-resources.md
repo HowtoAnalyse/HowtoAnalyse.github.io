@@ -4,6 +4,10 @@ title: "Web Scrapers to get an Affordable Studio"
 subheadline: ""
 teaser: "I built web scrapers to find an affordable studio in Hong Kong"
 header: no
+tags:
+  - Scrapy
+categories:
+  - Toolbox
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">

@@ -2,6 +2,8 @@
 layout: page
 title: "Human Traffic of Stadium"
 categories:
+  - Programming
+tags:
   - Algorithms
 ---
 

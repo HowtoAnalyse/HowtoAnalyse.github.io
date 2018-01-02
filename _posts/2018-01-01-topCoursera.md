@@ -2,6 +2,8 @@
 layout: page
 sidebar: right
 title: "Top 3 online courses"
+tags:
+  - Resources
 categories:
   - Machine Learning
 ---

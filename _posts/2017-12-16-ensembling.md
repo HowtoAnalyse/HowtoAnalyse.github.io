@@ -3,7 +3,7 @@ layout: page
 sidebar: right
 title: "Bagging, boosting and stacking in machine learning"
 tags:
-  - ensemble
+  - Ensemble
 categories:
   - Machine-Learning
 ---

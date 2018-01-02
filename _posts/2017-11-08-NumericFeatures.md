@@ -5,9 +5,9 @@ title: "Feature Engineering"
 subheadline: "Feature Engineering Part 1: Numeric features"
 teaser: "Feature Preprocessing and generation with respect to models"
 tags:
-  - overview
+  - Feature Engineering
 categories:
-  - Machine Learning
+  - Machine-Learning
 ---
 
 

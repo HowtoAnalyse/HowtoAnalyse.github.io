@@ -5,9 +5,9 @@ title: "Commands Cheat Sheet"
 subheadline: ""
 teaser: ""
 tags:
-  - overview
-categories:
   - Django
+categories:
+  - Toolbox
 ---
 
 ```shell

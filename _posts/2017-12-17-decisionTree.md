@@ -3,7 +3,7 @@ layout: page
 sidebar: right
 title: "Decision Tree"
 tags:
-  - classification
+  - Tree
 categories:
   - Machine Learning
 ---

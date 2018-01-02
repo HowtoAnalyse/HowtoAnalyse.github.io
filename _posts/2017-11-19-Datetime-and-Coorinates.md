@@ -5,9 +5,9 @@ title: "Feature Engineering Part 3: Datetime and Coordinates"
 subheadline: "Feature Engineering Part 1: Categorical and Ordinal features"
 teaser: "Feature Preprocessing and generation with respect to models"
 tags:
-  - overview
+  - Feature Engineering
 categories:
-  - Machine Learning
+  - Machine-Learning
 ---
 
 ## Datetime

@@ -2,6 +2,8 @@
 layout: page
 title: "Minimum-Index-Sum-of-Two-Lists"
 categories:
+  - Programming
+tags:
   - Algorithms
 ---
 

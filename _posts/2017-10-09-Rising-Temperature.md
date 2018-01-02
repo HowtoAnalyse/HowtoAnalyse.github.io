@@ -2,6 +2,8 @@
 layout: page
 title: "Rising Temperature"
 categories:
+  - Programming
+tags:
   - Algorithms
 ---
 

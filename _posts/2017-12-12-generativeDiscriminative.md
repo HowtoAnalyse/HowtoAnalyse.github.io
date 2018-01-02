@@ -3,7 +3,7 @@ layout: page
 sidebar: right
 title: "Generative vs. Discriminatives"
 tags:
-  - ensemble
+  - Overview
 categories:
   - Machine-Learning
 ---

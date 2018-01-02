@@ -5,9 +5,9 @@ title: "Feature Engineering"
 subheadline: "Feature Engineering Part 1: Categorical and Ordinal features"
 teaser: "Feature Preprocessing and generation with respect to models"
 tags:
-  - overview
+  - Feature Engineering
 categories:
-  - Machine Learning
+  - Machine-Learning
 ---
 
 Ordinal features refer to ordered categorical features. Examples include 
