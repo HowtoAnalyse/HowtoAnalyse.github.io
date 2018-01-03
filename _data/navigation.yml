@@ -10,6 +10,8 @@
     url: "/ds/validation/"
   - title: "Model Related"
     url: "/ds/modelRelated/"
+  - title: "Resources"
+    url: "/ds/resources/"
 
 # - title: "Programming Tricks"
 #   url: "/coding/"
