@@ -8,6 +8,8 @@ tags:
   - Feature Engineering
 categories:
   - Machine-Learning
+header:
+  no
 ---
 
 ## Datetime
@@ -21,4 +23,3 @@ categories:
 - Interesting places from training/test set or external data
 - Centers of clusters
 - Aggregated statistics
-

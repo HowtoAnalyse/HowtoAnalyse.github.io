@@ -50,6 +50,10 @@ The textbook of Stanford's online course: [Statistical Learning](https://lagunit
 
 * [The Elements of Statistical Learning: Data Mining, Inference, and Prediction]
 
+* [Advanced Machine Learning -- Coursera online course](https://www.coursera.org/specializations/aml)
+
+* [Probabilistic Graphical Models -- Coursera online course](https://www.coursera.org/specializations/probabilistic-graphical-models)
+
 ## Deep Learning {#dl}
 
 * [Practical Deep Learning For Coders, fastai online course](http://course.fast.ai/)
@@ -57,6 +61,8 @@ The textbook of Stanford's online course: [Statistical Learning](https://lagunit
 * [CS 294: Deep Reinforcement Learning, Fall 2017, Stanford online course](http://rll.berkeley.edu/deeprlcourse/)
 
 * [Deep Learning by Ian Goodfellow and Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
+
+* [Deep Learning -- Coursera Online Course](https://www.coursera.org/specializations/deep-learning)
 
 * Make Your Own Neural Network by Tariq Rashid
 
