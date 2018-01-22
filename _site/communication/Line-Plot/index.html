@@ -14,25 +14,25 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 		<!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>Cross Validation - Base</title>
-<meta property="og:title" content="Cross Validation" />
-<meta name="description" content="What is cross-validation and How to do it right" />
-<meta property="og:description" content="What is cross-validation and How to do it right" />
-<link rel="canonical" href="https://orange-ape.cloudvent.net//machine-learning/Cross-Validation/" />
-<meta property="og:url" content="https://orange-ape.cloudvent.net//machine-learning/Cross-Validation/" />
+<title>Line Plot - Base</title>
+<meta property="og:title" content="Line Plot" />
+<meta name="description" content="Highlighted line on a line plot" />
+<meta property="og:description" content="Highlighted line on a line plot" />
+<link rel="canonical" href="https://orange-ape.cloudvent.net//communication/Line-Plot/" />
+<meta property="og:url" content="https://orange-ape.cloudvent.net//communication/Line-Plot/" />
 <meta property="og:site_name" content="Base" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-01-15T00:00:00+08:00" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
-"headline": "Cross Validation",
+"headline": "Line Plot",
 "datePublished": "2018-01-15T00:00:00+08:00",
-"description": "What is cross-validation and How to do it right",
+"description": "Highlighted line on a line plot",
 "publisher": {"@type": "Organization",
 "logo": {"@type": "ImageObject",
 "url": "https://orange-ape.cloudvent.net//siteicon.png"}},
-"url": "https://orange-ape.cloudvent.net//machine-learning/Cross-Validation/"}</script>
+"url": "https://orange-ape.cloudvent.net//communication/Line-Plot/"}</script>
 <!-- End Jekyll SEO tag -->
 
 		<link type="application/atom+xml" rel="alternate" href="https://orange-ape.cloudvent.net//feed.xml" title="Base" />
@@ -88,120 +88,71 @@
 		<ul>
 			
 			
-				<li><a href="#what-is-cross-validation">What is cross-validation?</a></li>
+				<li><a href="#visualization">Visualization</a></li>
 			
-				<li><a href="#robust-or-accurate-algorithms-how-do-you-choose">Robust or accurate algorithms, how do you choose?</a></li>
-			
-				<li><a href="#how-do-you-select-metrics">How do you select metrics?</a></li>
+				<li><a href="#description">Description</a></li>
 			
 		</ul>
 	</section>
 	<section class="tutorial-content">
-		<h1>Cross Validation</h1>
+		<h1>Line Plot</h1>
 
 		
 		
 		<div class="tutorial-main">
-			<h2 id="what-is-cross-validation">What is cross-validation?</h2>
+			<h2 id="visualization">Visualization</h2>
 
-<p>It’s a model validation technique for assessing how the results of a statistical analysis will generalize to an independent data set.</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 
-<p>It’s common to find that our model performs differently depending on the subset of the data it’s trained on. This phenomenon is known as <strong>overfitting</strong>: The model is learning to classify the training set so well that it doesn’t generalize and perform well on data it hasn’t seen before.</p>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="kn">as</span> <span class="nn">dt</span>
 
-<p>So we split the original data set into k subsets, use one of the subsets as the testing set, and the rest of the subsets are used as the training set. This process is then repeated k times such that each subset is used as the testing set exactly once.</p>
+<span class="n">dates</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">month</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">12</span><span class="p">):</span>
+    <span class="n">dates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">2017</span><span class="p">,</span> <span class="n">month</span><span class="o">=</span><span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 
-<p>This process is what we called cross-validation.</p>
 
-<p>Examples: leave-one-out cross validation, K-fold cross validation</p>
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s">'x'</span><span class="p">:</span> <span class="n">dates</span><span class="p">,</span> <span class="s">'y1'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="s">'y3'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">+</span><span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">21</span><span class="p">),</span> <span class="s">'y5'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">+</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="p">})</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s">'seaborn-darkgrid'</span><span class="p">)</span>
+<span class="n">my_dpi</span><span class="o">=</span><span class="mi">96</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">960</span><span class="o">/</span><span class="n">my_dpi</span><span class="p">,</span> <span class="mi">480</span><span class="o">/</span><span class="n">my_dpi</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="n">my_dpi</span><span class="p">)</span>
+ 
+<span class="c"># multiple line plot</span>
+<span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s">'x'</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+   <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'x'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s">''</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'grey'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+ 
 
-<h3 id="how-to-do-it-right">How to do it right?</h3>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'x'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s">'y5'</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s">''</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'orange'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
 
-<p>Firstly, the training and validation data sets should be drawn from the same population.</p>
+<span class="c"># num=0</span>
+<span class="c"># for i in df.values[9][1:]:</span>
+<span class="c">#    num+=1</span>
+<span class="c">#    name=list(df)[num]</span>
+<span class="c">#    if name != 'y5':</span>
+<span class="c">#       plt.text(0.000000000005, i, name, horizontalalignment='left', size='small', color='grey')</span>
 
-<p>predicting stock prices: trained for a certain 5-year period, it’s unrealistic to treat the subsequent 5-year a draw from the same population
-common mistake: for instance the step of choosing the kernel parameters of a SVM should be cross-validated as well</p>
+<span class="c"># And add a special annotation for the group we are interested in</span>
+<span class="c"># plt.text(10.2, df.y5.tail(1), 'Mr Orange', horizontalalignment='left', size='small', color='orange')</span>
 
-<h3 id="bias-variance-trade-off-for-k-fold-cross-validation">Bias-variance trade-off for k-fold cross validation</h3>
+<span class="c"># Add titles</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Pageviews of Machine Learning posts vs other categories"</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s">'left'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'orange'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"YearMonth"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Pageviews"</span><span class="p">)</span>
 
-<p>Leave-one-out cross-validation: gives approximately unbiased estimates of the test error since each training set contains almost the entire data set (n−1 observations).</p>
 
-<p>But: we average the outputs of n fitted models, each of which is trained on an almost identical set of observations hence the outputs are highly correlated. Since the variance of a mean of quantities increases when correlation of these quantities increase, the test error estimate from a LOOCV has higher variance than the one obtained with k-fold cross validation</p>
 
-<p>Typically, we choose k=5 or k=10, as these values have been shown empirically to yield test error estimates that suffer neither from excessively high bias nor high variance.</p>
+</code></pre>
+</div>
 
-<h2 id="robust-or-accurate-algorithms-how-do-you-choose">Robust or accurate algorithms, how do you choose?</h2>
+<p><img src="/images/linePlot.png" alt="png" /></p>
 
-<p>Simpler models are preferred if more complex models do not significantly improve the quality of the description for the observations.</p>
+<h2 id="description">Description</h2>
 
-<p>Our ultimate goal is to design systems with good generalization capacity, that is, systems that correctly identify patterns in data instances not seen before. While the generalization performance of a learning system strongly depends on the complexity of the model assumed.</p>
+<p>This graph shows the growth of the pageviews of howtoanalyse.github.io from February,2017 to December,2017. It is taken from Google Analytics.</p>
 
-<p>If the model is too simple, the system can only capture the actual data regularities in a rough manner. In this case, the system has poor generalization properties and is said to suffer from underfitting.</p>
-
-<p>By contrast, if the model is too complex, the system can identify accidental patterns in the training data that need not be present in the test set. These spurious patterns can be the result of random fluctuations or of measurement errors during the data collection process. In this case, the generalization capacity of the learning system is also poor. The learning system is said to be affected by overfitting. Spurious patterns, which are only present by accident in the data, tend to have complex forms.</p>
-
-<p>By the way, ensemble learning can help balancing bias/variance. Several weak learners together = strong learner.</p>
-
-<h2 id="how-do-you-select-metrics">How do you select metrics?</h2>
-
-<h3 id="classification">Classification</h3>
-
-<ol>
-  <li>
-    <p>Recall / Sensitivity / True positive rate</p>
-  </li>
-  <li>
-    <p>Precision / Positive Predictive value</p>
-  </li>
-  <li>
-    <p>Specificity / True negative rate</p>
-  </li>
-  <li>
-    <p>Accuracy</p>
-  </li>
-  <li>
-    <p>ROC / AUC</p>
-  </li>
-</ol>
-
-<p>ROC is a graphical plot that illustrates the performance of a binary classifier (SensitivitySensitivity Vs 1−Specificity1−Specificity or SensitivitySensitivity Vs SpecificitySpecificity). They are not sensitive to unbalanced classes.
-AUC is the area under the ROC curve. Perfect classifier: AUC=1, fall on (0,1); 100% sensitivity (no FN) and 100% specificity (no FP)</p>
-
-<ol>
-  <li>Logarithmic loss</li>
-</ol>
-
-<p>Punishes infinitely the deviation from the true value! It’s better to be somewhat wrong than emphatically wrong!</p>
-
-<ol>
-  <li>
-    <p>Misclassification Rate</p>
-  </li>
-  <li>
-    <p>F1-Score</p>
-  </li>
-</ol>
-
-<h3 id="regression">Regression</h3>
-
-<ol>
-  <li>Mean Squared Error Vs Mean Absolute Error</li>
-</ol>
-
-<p>RMSE gives a relatively high weight to large errors. The RMSE is most useful when large errors are particularly undesirable.</p>
-
-<p>The MAE is a linear score: all the individual differences are weighted equally in the average. MAE is more robust to outliers than MSE.</p>
-
-<ol>
-  <li>Root Mean Squared Logarithmic Error</li>
-</ol>
-
-<p>RMSLE penalizes an under-predicted estimate greater than an over-predicted estimate (opposite to RMSE)</p>
-
-<ol>
-  <li>Weighted Mean Absolute Error</li>
-</ol>
-
-<p>The weighted average of absolute errors. MAE and RMSE consider that each prediction provides equally precise information about the error variation, i.e. the standard variation of the error term is constant over all the predictions. Examples: recommender systems (differences between past and recent products)</p>
+<p>There are eight graphs in the chart. Each graph deals with the pageviews of a category. The orange graph shows the pageviews on Machine Learning posts. In April,2017 there was an enourmous growth. In the following months the total growth went down to about 7 in June, 2017. From that time on the pageviews of Machine Learning posts has been gradually growing again although the natural increase slows down. So we can say that the growth of the pageviews in Machine Learning posts is based on Ads.</p>
 
 		</div>
 		<div class="tutorial-share">
@@ -332,23 +283,6 @@ AUC is the area under the ROC curve. Perfect classifier: AUC=1, fall on (0,1); 1
 		</li>
 	
 		<li >
-			<a href="/communication/Line-Plot/">
-				<div class="icon">
-		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
-			<path d="M0 0h24v24H0z" fill="none"/>
-		</svg>
-</div>
-				<article>
-					<div>
-						<h3>Line Plot</h3>
-						<p class="description">Highlighted line on a line plot</p>
-					</div>
-				</article>
-			</a>
-		</li>
-	
-		<li >
 			<a href="/pandas/Convert-Pandas-DataFrame-to-Dictionary/">
 				<div class="icon">
 		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -382,6 +316,23 @@ AUC is the area under the ROC curve. Perfect classifier: AUC=1, fall on (0,1); 1
 			</a>
 		</li>
 	
+		<li >
+			<a href="/machine-learning/Cross-Validation/">
+				<div class="icon">
+		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+			<path d="M0 0h24v24H0z" fill="none"/>
+		</svg>
+</div>
+				<article>
+					<div>
+						<h3>Cross Validation</h3>
+						<p class="description">What is cross-validation and How to do it right</p>
+					</div>
+				</article>
+			</a>
+		</li>
+	
 </ul>
 	</div>
 
@@ -391,8 +342,8 @@ AUC is the area under the ROC curve. Perfect classifier: AUC=1, fall on (0,1); 1
 	<script>
 		var disqus_shortname = 'greendata-1';
 		var disqus_config = function () {
-			this.page.url = "https://orange-ape.cloudvent.net//machine-learning/Cross-Validation/";
-			this.page.identifier = "/machine-learning/Cross-Validation";
+			this.page.url = "https://orange-ape.cloudvent.net//communication/Line-Plot/";
+			this.page.identifier = "/communication/Line-Plot";
 		};
 		(function() {  // DON'T EDIT BELOW THIS LINE
 			var d = document, s = d.createElement('script');
@@ -422,19 +373,19 @@ AUC is the area under the ROC curve. Perfect classifier: AUC=1, fall on (0,1); 1
 		<h2>Share</h2>
 		<p>Share this tutorial with your community.</p>
 		<ul>
-			<li><a class="twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Forange-ape.cloudvent.net%2F%2Fmachine-learning%2FCross-Validation%2F">
+			<li><a class="twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Forange-ape.cloudvent.net%2F%2Fcommunication%2FLine-Plot%2F">
 		<svg class="twitter" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" /></svg>
 	
  Twitter</a></li>
-			<li><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Forange-ape.cloudvent.net%2F%2Fmachine-learning%2FCross-Validation%2F">
+			<li><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Forange-ape.cloudvent.net%2F%2Fcommunication%2FLine-Plot%2F">
 		<svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="15.8 15.8 25 25"><path d="M32.8 24.7h-3.2v-2.1c0-0.8 0.5-1 0.9-1s2.3 0 2.3 0v-3.5l-3.1 0c-3.5 0-4.3 2.6-4.3 4.3v2.3h-2v3.6h2c0 4.6 0 10.2 0 10.2h4.2c0 0 0-5.6 0-10.2h2.8L32.8 24.7z"/></svg>
 	
  Facebook</a></li>
-			<li><a class="google-plus" target="_blank" href="https://plus.google.com/share?url=https%3A%2F%2Forange-ape.cloudvent.net%2F%2Fmachine-learning%2FCross-Validation%2F">
+			<li><a class="google-plus" target="_blank" href="https://plus.google.com/share?url=https%3A%2F%2Forange-ape.cloudvent.net%2F%2Fcommunication%2FLine-Plot%2F">
 		<svg class="google-plus" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" /></svg>
 	
  Google+</a></li>
-			<li><a class="hacker-news" target="_blank" href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Forange-ape.cloudvent.net%2F%2Fmachine-learning%2FCross-Validation%2F&t=Cross%20Validation">
+			<li><a class="hacker-news" target="_blank" href="http://news.ycombinator.com/submitlink?u=https%3A%2F%2Forange-ape.cloudvent.net%2F%2Fcommunication%2FLine-Plot%2F&t=Line%20Plot">
 		<svg class="hacker-news" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.8 3.3c-0.4 0.8-5.6 11.1-5.6 11.2 0 2 0 6.2 0 6.2 -0.1 0-2.2 0-2.3 0 0 0 0-5.9 0-6.2 0 0-5.5-10.9-5.6-11.1C5.3 3.3 5.3 3.3 5.3 3.3 5.3 3.3 5.3 3.3 5.3 3.3c0 0 0 0 0.1 0 0.9 0 1.7 0 2.6 0 0 0 0 0 0 0.1 0.1 0.1 4 8.3 4.1 8.3 0 0 4.2-8.3 4.3-8.4 0.8 0 1.6 0 2.4 0 0 0 0 0 0 0C18.8 3.3 18.8 3.3 18.8 3.3z"/></svg>
 	
  Hacker News</a></li>

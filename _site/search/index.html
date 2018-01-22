@@ -35,16 +35,6 @@
 		<link type="application/atom+xml" rel="alternate" href="https://orange-ape.cloudvent.net//feed.xml" title="Base" />
 
 		
-			<script>
-				(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
-
-				ga("create", "", "auto");
-				ga("send", "pageview");
-			</script>
-		
 	</head>
 
 	<body class="">
@@ -190,6 +180,21 @@
 				
 					,
 					
+					"communication-line-plot": {
+						"id": "communication-line-plot",
+						"title": "Line Plot",
+						"categories": "Communication",
+						"url": " /communication/Line-Plot/",
+						"content": "Visualization\n\n%matplotlib inline\n\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\nimport datetime as dt\n\ndates = []\nfor month in range(2, 12):\n    dates.append(dt.datetime(year=2017, month=month, day=1))\n\n\ndf=pd.DataFrame({'x': dates, 'y1': np.random.randn(10), 'y3': np.random.randn(10)+range(11,21), 'y5': np.random.randn(10)+range(4,14)+(0,0,9,0,0,0,0,1,2,0), })\nplt.style.use('seaborn-darkgrid')\nmy_dpi=96\nplt.figure(figsize=(960/my_dpi, 480/my_dpi), dpi=my_dpi)\n \n# multiple line plot\nfor column in df.drop('x', axis=1):\n   plt.plot(df['x'], df[column], marker='', color='grey', linewidth=1, alpha=0.4)\n \n\nplt.plot(df['x'], df['y5'], marker='', color='orange', linewidth=4, alpha=0.7)\n\n# num=0\n# for i in df.values[9][1:]:\n#    num+=1\n#    name=list(df)[num]\n#    if name != 'y5':\n#       plt.text(0.000000000005, i, name, horizontalalignment='left', size='small', color='grey')\n\n# And add a special annotation for the group we are interested in\n# plt.text(10.2, df.y5.tail(1), 'Mr Orange', horizontalalignment='left', size='small', color='orange')\n\n# Add titles\nplt.title(\"Pageviews of Machine Learning posts vs other categories\", loc='left', fontsize=12, fontweight=0, color='orange')\nplt.xlabel(\"YearMonth\")\nplt.ylabel(\"Pageviews\")\n\n\n\n\n\n\n\n\nDescription\n\nThis graph shows the growth of the pageviews of howtoanalyse.github.io from February,2017 to December,2017. It is taken from Google Analytics.\n\nThere are eight graphs in the chart. Each graph deals with the pageviews of a category. The orange graph shows the pageviews on Machine Learning posts. In April,2017 there was an enourmous growth. In the following months the total growth went down to about 7 in June, 2017. From that time on the pageviews of Machine Learning posts has been gradually growing again although the natural increase slows down. So we can say that the growth of the pageviews in Machine Learning posts is based on Ads."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
 					"pandas-convert-pandas-dataframe-to-dictionary": {
 						"id": "pandas-convert-pandas-dataframe-to-dictionary",
 						"title": "DataFrame to Dictionary",
@@ -302,18 +307,6 @@
 				event.preventDefault();
 				document.body.classList.toggle("nav-open");
 			});
-		</script>
-		
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-96859607-3', 'auto');
-		  ga('set', 'anonymizeIp', true);
-		  ga('send', 'pageview');
-
 		</script>
 		
 	</body>
