@@ -1,14 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'jekyll-seo-tag'
+gem 'jekyll', '3.4.3'
 
 group :jekyll_plugins do
-  gem 'jekyll-gist'
-  gem 'jekyll-paginate'
-  gem "jekyll-asciidoc"
+	gem 'jekyll-archives', '2.1.1'
+	gem 'jekyll-sitemap', '1.0.0'
+	gem 'jekyll-seo-tag', '2.1.0'
+	gem 'jekyll-feed', '0.9.1'
+	gem 'jekyll-extract-element', '0.0.6'
 end
-
-gem 'asciidoctor', '~> 1.5.4'
-gem 'coderay', '1.1.1'
-

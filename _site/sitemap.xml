@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://orange-ape.cloudvent.net//machine-learning/Cross-Validation/</loc>
+<lastmod>2018-01-15T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>https://orange-ape.cloudvent.net//python/Default-parameter-values/</loc>
+<lastmod>2018-01-15T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>https://orange-ape.cloudvent.net//pandas/Convert-Pandas-DataFrame-to-Dictionary/</loc>
+<lastmod>2018-01-15T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>https://orange-ape.cloudvent.net//faq/</loc>
+</url>
+<url>
+<loc>https://orange-ape.cloudvent.net//</loc>
+</url>
+<url>
+<loc>https://orange-ape.cloudvent.net//videos/</loc>
+</url>
+<url>
+<loc>https://orange-ape.cloudvent.net//category/machine-learning/</loc>
+</url>
+<url>
+<loc>https://orange-ape.cloudvent.net//category/python/</loc>
+</url>
+<url>
+<loc>https://orange-ape.cloudvent.net//category/pandas/</loc>
+</url>
+</urlset>
