@@ -18,8 +18,8 @@
 <meta property="og:title" content="Search" />
 <meta name="description" content="Knowledge base template for Jekyll." />
 <meta property="og:description" content="Knowledge base template for Jekyll." />
-<link rel="canonical" href="https://orange-ape.cloudvent.net//search/" />
-<meta property="og:url" content="https://orange-ape.cloudvent.net//search/" />
+<link rel="canonical" href="http://localhost:4000/search/" />
+<meta property="og:url" content="http://localhost:4000/search/" />
 <meta property="og:site_name" content="Base" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
@@ -28,11 +28,11 @@
 "description": "Knowledge base template for Jekyll.",
 "publisher": {"@type": "Organization",
 "logo": {"@type": "ImageObject",
-"url": "https://orange-ape.cloudvent.net//siteicon.png"}},
-"url": "https://orange-ape.cloudvent.net//search/"}</script>
+"url": "http://localhost:4000/siteicon.png"}},
+"url": "http://localhost:4000/search/"}</script>
 <!-- End Jekyll SEO tag -->
 
-		<link type="application/atom+xml" rel="alternate" href="https://orange-ape.cloudvent.net//feed.xml" title="Base" />
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Base" />
 
 		
 	</head>
@@ -90,12 +90,42 @@
 				
 					
 					
+					"machine-learning-missing-data-imputation": {
+						"id": "machine-learning-missing-data-imputation",
+						"title": "Feature Engineering Part II -- Missing Values",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/Missing-data-imputation/",
+						"content": "Imputation\n\na. Replace it with a number outside the normal range like -999 \nb. Replace it with mean or median\nc. Reconstruct values\n\nMethod a is useful because it gives trees the possibility to take missing values into a separate category. The downside is that performance of linear models and neural networks will suffer.\n\nMethod b is beneficial for simple linear models and neural networks. But tree-based methods can be harder to select object with missing values in the first place.\n\nMethod c: Reconstruct values\n\nWhen data points are dependent to each other like time series data, we can approximate NAs using observations in the neighborhood.\n\nChallenges come when data points are independent.\n\nFeature Generation\n\nSometimes we create a binary feature, isnull, indicating which rows have missing values for this feature. Through this way, we can address concerns about trees and neural networks while computing mean or median. The drawback is that we will double the number of columns.\n\nThis method is especially worth trying for missing data occured in test set only. The intuition behind is that categories absent in the training set will be treated randomly eventually.\n\nAs an alternative, we may have a try on frequency encoding with missing values as a new category.\n\nXgboost can handle NaN."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"machine-learning-bag-of-words": {
+						"id": "machine-learning-bag-of-words",
+						"title": "Bag of words",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/bag-of-words/",
+						"content": "If text and images are the only data we got, it’s more convenient to apply specific approach for these types of data.\n\nThe common scenario is that we have text or images as additional data set, we need to grasp different features that can be input to machine learning models as a complementary to our main data frame of samples and features.\n\nBag of words (BOW)\n\nPipeline of applying BOW:\n\n  Preprocessing:\n Lowercase, stemming, lemmatization, stopwords\n  N-grams can help to use local context\n  Postprocessing: TF-IDF\n\n\nTF-IDF\n\nIntuition: normalize data column-wise\n\nsklearn.feature_extraction.text.TfidfVectorizer\n\n\n\nTerm Frequency (TF)\ntf = 1/x.sum(axis=1)[:,None]\nx = x*tf\n\n\n\nInverse Document Frequency (IDF)\nidf = np.log(x.shape[0]/(x&gt;0).sum(0))\nx=x*idf\n\n\n\nN-grams\n\nsklearn.feature_extraction.text.CountVectorizer: \nNgram_range, analyzer\n\n\n\nIf you have 28 unique symbols, the number of all possible combinations is 28x28\n\nNext: Embeddings\n\nEmbeddings like Word2Vec"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
 					"recommender-word2vec": {
 						"id": "recommender-word2vec",
 						"title": "Word2Vec",
 						"categories": "Recommender",
 						"url": " /recommender/Word2Vec/",
-						"content": ""
+						"content": "At Openrice, I’m always looking for ways to leverage massive data set to automate customer-facing experiences."
 					}
 					
 				
@@ -171,6 +201,96 @@
 						"categories": "Statistics",
 						"url": " /statistics/AB-testing/",
 						"content": ""
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"machine-learning-machine-learning-recap": {
+						"id": "machine-learning-machine-learning-recap",
+						"title": "Machine Learning Recap",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/machine-learning-recap/",
+						"content": "No Free Lunch Theorem\n\nBasically, No Free Lunch Theorem states that there is no methods which outperform all others on all tasks.\n\nThe reason behind is that every method relies on certain assumptions about data or task. If these assumptions fail, it will perform poorly.\n\nFor us, this means that we cannot every competition with just a single algorithm. So it is important for us to have a clear mind map of various models based off different assumptions.\n\nThen let’s start getting familiar with the four popular families of machine learning algorithms.\n\nLinear Model\n\nLinear models try to separate objects with a plane which divides space into two parts.\n\nWith 2 sets of points, it is quite intuitive to separate them using a line. This approach can be generalized for a higher dimensional space. This is the main idea behind linear models.\n\nLogistic regression or SVM are all linear models withdifferent loss functions.\n\nLinear models are especially good for sparse high dimensional data.\n\nTree-Based Methods\n\nIn general, tree-based models are very powerful and can be a good default method for tabular data.\n\nIntuitively, a single decision tree can be considered as dividing space into boxes and approximating data with a constant inside of these boxes. It uses divide-and-conquer approach to recur sub-split spaces into sub-spaces.\n\nThe way of true axis splits and corresponding constants produces several approaches for building decision trees. Moreover, such trees can be combined together in a lot of ways. All this leads to a wide variety of tree-based algorithms, most famous of them being random forest and Gradient Boosted Decision Trees.\n\nScikit-Learn contains quite good implementation of random forest. For gradient boost decision trees, you may find XGBoost and LightGBM with higher speed and accuracy.\n\nk-Nearest Neighbors (k-NN)\n\nThe intuition behind k-NN is very simple. Closer objects will likely to have same labels.\n\nNeural Networks\n\nNeural Nets is a special class of machine learning models, which deserve a separate topic."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"machine-learning-dm-stat-ml": {
+						"id": "machine-learning-dm-stat-ml",
+						"title": "Data mining, statistics, machine learning and AI",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/dm-stat-ml/",
+						"content": "Artificial Intelligence is the study of how to create intelligent agents. Most tasks that require intelligence require an ability to induce new knowledge from experiences. Thus, a large area within AI is machine learning. Procedures in machine learning include ideas derived directly from, or inspired by, classical statistics, but they don’t have to be. Data mining is an area that has taken much of its inspiration and techniques from machine learning (and some, also, from statistics), but aims at either to discover / generate some preliminary insights in an area where there really was little knowledge beforehand, or to be able to predict future observations accurately.\n\nThere are considerable overlaps among them. If we have to make some distinctions, they are:\n\nStatistics is about numbers. It is mostly employed towards better understanding particular data generating processes. Thus, it usually starts with a formally specified model, and from this are derived procedures to accurately extract that model from noisy instances (i.e., estimation–by optimizing some loss function) and to be able to distinguish it from other possibilities (i.e., inferences based on known properties of sampling distributions). The prototypical statistical technique is regression.\n\nData Mining is about using Statistics as well as other programming methods to find patterns hidden in the data so that you can explain some phenomenon. Data Mining builds intuition about what is really happening in some data and is still little more towards math than programming, but uses both. Common data mining techniques would include cluster analyses, classification and regression trees, and neural networks.\n\nMachine Learning uses Data Mining techniques and other learning algorithms to build models of what is happening behind some data so that it can predict future outcomes. Math is the basis for many of the algorithms, but this is more towards programming. A computer program is said to learn some task from experience if its performance at the task improves with experience, according to some performance measure. Machine learning involves the study of algorithms that can extract information automatically (i.e., without on-line human guidance).\n\nArtificial Intelligence uses models built by Machine Learning and other ways to reason about the world and give rise to intelligent behavior whether this is playing a game or driving a robot/car. Artificial Intelligence has some goal to achieve by predicting how actions will affect the model of the world and chooses the actions that will best achieve that goal. Very programming based."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"machine-learning-cv": {
+						"id": "machine-learning-cv",
+						"title": "Test set vs. Validation set",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/cv/",
+						"content": "When you have a large data set, it’s recommended to split it into 3 parts:\n\n\n  \n    Training set: This is used to build up our prediction algorithm. Our algorithm tries to tune itself to the quirks of the training data sets. In this phase we usually create multiple algorithms in order to compare their performances during the Cross-Validation Phase.\n  \n  \n    Validation set: This data set is used to compare the performances of the prediction algorithms that were created based on the training set. We choose the algorithm that has the best performance.\n  \n  \n    Test set: Now we have chosen our preferred prediction algorithm but we don’t know yet how it’s going to perform on completely unseen real-world data. So, we apply our chosen prediction algorithm on our test set in order to see how it’s going to perform so we can have an idea about our algorithm’s performance on unseen data.\n  \n\n\nNotes:\n\n-It’s very important to keep in mind that skipping the test phase is not recommended, because the algorithm that performed well during the validation phase doesn’t really mean that it’s truly the best one, because the algorithms are compared based on the cross-validation set and its quirks and noises.\n\n-During the Test Phase, the purpose is to see how our final model is going to deal in the wild, so in case its performance is very poor we should repeat the whole process starting from the Training Phase."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"machine-learning-bias-variance-tradeoff": {
+						"id": "machine-learning-bias-variance-tradeoff",
+						"title": "Bias Variance Tradeoff",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/bias-variance-Tradeoff/",
+						"content": "In short,\n\n  bias is how far away a model’s predictions are from true values,\n  variance is how scattered these predictions are among model iterations.\n\n\n\n\n\n\n  Error due to Bias: The error due to bias is taken as the difference between the expected (or average) prediction of our model and the correct value which we are trying to predict. Of course you only have one model so talking about expected or average prediction values might seem a little strange. However, imagine you could repeat the whole model building process more than once: each time you gather new data and run a new analysis creating a new model. Due to randomness in the underlying data sets, the resulting models will have a range of predictions. Bias measures how far off in general these models’ predictions are from the correct value.\nScott Fortmann-Roe\n\n\n\n\n  Error due to Variance: The error due to variance is taken as the variability of a model prediction for a given data point. Again, imagine you can repeat the entire model building process multiple times. The variance is how much the predictions for a given point vary between different realizations of the model.\nScott Fortmann-Roe"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"machine-learning-generative-discriminative": {
+						"id": "machine-learning-generative-discriminative",
+						"title": "Generative vs. Discriminative",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/Generative-Discriminative/",
+						"content": "The fundamental distinction between discriminative models and generative models is:\n\n\n  Discriminative models learn the (hard or soft) boundary between classes\n  Generative models model the distribution of individual classes\n\n\nDiscriminative\n\nSVMs and decision trees are discriminative because they learn explicit boundaries between classes.\n\nSVM is a maximal margin classifier, meaning that it learns a decision boundary that maximizes the distance between samples of the two classes, given a kernel. The distance between a sample and the learned decision boundary can be used to make the SVM a “soft” classifier.\n\nDecision trees learn the decision boundary by recursively partitioning the space in a manner that maximizes the information gain (or another criterion).\n\nGenerative\n\nGenerative models are typically specified as probabilistic graphical models. They offer rich representations of the independence relations in the dataset.\n\nDiscriminative models do not offer such clear representations of relations between features and classes in the dataset. Instead of using resources to fully model each class, they focus on richly modeling the boundary between classes. Given the same amount of capacity (say, bits in a computer program executing the model), a discriminative model thus may yield more complex representations of this boundary than a generative model.\n\nWhen you are dealing with non-stationary distributions where the online test data may be generated by different underlying distributions than the training data, it is typically more straightforward to detect distribution changes and update a generative model accordingly than do this for a decision boundary in an SVM, especially if the online updates need to be unsupervised.\n\nTo sum up:\n\n\n  \n    \n      Discriminative models\n      Generative models\n    \n  \n  \n    \n      learn the (hard or soft) boundary between classes\n      model the distribution of individual classes\n    \n    \n      generally do not function for outlier detection\n      generally function for outlier detection\n    \n    \n      do not offer clear representations of relations between features and classes in the dataset\n      offer rich representations of the independence relations in the dataset"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"machine-learning-decision-tree": {
+						"id": "machine-learning-decision-tree",
+						"title": "Decision Trees",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/Decision-Tree/",
+						"content": "Decision tree classifiers are incredibly simple in theory. In their simplest form, decision tree classifiers ask a series of Yes/No questions about the data — each time getting closer to finding out the class of each entry — until they either classify the data set perfectly or simply can’t differentiate a set of entries. Think of it like a game of Twenty Questions, except the computer is much, much better at it.\n\nThe nice part about decision tree classifiers is that they are scale-invariant, i.e., the scale of the features does not affect their performance.\n\nA common problem that decision trees face is that they’re prone to overfitting: They complexify to the point that they classify the training set near-perfectly, but fail to generalize to data they have not seen before.\nRandom Forest classifiers work around that limitation by creating a whole bunch of decision trees (hence “forest”) — each trained on random subsets of training samples (drawn with replacement) and features (drawn without replacement) — and have the decision trees work together to make a more accurate classification.\n\nRandom Forest\n\nIn RandomForest model we average n similar performing trees (“forest”), trained independently. So two RF with 1000 trees is essentially the same as single RF model with 2000 trees.\n\nGradient Boosted Decision Trees\n\nIn GBDT model we have sequence of trees, each improve predictions of all previous.\n\nSo taking other settings the same, dropping the n-th tree has different effects on these two models.\n\nFor Random Forest, the order of trees does not matter in RandomForest and performance drop will be very similar on average.\n\nFor GBDT:\n\n  if we drop first tree, sum of all the rest trees will be biased and overall performance should drop.\n  if we drop the last tree, sum of all previous tree won’t be affected, and therefore performance will change insignificantly (in case we have enough trees)"
 					}
 					
 				
