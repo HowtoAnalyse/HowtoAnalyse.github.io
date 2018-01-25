@@ -18,8 +18,8 @@
 <meta property="og:title" content="Search" />
 <meta name="description" content="Knowledge base template for Jekyll." />
 <meta property="og:description" content="Knowledge base template for Jekyll." />
-<link rel="canonical" href="http://localhost:4000/search/" />
-<meta property="og:url" content="http://localhost:4000/search/" />
+<link rel="canonical" href="https://orange-ape.cloudvent.net//search/" />
+<meta property="og:url" content="https://orange-ape.cloudvent.net//search/" />
 <meta property="og:site_name" content="Base" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
@@ -28,11 +28,11 @@
 "description": "Knowledge base template for Jekyll.",
 "publisher": {"@type": "Organization",
 "logo": {"@type": "ImageObject",
-"url": "http://localhost:4000/siteicon.png"}},
-"url": "http://localhost:4000/search/"}</script>
+"url": "https://orange-ape.cloudvent.net//siteicon.png"}},
+"url": "https://orange-ape.cloudvent.net//search/"}</script>
 <!-- End Jekyll SEO tag -->
 
-		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Base" />
+		<link type="application/atom+xml" rel="alternate" href="https://orange-ape.cloudvent.net//feed.xml" title="Base" />
 
 		
 	</head>
@@ -90,12 +90,42 @@
 				
 					
 					
+					"machine-learning-numeric-feature-engineering": {
+						"id": "machine-learning-numeric-feature-engineering",
+						"title": "Feature Engineering on Numeric features",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/Numeric-feature-engineering/",
+						"content": "Feature Preprocessing\n\nScaling\n\nScaling numeric features ensures that their initial impact on models are relatively the same.\n\nWinsorization or Rank Transformation to deal with Outliers\n\nOutliers are not only exist in features but our target as well.\n\nWinsorization\n\nTo protect linear models from outliers, we can clip features values between two chosen values of lower bound and upper bound. We can choose them as some percentiles of that feature. For example, first and 99s percentiles. This procedure of clipping is known as winsorization\n\nRank Transformation\n\nRank transformation sets spaces between properly assorted values to be equal. It can be a better choice than MinMaxScaler if we have outliers bacause it moves outliers closer to normal objects.\n\nThere are 2 choice while applying rank transformation to the test set:\n\n\n  store the creative mapping from features values to their rank values\n  concatenate train and test sets before applying the rank transformation.\n\n\nscipy.stats.rankdata\n\n\n\nLog transformation\n\nLog transformation acts as a representative of methametical transformations that often helps non-tree-based models and especially neural networks. As an alternative, you may extract a square root of the data.\n\nBoth of these transformations can:\n\n  drive extremely big values closer to the features’ average value.\n  make values near zero to be more distinguishable.\n\n\nDespite the simplicity, one of these transformations can improve your neural network’s results significantly.\n\nIn conclusion, linear models, KNN, and neural networks can benefit hugely from this.\n\nFeature Generation\n\nFeature generation is a process of deriving new features using logic or knowledge derived after data exploration and hypothesis checking.\n\nExamples:\n\n\n  Real Estate price and Real Estate squared area -&gt; price per meter square\n  Horizontal distance and the vertical difference in heights -&gt; direct distance.\n\n\nSuch examples can be of help not only for linear models. For example, although gradient within decision tree is a very powerful model, it still experiences difficulties with approximation of multiplications and divisions. And adding size features explicitly can lead to a more robust model with less amount of trees.\n\nApart from examples like adding, multiplications, divisions, and other features interactions, we can also:\n\n\n  A new feature indicating fractional part of these prices. For example, if some product costs 2.49, the fractional part of its price is 0.49. This feature can help the model utilize the differences in people’s perception of these prices.\n\n\nAlso, we can find similar patterns in tasks which require distinguishing between a human and a robot. For example, if we will have some kind of financial data like auctions, we could observe that people tend to set round numbers as prices, and there are something like 0.935, blah, blah,, blah, very long number here. Or, if we are trying to find spambots on social networks, we can be sure that no human ever read messages with an exact interval of one second."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
 					"machine-learning-missing-data-imputation": {
 						"id": "machine-learning-missing-data-imputation",
 						"title": "Feature Engineering Part II -- Missing Values",
 						"categories": "Machine-Learning",
 						"url": " /machine-learning/Missing-data-imputation/",
 						"content": "Imputation\n\na. Replace it with a number outside the normal range like -999 \nb. Replace it with mean or median\nc. Reconstruct values\n\nMethod a is useful because it gives trees the possibility to take missing values into a separate category. The downside is that performance of linear models and neural networks will suffer.\n\nMethod b is beneficial for simple linear models and neural networks. But tree-based methods can be harder to select object with missing values in the first place.\n\nMethod c: Reconstruct values\n\nWhen data points are dependent to each other like time series data, we can approximate NAs using observations in the neighborhood.\n\nChallenges come when data points are independent.\n\nFeature Generation\n\nSometimes we create a binary feature, isnull, indicating which rows have missing values for this feature. Through this way, we can address concerns about trees and neural networks while computing mean or median. The drawback is that we will double the number of columns.\n\nThis method is especially worth trying for missing data occured in test set only. The intuition behind is that categories absent in the training set will be treated randomly eventually.\n\nAs an alternative, we may have a try on frequency encoding with missing values as a new category.\n\nXgboost can handle NaN."
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"machine-learning-categorical-feature-engineering": {
+						"id": "machine-learning-categorical-feature-engineering",
+						"title": "Feature Engineering on Categorical and Ordinal features&quot;",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/Categorical-feature-engineering/",
+						"content": "Ordinal features refer to ordered categorical features. Examples include\n\n  Driver’s license: A,B,C,D\n  Education level: Bachelor, Master, Doctoral\n  …\n\n\nDifference between Numeric and Ordinal Features with values 1,2,3…\n\nFor numerical features with values 1,2,3…, we can conclude that the distance between first, and the second class is equal to the distance between second and the third class, but because for ordinal features, we can’t tell which distance is bigger.\n\nAs these numeric features, we can’t sort and integrate an ordinal feature the other way, and expect to get similar performance.\n\nLabel Encoding\n\nThe simplest way to encode a categorical feature is to map it’s unique values to different numbers.\n\nThere are different method. Be creative in constructing them\n\nFollowing are three examples:\n\n\n  Sorted alphabetical order\n    sklearn.preprocessing.LabelEncoding\n\n    \n  \n  Order of appearance\n    pandas.factorize\n\n    \n  \n\n\nFrequency Encoding\n\nencoding = df.groupby('col1').size()\nencoding = encoding / len(df)\ndf['enc']=df.col1.map(encoding)\n\n\n\nLabel encoding and frequency encoding work fine with tree-based models because models can split feature, and extract most of the useful values in categories on its own.\n\nBut linear models might get confused by non linear dependence of categorical features. The non-linear dependence refers to cases like:\n+——+————+———–+\n| id   | Cat       | target    |\n+——+————+———–+\n| 5    | 1 | 1       |\n| 6    | 2 | 0     |\n| 7    | 3 | 1       |\n| 8    | 4 | 1       |\n+——+————+———–+\n\nOne-hot Encoding\n\nOne-hot Encoding creates a new column for each unique value of our categorical feature and put one in the appropriate place. Everything else will be 0. This works well for linear models, k-NN and Neural Nets.\n\nSituations where we have a few important numeric features and hundreds of binary features generated by one-hot encoding may slow down tree-based models, not always improving their results.\n\nFeature Generation\n\nFeature interaction between several categorical features\n\nThis method works well with non-tree based models."
 					}
 					
 				
@@ -276,6 +306,21 @@
 						"categories": "Machine-Learning",
 						"url": " /machine-learning/Generative-Discriminative/",
 						"content": "The fundamental distinction between discriminative models and generative models is:\n\n\n  Discriminative models learn the (hard or soft) boundary between classes\n  Generative models model the distribution of individual classes\n\n\nDiscriminative\n\nSVMs and decision trees are discriminative because they learn explicit boundaries between classes.\n\nSVM is a maximal margin classifier, meaning that it learns a decision boundary that maximizes the distance between samples of the two classes, given a kernel. The distance between a sample and the learned decision boundary can be used to make the SVM a “soft” classifier.\n\nDecision trees learn the decision boundary by recursively partitioning the space in a manner that maximizes the information gain (or another criterion).\n\nGenerative\n\nGenerative models are typically specified as probabilistic graphical models. They offer rich representations of the independence relations in the dataset.\n\nDiscriminative models do not offer such clear representations of relations between features and classes in the dataset. Instead of using resources to fully model each class, they focus on richly modeling the boundary between classes. Given the same amount of capacity (say, bits in a computer program executing the model), a discriminative model thus may yield more complex representations of this boundary than a generative model.\n\nWhen you are dealing with non-stationary distributions where the online test data may be generated by different underlying distributions than the training data, it is typically more straightforward to detect distribution changes and update a generative model accordingly than do this for a decision boundary in an SVM, especially if the online updates need to be unsupervised.\n\nTo sum up:\n\n\n  \n    \n      Discriminative models\n      Generative models\n    \n  \n  \n    \n      learn the (hard or soft) boundary between classes\n      model the distribution of individual classes\n    \n    \n      generally do not function for outlier detection\n      generally function for outlier detection\n    \n    \n      do not offer clear representations of relations between features and classes in the dataset\n      offer rich representations of the independence relations in the dataset"
+					}
+					
+				
+			
+		
+			
+				
+					,
+					
+					"machine-learning-ensemble-methods": {
+						"id": "machine-learning-ensemble-methods",
+						"title": "Ensemble Learning",
+						"categories": "Machine-Learning",
+						"url": " /machine-learning/Ensemble-methods/",
+						"content": "Bagging and boosting are two families of ensemble methods.\n\nEnsemble methods aim at combining the predictions of several base estimators built with a given learning algorithm in order to improve generalizability / robustness over a single estimator.\n\nBagging(short for Bootstrap Aggregating):\n\n\n  build several base estimators independently and then to average their predictions.\n  aim to decrease variance by generating additional data for training from the original dataset\n  suitable for models with high variance low bias (complex models)\n  Examples: Random forest, which develop fully grown trees (note that RF modifies the grown procedure to reduce the correlation between trees)\n\n\nBoosting:\n\n\n  build several base estimators sequentialy and one tries to reduce the bias of the combined estimator\n  aim to decrease bias\n  suitable for models with low variance high bias\n  Examples:  Gradient boosting"
 					}
 					
 				

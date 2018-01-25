@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/sitemap.xml
+Sitemap: https://orange-ape.cloudvent.net//sitemap.xml

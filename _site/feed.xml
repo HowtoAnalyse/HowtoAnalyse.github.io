@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-25T20:46:33+08:00</updated><id>http://localhost:4000/</id><title type="html">Base</title><subtitle>Knowledge base template for Jekyll.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Feature Engineering Part II – Missing Values</title><link href="http://localhost:4000/machine-learning/Missing-data-imputation/" rel="alternate" type="text/html" title="Feature Engineering Part II -- Missing Values" /><published>2018-01-25T00:00:00+08:00</published><updated>2018-01-25T00:00:00+08:00</updated><id>http://localhost:4000/machine-learning/Missing-data-imputation</id><content type="html" xml:base="http://localhost:4000/machine-learning/Missing-data-imputation/">&lt;h2 id=&quot;imputation&quot;&gt;Imputation&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="https://orange-ape.cloudvent.net//feed.xml" rel="self" type="application/atom+xml" /><link href="https://orange-ape.cloudvent.net//" rel="alternate" type="text/html" /><updated>2018-01-25T21:57:24+08:00</updated><id>https://orange-ape.cloudvent.net//</id><title type="html">Base</title><subtitle>Knowledge base template for Jekyll.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Feature Engineering on Numeric features</title><link href="https://orange-ape.cloudvent.net//machine-learning/Numeric-feature-engineering/" rel="alternate" type="text/html" title="Feature Engineering on Numeric features" /><published>2018-01-25T00:00:00+08:00</published><updated>2018-01-25T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//machine-learning/Numeric-feature-engineering</id><content type="html" xml:base="https://orange-ape.cloudvent.net//machine-learning/Numeric-feature-engineering/">&lt;h2 id=&quot;feature-preprocessing&quot;&gt;Feature Preprocessing&lt;/h2&gt;
+
+&lt;h3 id=&quot;scaling&quot;&gt;Scaling&lt;/h3&gt;
+
+&lt;p&gt;Scaling numeric features ensures that their initial impact on models are relatively the same.&lt;/p&gt;
+
+&lt;h3 id=&quot;winsorization-or-rank-transformation-to-deal-with-outliers&quot;&gt;Winsorization or Rank Transformation to deal with Outliers&lt;/h3&gt;
+
+&lt;p&gt;Outliers are not only exist in features but our target as well.&lt;/p&gt;
+
+&lt;h4 id=&quot;winsorization&quot;&gt;Winsorization&lt;/h4&gt;
+
+&lt;p&gt;To protect linear models from outliers, we can clip features values between two chosen values of lower bound and upper bound. We can choose them as some percentiles of that feature. For example, first and 99s percentiles. This procedure of clipping is known as winsorization&lt;/p&gt;
+
+&lt;h4 id=&quot;rank-transformation&quot;&gt;Rank Transformation&lt;/h4&gt;
+
+&lt;p&gt;Rank transformation sets spaces between properly assorted values to be equal. It can be a better choice than MinMaxScaler if we have outliers bacause it moves outliers closer to normal objects.&lt;/p&gt;
+
+&lt;p&gt;There are 2 choice while applying rank transformation to the test set:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;store the creative mapping from features values to their rank values&lt;/li&gt;
+  &lt;li&gt;concatenate train and test sets before applying the rank transformation.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scipy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rankdata&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;log-transformation&quot;&gt;Log transformation&lt;/h3&gt;
+
+&lt;p&gt;Log transformation acts as a representative of methametical transformations that often helps non-tree-based models and especially neural networks. As an alternative, you may extract a square root of the data.&lt;/p&gt;
+
+&lt;p&gt;Both of these transformations can:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;drive extremely big values closer to the features’ average value.&lt;/li&gt;
+  &lt;li&gt;make values near zero to be more distinguishable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Despite the simplicity, one of these transformations can improve your neural network’s results significantly.&lt;/p&gt;
+
+&lt;p&gt;In conclusion, linear models, KNN, and neural networks can benefit hugely from this.&lt;/p&gt;
+
+&lt;h2 id=&quot;feature-generation&quot;&gt;Feature Generation&lt;/h2&gt;
+
+&lt;p&gt;Feature generation is a process of deriving new features using logic or knowledge derived after data exploration and hypothesis checking.&lt;/p&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Real Estate price and Real Estate squared area -&amp;gt; price per meter square&lt;/li&gt;
+  &lt;li&gt;Horizontal distance and the vertical difference in heights -&amp;gt; direct distance.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Such examples can be of help not only for linear models. For example, although gradient within decision tree is a very powerful model, it still experiences difficulties with approximation of multiplications and divisions. And adding size features explicitly can lead to a more robust model with less amount of trees.&lt;/p&gt;
+
+&lt;p&gt;Apart from examples like adding, multiplications, divisions, and other features interactions, we can also:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A new feature indicating fractional part of these prices. For example, if some product costs 2.49, the fractional part of its price is 0.49. This feature can help the model utilize the differences in people’s perception of these prices.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Also, we can find similar patterns in tasks which require distinguishing between a human and a robot. For example, if we will have some kind of financial data like auctions, we could observe that people tend to set round numbers as prices, and there are something like 0.935, blah, blah,, blah, very long number here. Or, if we are trying to find spambots on social networks, we can be sure that no human ever read messages with an exact interval of one second.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Feature Preprocessing</summary></entry><entry><title type="html">Feature Engineering Part II – Missing Values</title><link href="https://orange-ape.cloudvent.net//machine-learning/Missing-data-imputation/" rel="alternate" type="text/html" title="Feature Engineering Part II -- Missing Values" /><published>2018-01-25T00:00:00+08:00</published><updated>2018-01-25T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//machine-learning/Missing-data-imputation</id><content type="html" xml:base="https://orange-ape.cloudvent.net//machine-learning/Missing-data-imputation/">&lt;h2 id=&quot;imputation&quot;&gt;Imputation&lt;/h2&gt;
 
 &lt;p&gt;a. Replace it with a number outside the normal range like -999 
 b. Replace it with mean or median
@@ -22,7 +84,71 @@ c. Reconstruct values&lt;/p&gt;
 
 &lt;p&gt;As an alternative, we may have a try on frequency encoding with missing values as a new category.&lt;/p&gt;
 
-&lt;h2 id=&quot;xgboost-can-handle-nan&quot;&gt;Xgboost can handle NaN.&lt;/h2&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Imputation</summary></entry><entry><title type="html">Bag of words</title><link href="http://localhost:4000/machine-learning/bag-of-words/" rel="alternate" type="text/html" title="Bag of words" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>http://localhost:4000/machine-learning/bag-of-words</id><content type="html" xml:base="http://localhost:4000/machine-learning/bag-of-words/">&lt;p&gt;If text and images are the only data we got, it’s more convenient to apply specific approach for these types of data.&lt;/p&gt;
+&lt;h2 id=&quot;xgboost-can-handle-nan&quot;&gt;Xgboost can handle NaN.&lt;/h2&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Imputation</summary></entry><entry><title type="html">Feature Engineering on Categorical and Ordinal features”</title><link href="https://orange-ape.cloudvent.net//machine-learning/Categorical-feature-engineering/" rel="alternate" type="text/html" title="Feature Engineering on Categorical and Ordinal features&quot;" /><published>2018-01-25T00:00:00+08:00</published><updated>2018-01-25T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//machine-learning/Categorical-feature-engineering</id><content type="html" xml:base="https://orange-ape.cloudvent.net//machine-learning/Categorical-feature-engineering/">&lt;p&gt;Ordinal features refer to ordered categorical features. Examples include&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Driver’s license: A,B,C,D&lt;/li&gt;
+  &lt;li&gt;Education level: Bachelor, Master, Doctoral&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;difference-between-numeric-and-ordinal-features-with-values-123&quot;&gt;Difference between Numeric and Ordinal Features with values 1,2,3…&lt;/h3&gt;
+
+&lt;p&gt;For numerical features with values 1,2,3…, we can conclude that the distance between first, and the second class is equal to the distance between second and the third class, but because for ordinal features, we can’t tell which distance is bigger.&lt;/p&gt;
+
+&lt;p&gt;As these numeric features, we can’t sort and integrate an ordinal feature the other way, and expect to get similar performance.&lt;/p&gt;
+
+&lt;h3 id=&quot;label-encoding&quot;&gt;Label Encoding&lt;/h3&gt;
+
+&lt;p&gt;The simplest way to encode a categorical feature is to map it’s unique values to different numbers.&lt;/p&gt;
+
+&lt;p&gt;There are different method. Be creative in constructing them&lt;/p&gt;
+
+&lt;p&gt;Following are three examples:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Sorted alphabetical order
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sklearn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;preprocessing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LabelEncoding&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Order of appearance
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pandas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;factorize&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;frequency-encoding&quot;&gt;Frequency Encoding&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;groupby&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'col1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'enc'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Label encoding and frequency encoding work fine with tree-based models because models can split feature, and extract most of the useful values in categories on its own.&lt;/p&gt;
+
+&lt;p&gt;But linear models might get confused by non linear dependence of categorical features. The non-linear dependence refers to cases like:
++——+————+———–+
+| id   | Cat       | target    |
++——+————+———–+
+| 5    | 1 | 1       |
+| 6    | 2 | 0     |
+| 7    | 3 | 1       |
+| 8    | 4 | 1       |
++——+————+———–+&lt;/p&gt;
+
+&lt;h3 id=&quot;one-hot-encoding&quot;&gt;One-hot Encoding&lt;/h3&gt;
+
+&lt;p&gt;One-hot Encoding creates a new column for each unique value of our categorical feature and put one in the appropriate place. Everything else will be 0. This works well for linear models, k-NN and Neural Nets.&lt;/p&gt;
+
+&lt;p&gt;Situations where we have a few important numeric features and hundreds of binary features generated by one-hot encoding may slow down tree-based models, not always improving their results.&lt;/p&gt;
+
+&lt;h2 id=&quot;feature-generation&quot;&gt;Feature Generation&lt;/h2&gt;
+
+&lt;h3 id=&quot;feature-interaction-between-several-categorical-features&quot;&gt;Feature interaction between several categorical features&lt;/h3&gt;
+
+&lt;p&gt;This method works well with non-tree based models.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Ordinal features refer to ordered categorical features. Examples include Driver’s license: A,B,C,D Education level: Bachelor, Master, Doctoral …</summary></entry><entry><title type="html">Bag of words</title><link href="https://orange-ape.cloudvent.net//machine-learning/bag-of-words/" rel="alternate" type="text/html" title="Bag of words" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//machine-learning/bag-of-words</id><content type="html" xml:base="https://orange-ape.cloudvent.net//machine-learning/bag-of-words/">&lt;p&gt;If text and images are the only data we got, it’s more convenient to apply specific approach for these types of data.&lt;/p&gt;
 
 &lt;p&gt;The common scenario is that we have text or images as additional data set, we need to grasp different features that can be input to machine learning models as a complementary to our main data frame of samples and features.&lt;/p&gt;
 
@@ -67,50 +193,4 @@ c. Reconstruct values&lt;/p&gt;
 
 &lt;h2 id=&quot;next-embeddings&quot;&gt;Next: Embeddings&lt;/h2&gt;
 
-&lt;p&gt;Embeddings like Word2Vec&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">If text and images are the only data we got, it’s more convenient to apply specific approach for these types of data.</summary></entry><entry><title type="html">Word2Vec</title><link href="http://localhost:4000/recommender/Word2Vec/" rel="alternate" type="text/html" title="Word2Vec" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>http://localhost:4000/recommender/Word2Vec</id><content type="html" xml:base="http://localhost:4000/recommender/Word2Vec/">&lt;p&gt;At Openrice, I’m always looking for ways to leverage massive data set to automate customer-facing experiences.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">At Openrice, I’m always looking for ways to leverage massive data set to automate customer-facing experiences.</summary></entry><entry><title type="html">Statistical tests</title><link href="http://localhost:4000/statistics/Statistical-tests/" rel="alternate" type="text/html" title="Statistical tests" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>http://localhost:4000/statistics/Statistical-tests</id><content type="html" xml:base="http://localhost:4000/statistics/Statistical-tests/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry><entry><title type="html">PyMongo</title><link href="http://localhost:4000/etl/PyMongo/" rel="alternate" type="text/html" title="PyMongo" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>http://localhost:4000/etl/PyMongo</id><content type="html" xml:base="http://localhost:4000/etl/PyMongo/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry><entry><title type="html">Deep Neural Networds</title><link href="http://localhost:4000/recommender/Deep-Learning/" rel="alternate" type="text/html" title="Deep Neural Networds" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>http://localhost:4000/recommender/Deep-Learning</id><content type="html" xml:base="http://localhost:4000/recommender/Deep-Learning/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry><entry><title type="html">Collaborative Filtering</title><link href="http://localhost:4000/recommender/Collaborative-Filtering/" rel="alternate" type="text/html" title="Collaborative Filtering" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>http://localhost:4000/recommender/Collaborative-Filtering</id><content type="html" xml:base="http://localhost:4000/recommender/Collaborative-Filtering/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry><entry><title type="html">A/B Testing</title><link href="http://localhost:4000/statistics/AB-testing/" rel="alternate" type="text/html" title="A/B Testing" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>http://localhost:4000/statistics/AB-testing</id><content type="html" xml:base="http://localhost:4000/statistics/AB-testing/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry><entry><title type="html">Machine Learning Recap</title><link href="http://localhost:4000/machine-learning/machine-learning-recap/" rel="alternate" type="text/html" title="Machine Learning Recap" /><published>2018-01-15T00:00:00+08:00</published><updated>2018-01-15T00:00:00+08:00</updated><id>http://localhost:4000/machine-learning/machine-learning-recap</id><content type="html" xml:base="http://localhost:4000/machine-learning/machine-learning-recap/">&lt;h2 id=&quot;no-free-lunch-theorem&quot;&gt;No Free Lunch Theorem&lt;/h2&gt;
-
-&lt;p&gt;Basically, No Free Lunch Theorem states that there is no methods which outperform all others on all tasks.&lt;/p&gt;
-
-&lt;p&gt;The reason behind is that every method relies on certain assumptions about data or task. If these assumptions fail, it will perform poorly.&lt;/p&gt;
-
-&lt;p&gt;For us, this means that we cannot every competition with just a single algorithm. So it is important for us to have a clear mind map of various models based off different assumptions.&lt;/p&gt;
-
-&lt;p&gt;Then let’s start getting familiar with the four popular families of machine learning algorithms.&lt;/p&gt;
-
-&lt;h2 id=&quot;linear-model&quot;&gt;Linear Model&lt;/h2&gt;
-
-&lt;p&gt;Linear models try to separate objects with a plane which divides space into two parts.&lt;/p&gt;
-
-&lt;p&gt;With 2 sets of points, it is quite intuitive to separate them using a line. This approach can be generalized for a higher dimensional space. This is the main idea behind linear models.&lt;/p&gt;
-
-&lt;p&gt;Logistic regression or SVM are all linear models withdifferent loss functions.&lt;/p&gt;
-
-&lt;h3 id=&quot;linear-models-are-especially-good-for-sparse-high-dimensional-data&quot;&gt;Linear models are especially good for sparse high dimensional data.&lt;/h3&gt;
-
-&lt;h2 id=&quot;tree-based-methods&quot;&gt;Tree-Based Methods&lt;/h2&gt;
-
-&lt;p&gt;In general, tree-based models are very powerful and can be a good default method for tabular data.&lt;/p&gt;
-
-&lt;p&gt;Intuitively, a single decision tree can be considered as dividing space into boxes and approximating data with a constant inside of these boxes. It uses divide-and-conquer approach to recur sub-split spaces into sub-spaces.&lt;/p&gt;
-
-&lt;p&gt;The way of true axis splits and corresponding constants produces several approaches for building decision trees. Moreover, such trees can be combined together in a lot of ways. All this leads to a wide variety of tree-based algorithms, most famous of them being random forest and Gradient Boosted Decision Trees.&lt;/p&gt;
-
-&lt;p&gt;Scikit-Learn contains quite good implementation of random forest. For gradient boost decision trees, you may find XGBoost and LightGBM with higher speed and accuracy.&lt;/p&gt;
-
-&lt;h2 id=&quot;k-nearest-neighbors-k-nn&quot;&gt;k-Nearest Neighbors (k-NN)&lt;/h2&gt;
-
-&lt;p&gt;The intuition behind k-NN is very simple. Closer objects will likely to have same labels.&lt;/p&gt;
-
-&lt;h2 id=&quot;neural-networks&quot;&gt;Neural Networks&lt;/h2&gt;
-
-&lt;p&gt;Neural Nets is a special class of machine learning models, which deserve a separate topic.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">No Free Lunch Theorem</summary></entry><entry><title type="html">Data mining, statistics, machine learning and AI</title><link href="http://localhost:4000/machine-learning/dm-stat-ml/" rel="alternate" type="text/html" title="Data mining, statistics, machine learning and AI" /><published>2018-01-15T00:00:00+08:00</published><updated>2018-01-15T00:00:00+08:00</updated><id>http://localhost:4000/machine-learning/dm-stat-ml</id><content type="html" xml:base="http://localhost:4000/machine-learning/dm-stat-ml/">&lt;p&gt;Artificial Intelligence is the study of how to create intelligent agents. Most tasks that require intelligence require an ability to induce new knowledge from experiences. Thus, a large area within AI is machine learning. Procedures in machine learning include ideas derived directly from, or inspired by, classical statistics, but they don’t have to be. Data mining is an area that has taken much of its inspiration and techniques from machine learning (and some, also, from statistics), but aims at either to discover / generate some preliminary insights in an area where there really was little knowledge beforehand, or to be able to predict future observations accurately.&lt;/p&gt;
-
-&lt;p&gt;There are considerable overlaps among them. If we have to make some distinctions, they are:&lt;/p&gt;
-
-&lt;p&gt;Statistics is about &lt;strong&gt;numbers&lt;/strong&gt;. It is mostly employed towards better understanding particular data generating processes. Thus, it usually starts with a formally specified model, and from this are derived procedures to accurately extract that model from noisy instances (i.e., estimation–by optimizing some loss function) and to be able to distinguish it from other possibilities (i.e., inferences based on known properties of sampling distributions). The prototypical statistical technique is regression.&lt;/p&gt;
-
-&lt;p&gt;Data Mining is about using Statistics as well as other programming methods to find &lt;strong&gt;patterns&lt;/strong&gt; hidden in the data so that you can explain some phenomenon. Data Mining builds intuition about what is really happening in some data and is still little more towards math than programming, but uses both. Common data mining techniques would include cluster analyses, classification and regression trees, and neural networks.&lt;/p&gt;
-
-&lt;p&gt;Machine Learning uses Data Mining techniques and other learning algorithms to build models of what is happening behind some data so that it can predict future outcomes. Math is the basis for many of the algorithms, but this is more towards programming. A computer program is said to learn some task from experience if its performance at the task improves with experience, according to some performance measure. Machine learning involves the study of algorithms that can extract information automatically (i.e., without on-line human guidance).&lt;/p&gt;
-
-&lt;p&gt;Artificial Intelligence uses models built by Machine Learning and other ways to reason about the world and give rise to intelligent behavior whether this is playing a game or driving a robot/car. Artificial Intelligence has some goal to achieve by predicting how actions will affect the model of the world and chooses the actions that will best achieve that goal. Very programming based.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Artificial Intelligence is the study of how to create intelligent agents. Most tasks that require intelligence require an ability to induce new knowledge from experiences. Thus, a large area within AI is machine learning. Procedures in machine learning include ideas derived directly from, or inspired by, classical statistics, but they don’t have to be. Data mining is an area that has taken much of its inspiration and techniques from machine learning (and some, also, from statistics), but aims at either to discover / generate some preliminary insights in an area where there really was little knowledge beforehand, or to be able to predict future observations accurately.</summary></entry></feed>
+&lt;p&gt;Embeddings like Word2Vec&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">If text and images are the only data we got, it’s more convenient to apply specific approach for these types of data.</summary></entry><entry><title type="html">Word2Vec</title><link href="https://orange-ape.cloudvent.net//recommender/Word2Vec/" rel="alternate" type="text/html" title="Word2Vec" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//recommender/Word2Vec</id><content type="html" xml:base="https://orange-ape.cloudvent.net//recommender/Word2Vec/">&lt;p&gt;At Openrice, I’m always looking for ways to leverage massive data set to automate customer-facing experiences.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">At Openrice, I’m always looking for ways to leverage massive data set to automate customer-facing experiences.</summary></entry><entry><title type="html">Statistical tests</title><link href="https://orange-ape.cloudvent.net//statistics/Statistical-tests/" rel="alternate" type="text/html" title="Statistical tests" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//statistics/Statistical-tests</id><content type="html" xml:base="https://orange-ape.cloudvent.net//statistics/Statistical-tests/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry><entry><title type="html">PyMongo</title><link href="https://orange-ape.cloudvent.net//etl/PyMongo/" rel="alternate" type="text/html" title="PyMongo" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//etl/PyMongo</id><content type="html" xml:base="https://orange-ape.cloudvent.net//etl/PyMongo/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry><entry><title type="html">Deep Neural Networds</title><link href="https://orange-ape.cloudvent.net//recommender/Deep-Learning/" rel="alternate" type="text/html" title="Deep Neural Networds" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//recommender/Deep-Learning</id><content type="html" xml:base="https://orange-ape.cloudvent.net//recommender/Deep-Learning/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry><entry><title type="html">Collaborative Filtering</title><link href="https://orange-ape.cloudvent.net//recommender/Collaborative-Filtering/" rel="alternate" type="text/html" title="Collaborative Filtering" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//recommender/Collaborative-Filtering</id><content type="html" xml:base="https://orange-ape.cloudvent.net//recommender/Collaborative-Filtering/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry><entry><title type="html">A/B Testing</title><link href="https://orange-ape.cloudvent.net//statistics/AB-testing/" rel="alternate" type="text/html" title="A/B Testing" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//statistics/AB-testing</id><content type="html" xml:base="https://orange-ape.cloudvent.net//statistics/AB-testing/"></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html"></summary></entry></feed>
