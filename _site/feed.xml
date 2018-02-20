@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="https://orange-ape.cloudvent.net//feed.xml" rel="self" type="application/atom+xml" /><link href="https://orange-ape.cloudvent.net//" rel="alternate" type="text/html" /><updated>2018-02-06T21:47:58+08:00</updated><id>https://orange-ape.cloudvent.net//</id><title type="html">Base</title><subtitle>Knowledge base template for Jekyll.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Deeper neural network</title><link href="https://orange-ape.cloudvent.net//deep-learning-with-numpy/Deep-Neural-Network/" rel="alternate" type="text/html" title="Deeper neural network" /><published>2018-02-06T00:00:00+08:00</published><updated>2018-02-06T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//deep-learning-with-numpy/Deep-Neural-Network</id><content type="html" xml:base="https://orange-ape.cloudvent.net//deep-learning-with-numpy/Deep-Neural-Network/">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize_parameters_deep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layer_dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="https://orange-ape.cloudvent.net//feed.xml" rel="self" type="application/atom+xml" /><link href="https://orange-ape.cloudvent.net//" rel="alternate" type="text/html" /><updated>2018-02-20T16:41:10+08:00</updated><id>https://orange-ape.cloudvent.net//</id><title type="html">Base</title><subtitle>Knowledge base template for Jekyll.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Deeper neural network</title><link href="https://orange-ape.cloudvent.net//deep-learning-with-numpy/Deep-Neural-Network/" rel="alternate" type="text/html" title="Deeper neural network" /><published>2018-02-06T00:00:00+08:00</published><updated>2018-02-06T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//deep-learning-with-numpy/Deep-Neural-Network</id><content type="html" xml:base="https://orange-ape.cloudvent.net//deep-learning-with-numpy/Deep-Neural-Network/">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize_parameters_deep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layer_dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;L&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layer_dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -276,7 +276,181 @@ c. Reconstruct values&lt;/p&gt;
 
 &lt;h3 id=&quot;feature-interaction-between-several-categorical-features&quot;&gt;Feature interaction between several categorical features&lt;/h3&gt;
 
-&lt;p&gt;This method works well with non-tree based models.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Ordinal features refer to ordered categorical features. Examples include Driver’s license: A,B,C,D Education level: Bachelor, Master, Doctoral …</summary></entry><entry><title type="html">PCA can do more than dimension reduction</title><link href="https://orange-ape.cloudvent.net//top%204%25%20kaggle%20solution/PCA/" rel="alternate" type="text/html" title="PCA can do more than dimension reduction" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//top%204%25%20kaggle%20solution/PCA</id><content type="html" xml:base="https://orange-ape.cloudvent.net//top%204%25%20kaggle%20solution/PCA/">&lt;p&gt;I was at first inspired by a discussion on Kaggle forum that doing PCA helps obtain a big boost on leaderboard.&lt;/p&gt;
+&lt;p&gt;This method works well with non-tree based models.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Ordinal features refer to ordered categorical features. Examples include Driver’s license: A,B,C,D Education level: Bachelor, Master, Doctoral …</summary></entry><entry><title type="html">Build a Recommender Engine with Gensim</title><link href="https://orange-ape.cloudvent.net//recommender/Word2Vec-Gensim/" rel="alternate" type="text/html" title="Build a Recommender Engine with Gensim" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//recommender/Word2Vec-Gensim</id><content type="html" xml:base="https://orange-ape.cloudvent.net//recommender/Word2Vec-Gensim/">&lt;p&gt;Recommender engines powered by Word2Vec are able to learn user preference adaptively based on previous interactions.&lt;/p&gt;
+
+&lt;p&gt;This notebook gives an example using Gensim.&lt;/p&gt;
+
+&lt;p&gt;For a more detailed implementation using Tensorflow:&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-make-every-users-to-read-list-as-a-sentence-and-feed-it-into-word2vec&quot;&gt;Step 1. Make every user’s to-read list as a sentence and feed it into word2vec&lt;/h2&gt;
+
+&lt;p&gt;Given a dataset large enough, it can find out similar books&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pd&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;gensim.models&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Word2Vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyedVectors&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'to_read.csv'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'books.csv'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'book_id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'book_id'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style&gt;
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;user_id&lt;/th&gt;
+      &lt;th&gt;book_id&lt;/th&gt;
+      &lt;th&gt;title&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;102338&lt;/th&gt;
+      &lt;td&gt;25663&lt;/td&gt;
+      &lt;td&gt;67&lt;/td&gt;
+      &lt;td&gt;A Thousand Splendid Suns&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;631930&lt;/th&gt;
+      &lt;td&gt;25250&lt;/td&gt;
+      &lt;td&gt;7629&lt;/td&gt;
+      &lt;td&gt;Auschwitz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;790848&lt;/th&gt;
+      &lt;td&gt;32567&lt;/td&gt;
+      &lt;td&gt;5442&lt;/td&gt;
+      &lt;td&gt;Vicious (Villains, #1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;475377&lt;/th&gt;
+      &lt;td&gt;9423&lt;/td&gt;
+      &lt;td&gt;6239&lt;/td&gt;
+      &lt;td&gt;Royal Blood (Vampire Kisses, #6)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;94525&lt;/th&gt;
+      &lt;td&gt;28268&lt;/td&gt;
+      &lt;td&gt;33&lt;/td&gt;
+      &lt;td&gt;Memoirs of a Geisha&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;548850&lt;/th&gt;
+      &lt;td&gt;19543&lt;/td&gt;
+      &lt;td&gt;4290&lt;/td&gt;
+      &lt;td&gt;Whose Body?  (Lord Peter Wimsey, #1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;652391&lt;/th&gt;
+      &lt;td&gt;28523&lt;/td&gt;
+      &lt;td&gt;649&lt;/td&gt;
+      &lt;td&gt;1Q84&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;813174&lt;/th&gt;
+      &lt;td&gt;10051&lt;/td&gt;
+      &lt;td&gt;4499&lt;/td&gt;
+      &lt;td&gt;The Paris Architect&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;831203&lt;/th&gt;
+      &lt;td&gt;39958&lt;/td&gt;
+      &lt;td&gt;1511&lt;/td&gt;
+      &lt;td&gt;The Slow Regard of Silent Things (The Kingkill...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;45407&lt;/th&gt;
+      &lt;td&gt;37147&lt;/td&gt;
+      &lt;td&gt;317&lt;/td&gt;
+      &lt;td&gt;I Know Why the Caged Bird Sings&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;raw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;groupby&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'user_id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nunique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sentences&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Word2Vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sentences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;workers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Word2Vec(vocab=9676, size=128, alpha=0.025)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vocab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;step-2-store-and-query-book-vectors&quot;&gt;Step 2. Store and Query book vectors&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;book_vectors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wv&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gmtime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strftime&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'vectors_'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strftime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gmtime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;book_vectors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;old_vectors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyedVectors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'vectors_20180220'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Say, a user bookmarked &lt;em&gt;A Hundred Summers&lt;/em&gt; and &lt;em&gt;The Stand&lt;/em&gt; on his to-do list and disliked &lt;em&gt;The Silver Star&lt;/em&gt;, the recommendation engine will suggest a list of books as following:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;old_vectors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;most_similar_cosmul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;positive&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'A Hundred Summers'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'The Stand'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;negative&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'The Silver Star'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[('Preludes &amp;amp; Nocturnes (The Sandman #1)', 1.1122468709945679),
+ ('The Gods Themselves', 1.1107063293457031),
+ ('Preacher, Volume 1: Gone to Texas', 1.1103928089141846),
+ ('Snow Crash', 1.1093586683273315),
+ ('Gateway (Heechee Saga, #1)', 1.109340786933899),
+ ('Doomsday Book (Oxford Time Travel, #1)', 1.1071699857711792),
+ ('The Fountains of Paradise', 1.1049118041992188),
+ ('Sundiver (The Uplift Saga, #1)', 1.1040676832199097),
+ ('Soon I Will Be Invincible', 1.1027390956878662),
+ ('The Children of Húrin', 1.1015183925628662)]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Recommender engines powered by Word2Vec are able to learn user preference adaptively based on previous interactions.</summary></entry><entry><title type="html">PCA can do more than dimension reduction</title><link href="https://orange-ape.cloudvent.net//top%204%25%20kaggle%20solution/PCA/" rel="alternate" type="text/html" title="PCA can do more than dimension reduction" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//top%204%25%20kaggle%20solution/PCA</id><content type="html" xml:base="https://orange-ape.cloudvent.net//top%204%25%20kaggle%20solution/PCA/">&lt;p&gt;I was at first inspired by a discussion on Kaggle forum that doing PCA helps obtain a big boost on leaderboard.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;np&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.preprocessing&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RobustScaler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Imputer&lt;/span&gt;
@@ -1431,33 +1605,34 @@ Name: PoolQC, dtype: int64
 
 &lt;h2 id=&quot;next-embeddings&quot;&gt;Next: Embeddings&lt;/h2&gt;
 
-&lt;p&gt;Embeddings like Word2Vec&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">If text and images are the only data we got, it’s more convenient to apply specific approach for these types of data.</summary></entry><entry><title type="html">From Word2Vec to Item Recommendation</title><link href="https://orange-ape.cloudvent.net//recommender/Word2Vec/" rel="alternate" type="text/html" title="From Word2Vec to Item Recommendation" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//recommender/Word2Vec</id><content type="html" xml:base="https://orange-ape.cloudvent.net//recommender/Word2Vec/">&lt;p&gt;As a data analyst, I’m always looking for ways to leverage massive data set to automate customer-facing experiences.&lt;/p&gt;
+&lt;p&gt;Embeddings like Word2Vec&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">If text and images are the only data we got, it’s more convenient to apply specific approach for these types of data.</summary></entry><entry><title type="html">From Word2Vec to Item Recommendation</title><link href="https://orange-ape.cloudvent.net//recommender/Word2Vec/" rel="alternate" type="text/html" title="From Word2Vec to Item Recommendation" /><published>2018-01-22T00:00:00+08:00</published><updated>2018-01-22T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//recommender/Word2Vec</id><content type="html" xml:base="https://orange-ape.cloudvent.net//recommender/Word2Vec/">&lt;p&gt;As a data analyst, I’m always looking for ways to leverage massive dataset to automate customer-facing experiences. Recently I’m focusing on using word2vec to power a recommendation engine.&lt;/p&gt;
 
 &lt;p&gt;Following is a minimalist script explaining how to apply Word2Vec for item recommendation and the data science behind it.&lt;/p&gt;
 
 &lt;p&gt;The demo data can be downloaded here: https://github.com/zygmuntz/goodbooks-10k&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;__future__&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;absolute_import&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;__future__&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;division&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;__future__&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_function&lt;/span&gt;
+&lt;h2 id=&quot;step-1-make-every-users-to-read-list-as-a-sentence-and-feed-it-into-word2vec&quot;&gt;Step 1. Make every user’s to-read list as a sentence and feed it into word2vec&lt;/h2&gt;
 
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt;
+&lt;p&gt;Given a dataset large enough, it can find out similar books&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;random&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tempfile&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gettempdir&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;zipfile&lt;/span&gt;
-
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;np&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;six.moves&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;six.moves&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# pylint: disable=redefined-builtin&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tf&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pickle&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pd&lt;/span&gt;
-
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;six.moves&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;p&gt;It’s worth mentioning that the syntax of &lt;code class=&quot;highlighter-rouge&quot;&gt;xrange&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;range&lt;/code&gt; are the same.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;xrange(stop)&lt;/li&gt;
+  &lt;li&gt;xrange(start, stop[, step])&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The major difference is that &lt;code class=&quot;highlighter-rouge&quot;&gt;range&lt;/code&gt; outputs tuples while &lt;code class=&quot;highlighter-rouge&quot;&gt;xrange&lt;/code&gt; gives us a generator, which is more efficient when data are too large to fit in memory.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'to_read.csv'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'books.csv'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -1468,10 +1643,6 @@ Name: PoolQC, dtype: int64
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-
-&lt;p&gt;Make every user’s to-read list as a sentence and feed it into word2vec.&lt;/p&gt;
-
-&lt;p&gt;Given a dataset large enough, it can find out similar books&lt;/p&gt;
 
 &lt;div&gt;
 &lt;style&gt;
@@ -1498,64 +1669,64 @@ Name: PoolQC, dtype: int64
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;th&gt;493151&lt;/th&gt;
-      &lt;td&gt;12921&lt;/td&gt;
-      &lt;td&gt;98&lt;/td&gt;
-      &lt;td&gt;The Girl Who Played with Fire (Millennium, #2)&lt;/td&gt;
+      &lt;th&gt;535344&lt;/th&gt;
+      &lt;td&gt;12001&lt;/td&gt;
+      &lt;td&gt;1587&lt;/td&gt;
+      &lt;td&gt;Saving CeeCee Honeycutt&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;458637&lt;/th&gt;
-      &lt;td&gt;33014&lt;/td&gt;
-      &lt;td&gt;51&lt;/td&gt;
-      &lt;td&gt;City of Bones (The Mortal Instruments, #1)&lt;/td&gt;
+      &lt;th&gt;127117&lt;/th&gt;
+      &lt;td&gt;996&lt;/td&gt;
+      &lt;td&gt;4055&lt;/td&gt;
+      &lt;td&gt;Jesus' Son&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;594218&lt;/th&gt;
-      &lt;td&gt;10492&lt;/td&gt;
-      &lt;td&gt;2476&lt;/td&gt;
-      &lt;td&gt;The Winter Sea (Slains, #1)&lt;/td&gt;
+      &lt;th&gt;57970&lt;/th&gt;
+      &lt;td&gt;43087&lt;/td&gt;
+      &lt;td&gt;457&lt;/td&gt;
+      &lt;td&gt;The Historian&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;84267&lt;/th&gt;
-      &lt;td&gt;11410&lt;/td&gt;
-      &lt;td&gt;341&lt;/td&gt;
-      &lt;td&gt;The Iliad&lt;/td&gt;
+      &lt;th&gt;197783&lt;/th&gt;
+      &lt;td&gt;14942&lt;/td&gt;
+      &lt;td&gt;148&lt;/td&gt;
+      &lt;td&gt;Girl with a Pearl Earring&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;35157&lt;/th&gt;
-      &lt;td&gt;17107&lt;/td&gt;
-      &lt;td&gt;13&lt;/td&gt;
-      &lt;td&gt;1984&lt;/td&gt;
+      &lt;th&gt;754480&lt;/th&gt;
+      &lt;td&gt;40397&lt;/td&gt;
+      &lt;td&gt;359&lt;/td&gt;
+      &lt;td&gt;And the Mountains Echoed&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;712362&lt;/th&gt;
-      &lt;td&gt;38510&lt;/td&gt;
-      &lt;td&gt;3852&lt;/td&gt;
-      &lt;td&gt;Deity (Covenant, #3)&lt;/td&gt;
+      &lt;th&gt;105202&lt;/th&gt;
+      &lt;td&gt;9323&lt;/td&gt;
+      &lt;td&gt;187&lt;/td&gt;
+      &lt;td&gt;Uglies (Uglies, #1)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;467464&lt;/th&gt;
-      &lt;td&gt;48549&lt;/td&gt;
-      &lt;td&gt;17&lt;/td&gt;
-      &lt;td&gt;Catching Fire (The Hunger Games, #2)&lt;/td&gt;
+      &lt;th&gt;692645&lt;/th&gt;
+      &lt;td&gt;40233&lt;/td&gt;
+      &lt;td&gt;3727&lt;/td&gt;
+      &lt;td&gt;The Rook (The Checquy Files, #1)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;519192&lt;/th&gt;
-      &lt;td&gt;48347&lt;/td&gt;
-      &lt;td&gt;182&lt;/td&gt;
-      &lt;td&gt;Beautiful Creatures (Caster Chronicles, #1)&lt;/td&gt;
+      &lt;th&gt;905310&lt;/th&gt;
+      &lt;td&gt;42392&lt;/td&gt;
+      &lt;td&gt;1028&lt;/td&gt;
+      &lt;td&gt;Truly Madly Guilty&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;366676&lt;/th&gt;
-      &lt;td&gt;22024&lt;/td&gt;
-      &lt;td&gt;188&lt;/td&gt;
-      &lt;td&gt;A Dance with Dragons (A Song of Ice and Fire, #5)&lt;/td&gt;
+      &lt;th&gt;728410&lt;/th&gt;
+      &lt;td&gt;2452&lt;/td&gt;
+      &lt;td&gt;4402&lt;/td&gt;
+      &lt;td&gt;The Perfect Hope (Inn Boonsboro, #3)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;588764&lt;/th&gt;
-      &lt;td&gt;31407&lt;/td&gt;
-      &lt;td&gt;3953&lt;/td&gt;
-      &lt;td&gt;The New Jim Crow: Mass Incarceration in the Ag...&lt;/td&gt;
+      &lt;th&gt;100382&lt;/th&gt;
+      &lt;td&gt;15170&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;To Kill a Mockingbird&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1607,23 +1778,14 @@ Name: PoolQC, dtype: int64
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow.python.client&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;device_lib&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;device_lib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_local_devices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;h2 id=&quot;step-2-build-a-skip-gram-model&quot;&gt;Step 2. Build a skip-gram model&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[name: &quot;/cpu:0&quot;
- device_type: &quot;CPU&quot;
- memory_limit: 268435456
- locality {
- }
- incarnation: 15191507020555158226]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;We can create our own word embeddings easily using &lt;code class=&quot;highlighter-rouge&quot;&gt;gensim&lt;/code&gt;, an open source Python library focusing on topic modeling.&lt;/p&gt;
+
+&lt;p&gt;Here I will have a try on &lt;code class=&quot;highlighter-rouge&quot;&gt;TensorFlow&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;data_index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 
-&lt;span class=&quot;c&quot;&gt;# Step 3: Function to generate a training batch for the skip-gram model.&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;generate_batch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;batch_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_skips&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skip_window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_index&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;batch_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_skips&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
@@ -1662,20 +1824,18 @@ Name: PoolQC, dtype: int64
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;86 Me Before You (Me Before You, #1) -&amp;gt; 380 The Husband's Secret
-86 Me Before You (Me Before You, #1) -&amp;gt; 721 The Aviator's Wife
-380 The Husband's Secret -&amp;gt; 175 A Little Life
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;86 Me Before You (Me Before You, #1) -&amp;gt; 720 The Aviator's Wife
+86 Me Before You (Me Before You, #1) -&amp;gt; 380 The Husband's Secret
 380 The Husband's Secret -&amp;gt; 86 Me Before You (Me Before You, #1)
-175 A Little Life -&amp;gt; 51 Go Set a Watchman
+380 The Husband's Secret -&amp;gt; 175 A Little Life
 175 A Little Life -&amp;gt; 380 The Husband's Secret
+175 A Little Life -&amp;gt; 51 Go Set a Watchman
 51 Go Set a Watchman -&amp;gt; 175 A Little Life
-51 Go Set a Watchman -&amp;gt; 1094 The Marriage of Opposites
+51 Go Set a Watchman -&amp;gt; 1095 The Marriage of Opposites
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Step 4: Build and train a skip-gram model.&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;batch_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;batch_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;embedding_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# Dimension of the embedding vector.&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;skip_window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;       &lt;span class=&quot;c&quot;&gt;# How many words to consider left and right.&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;num_skips&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;         &lt;span class=&quot;c&quot;&gt;# How many times to reuse an input to generate a label.&lt;/span&gt;
@@ -1714,8 +1874,6 @@ Name: PoolQC, dtype: int64
     &lt;span class=&quot;c&quot;&gt;# Compute the average NCE loss for the batch.&lt;/span&gt;
     &lt;span class=&quot;c&quot;&gt;# tf.nce_loss automatically draws a new sample of the negative labels each&lt;/span&gt;
     &lt;span class=&quot;c&quot;&gt;# time we evaluate the loss.&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# Explanation of the meaning of NCE loss:&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;#   http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;loss&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reduce_mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nce_loss&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weights&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nce_weights&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
                      &lt;span class=&quot;n&quot;&gt;biases&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nce_biases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
@@ -1738,8 +1896,13 @@ Name: PoolQC, dtype: int64
     &lt;span class=&quot;c&quot;&gt;# Add variable initializer.&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;global_variables_initializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
-&lt;span class=&quot;c&quot;&gt;# Step 5: Begin training.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;num_steps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100001&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;step-3-start-training&quot;&gt;Step 3. Start Training&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;num_steps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100001&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Session&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;session&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;c&quot;&gt;# We must initialize all variables before we use them.&lt;/span&gt;
@@ -1769,7 +1932,7 @@ Name: PoolQC, dtype: int64
             &lt;span class=&quot;n&quot;&gt;sim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;similarity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;valid_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;valid_word&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse_dictionary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;valid_examples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;top_k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# number of nearest neighbors&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;top_k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# number of nearest neighbors&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;nearest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argsort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;top_k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;log_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Nearest to &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s:'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;valid_word&lt;/span&gt;
                 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;xrange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;top_k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
@@ -1778,240 +1941,241 @@ Name: PoolQC, dtype: int64
                 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;final_embeddings&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;normalized_embeddings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
-
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Initialized
-Average loss at step  0 :  240.497894287
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): Gerald's Game, Rat Queens, Vol. 1: Sass &amp;amp; Sorcery, An American Tragedy, Purple Cow: Transform Your Business by Being Remarkable, Humans of New York: Stories, Beyond the Grave (The 39 Clues #4), The Weight of Silence, Certain Prey (Lucas Davenport, #10),
-Nearest to Lord of the Flies: The Age of Miracles, Ida B. . . and Her Plans to Maximize Fun, Avoid Disaster, and (Possibly) Save the World, The Source of Magic (Xanth, #2), Blackwood Farm (The Vampire Chronicles, #9), The Power of One (The Power of One, #1), Whispers at Moonrise (Shadow Falls, #4), Stitches, Holiday in Death (In Death, #7),
-Nearest to Bossypants: First Love, The Expats, Girlfriend in a Coma, The Boyfriend List: 15 Guys, 11 Shrink Appointments, 4 Ceramic Frogs and Me, Ruby Oliver (Ruby Oliver, #1), Ordinary People, I Want My Hat Back, Walk Two Moons, Restless,
-Nearest to City of Bones (The Mortal Instruments, #1): A Moveable Feast, Travesuras de la niña mala, Outcast of Redwall (Redwall, #8), Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer, Red Seas Under Red Skies (Gentleman Bastard, #2), Cat on a Hot Tin Roof, The Unexpected Mrs. Pollifax  (Mrs. Pollifax #1), Once (Eve, #2),
-Nearest to Jane Eyre: A Court of Mist and Fury (A Court of Thorns and Roses, #2), And the Mountains Echoed, Ever After (The Hollows, #11), The Darkest Pleasure (Lords of the Underworld #3), The Beekeeper's Apprentice (Mary Russell, #1), The Evolution of Mara Dyer (Mara Dyer, #2), Ten Tiny Breaths (Ten Tiny Breaths, #1), Thinking, Fast and Slow,
-Nearest to The Lovely Bones: No Country for Old Men, The House Girl, Krakatoa: The Day the World Exploded, Heir of Fire (Throne of Glass, #3), This Side of Paradise, Porno, The Watchman (Elvis Cole, #11; Joe Pike, #1), A Hunger Like No Other (Immortals After Dark #2),
-Nearest to The Giver (The Giver, #1): George, Hourglass (Hourglass, #1), Raise High the Roof Beam, Carpenters &amp;amp; Seymour: An Introduction, J is for Judgment (Kinsey Millhone, #10), Deeper Than the Dead (Oak Knoll, #1), Book of the Dead (Kay Scarpetta, #15), The Good, the Bad, and the Undead (The Hollows, #2), The Temple of My Familiar,
-Nearest to Atonement: Thirst No. 3: The Eternal Dawn (Thirst, #3), Barefoot Contessa Family Style: Easy Ideas and Recipes That Make Everyone Feel Like Family, Five Point Someone, Dark Legend (Dark, #8), Lord Loss (The Demonata, #1), The Pioneer Woman Cooks: Recipes from an Accidental Country Girl, Revelation (Matthew Shardlake, #4), Fairest (An Unfortunate Fairy Tale, #2),
-Nearest to The Handmaid's Tale: The Tell-Tale Heart and Other Writings, Sloppy Firsts (Jessica Darling, #1), Clifford the Big Red Dog, Think Twice (Rosato &amp;amp; Associates, #11), Hardwired (Hacker, #1), Homage to Catalonia, Jazz, L is for Lawless (Kinsey Millhone, #12),
-Nearest to Animal Farm: Haunted, The Golem and the Jinni (The Golem and the Jinni, #1), Flat Stanley (Flat Stanley, #1), Gap Creek, Crazy For You, Rise of Empire (The Riyria Revelations, #3-4), Radiant Shadows (Wicked Lovely, #4), Killing Yourself to Live: 85% of a True Story,
-Nearest to The Ocean at the End of the Lane: The Warrior Heir (The Heir Chronicles, #1), Killing Yourself to Live: 85% of a True Story, The Complete Novels, A Breath of Snow and Ashes (Outlander, #6), The Last Coyote (Harry Bosch, #4; Harry Bosch Universe, #4), Owl Moon, All the Birds in the Sky, Self-Reliance and Other Essays,
-Nearest to Outlander (Outlander, #1): A God in Ruins, Mariana, Father Mine (Black Dagger Brotherhood, #6.5), The Apostle (Scot Harvath, #8), Voyager (Outlander, #3), The Rosie Effect (Don Tillman, #2), Rodrick Rules (Diary of a Wimpy Kid, #2), The Book of Joe,
-Nearest to The Poisonwood Bible: Percy Jackson and the Sword of Hades (Percy Jackson and the Olympians, #4.5), Open Season, The Orphan Master's Son, Shōgun (Asian Saga, #1), Harold and the Purple Crayon, The Solitude of Prime Numbers, A Thousand Pieces of You (Firebird, #1), Heir of Fire (Throne of Glass, #3),
-Nearest to 1984: The Mad Ship (Liveship Traders, #2), Rosencrantz and Guildenstern Are Dead, The Monk, Magic Steps (The Circle Opens, #1), The Science of Getting Rich, The Fountains of Paradise, The Red Knight (The Traitor Son Cycle, #1), The God Delusion,
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: Songs of Innocence and of Experience, Little House in the Big Woods (Little House, #1), The Calling (Darkness Rising, #2), Complete Poems, 1904-1962, Gorky Park (Arkady Renko, #1), Burn for Burn (Burn for Burn, #1), Death in Venice, The Phantom Tollbooth,
-Nearest to The Maze Runner (Maze Runner, #1): Trojan Odyssey (Dirk Pitt, #17), Love, Stargirl (Stargirl, #2), Assholes Finish First (Tucker Max, #2), The 39 Steps (Richard Hannay, #1), Moriarty (Sherlock Holmes #2), Neil Patrick Harris: Choose Your Own Autobiography, Vampire Knight, Vol. 4 (Vampire Knight, #4), The Path to Power (The Years of Lyndon Johnson, #1),
-Average loss at step  2000 :  51.1207590363
-Average loss at step  4000 :  8.39590741718
-Average loss at step  6000 :  5.54902770615
-Average loss at step  8000 :  4.92703645575
-Average loss at step  10000 :  4.68519584727
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): Purple Cow: Transform Your Business by Being Remarkable, Gerald's Game, Rat Queens, Vol. 1: Sass &amp;amp; Sorcery, The Weight of Silence, The Highlander's Touch (Highlander, #3), Lucky Jim, Humans of New York: Stories, Rise of the Elgen (Michael Vey, #2),
-Nearest to Lord of the Flies: Crime and Punishment, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, The Great Gatsby, The Source of Magic (Xanth, #2), The Power of One (The Power of One, #1), The Shining (The Shining #1), Blackwood Farm (The Vampire Chronicles, #9), What We Keep ,
-Nearest to Bossypants: The Expats, Kabul Beauty School: An American Woman Goes Behind the Veil, A Trick of the Light (Chief Inspector Armand Gamache, #7), Walk Two Moons, Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), Chanakya's Chant, Glue, Everbound (Everneath, #2),
-Nearest to City of Bones (The Mortal Instruments, #1): Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer, The Forgotten Garden, Clockwork Angel (The Infernal Devices, #1), One Day, Kitty and the Midnight Hour (Kitty Norville #1), Such a Rush, Once (Eve, #2), The Righteous Mind: Why Good People are Divided by Politics and Religion,
-Nearest to Jane Eyre: The Subtle Knife (His Dark Materials, #2), Extremely Loud and Incredibly Close, The Lovely Bones, Eat, Pray, Love, Islands in the Stream, The Beekeeper's Apprentice (Mary Russell, #1), A Long Way Gone: Memoirs of a Boy Soldier, A Court of Mist and Fury (A Court of Thorns and Roses, #2),
-Nearest to The Lovely Bones: No Country for Old Men, The Secret Life of Bees, The House Girl, Two Ravens and One Crow (The Iron Druid Chronicles, #4.5), Krakatoa: The Day the World Exploded, This Side of Paradise, Jane Eyre, Uglies (Uglies, #1),
-Nearest to The Giver (The Giver, #1): Animal, Vegetable, Miracle: A Year of Food Life, Life of Pi, Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1), The Old Man and the Sea, George, The Good, the Bad, and the Undead (The Hollows, #2), Till We Have Faces, J is for Judgment (Kinsey Millhone, #10),
-Nearest to Atonement: Siddhartha, Lord Loss (The Demonata, #1), The Old Man and the Sea, Story of the Eye, To Kill a Mockingbird, Priestess of the White (Age of the Five, #1), A Deepness in the Sky (Zones of Thought, #2), Complete Works of Oscar Wilde,
-Nearest to The Handmaid's Tale: The Tell-Tale Heart and Other Writings, Three Cups of Tea: One Man's Mission to Promote Peace ... One School at a Time, For Whom the Bell Tolls, Girl, Stolen (Girl, Stolen #1), Dragon Ball, Vol. 1: The Monkey King (Dragon Ball, #1), Providence (Providence, #1), The Mists of Avalon (Avalon, #1), Hardwired (Hacker, #1),
-Nearest to Animal Farm: Haunted, Gap Creek, Flat Stanley (Flat Stanley, #1), Killing Yourself to Live: 85% of a True Story, Blood Magick (The Cousins O'Dwyer Trilogy, #3), Radiant Shadows (Wicked Lovely, #4), Crash &amp;amp; Burn (Tessa Leoni, #3), Angels &amp;amp; Demons  (Robert Langdon, #1),
-Nearest to The Ocean at the End of the Lane: The Complete Novels, A Breath of Snow and Ashes (Outlander, #6), Owl Moon, Ms. Marvel, Vol. 2: Generation Why, One More Chance (Rosemary Beach, #8; Chance, #2), The Warrior Heir (The Heir Chronicles, #1), Rogues, Unlimited Power : The New Science Of Personal Achievement,
-Nearest to Outlander (Outlander, #1): Leven Thumps and the Eyes of the Want (Leven Thumps, #3), Ender's Game (Ender's Saga, #1), The Mermaid Chair, A God in Ruins, When Calls the Heart (Canadian West, #1), The Rosie Effect (Don Tillman, #2), Father Mine (Black Dagger Brotherhood, #6.5), Redshirts,
-Nearest to The Poisonwood Bible: Percy Jackson and the Sword of Hades (Percy Jackson and the Olympians, #4.5), Harold and the Purple Crayon, Open Season, The First World War, Mere Christianity, The Solitude of Prime Numbers, The Plot Against America, A Thousand Pieces of You (Firebird, #1),
-Nearest to 1984: Rosencrantz and Guildenstern Are Dead, The God Delusion, The Red Knight (The Traitor Son Cycle, #1), Slaughterhouse-Five, The Science of Getting Rich, The Monk, Magic Steps (The Circle Opens, #1), Gone (Wake, #3),
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: Complete Poems, 1904-1962, The Hobbit, The Joke, Slaughterhouse-Five, Songs of Innocence and of Experience, The Panther  (John Corey, #6), Little House in the Big Woods (Little House, #1), Gorky Park (Arkady Renko, #1),
-Nearest to The Maze Runner (Maze Runner, #1): Trojan Odyssey (Dirk Pitt, #17), The 39 Steps (Richard Hannay, #1), Moriarty (Sherlock Holmes #2), Assholes Finish First (Tucker Max, #2), Neil Patrick Harris: Choose Your Own Autobiography, The Body Finder (The Body Finder, #1), Love, Stargirl (Stargirl, #2), Brotherhood in Death (In Death, #42),
-Average loss at step  12000 :  4.50244684148
-Average loss at step  14000 :  4.33098444271
-Average loss at step  16000 :  4.28433195019
-Average loss at step  18000 :  4.09698849154
-Average loss at step  20000 :  4.04729236376
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): Purple Cow: Transform Your Business by Being Remarkable, Rat Queens, Vol. 1: Sass &amp;amp; Sorcery, Gerald's Game, The Highlander's Touch (Highlander, #3), Rise of the Elgen (Michael Vey, #2), Beautiful Bitch (Beautiful Bastard, #1.5), Treasure Island, The Weight of Silence,
-Nearest to Lord of the Flies: Crime and Punishment, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, The Great Gatsby, The Shining (The Shining #1), The Source of Magic (Xanth, #2), 1984, The Quiet American, Ulysses,
-Nearest to Bossypants: Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), The Expats, State of Wonder, In the Garden of Beasts: Love, Terror, and an American Family in Hitler's Berlin, Rapture (Fallen, #4), A Trick of the Light (Chief Inspector Armand Gamache, #7), Chanakya's Chant, National Velvet,
-Nearest to City of Bones (The Mortal Instruments, #1): One Day, Clockwork Angel (The Infernal Devices, #1), Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer, The Help, Chains (Seeds of America, #1), The Forgotten Garden, Graceling (Graceling Realm, #1), Kitty and the Midnight Hour (Kitty Norville #1),
-Nearest to Jane Eyre: The Subtle Knife (His Dark Materials, #2), The Lovely Bones, Extremely Loud and Incredibly Close, Eat, Pray, Love, Les Misérables, A Long Way Gone: Memoirs of a Boy Soldier, Memoirs of a Geisha, The Beekeeper's Apprentice (Mary Russell, #1),
-Nearest to The Lovely Bones: The Secret Life of Bees, No Country for Old Men, Two Ravens and One Crow (The Iron Druid Chronicles, #4.5), Jane Eyre, Uglies (Uglies, #1), The House Girl, This Side of Paradise, Divided in Death (In Death, #18),
-Nearest to The Giver (The Giver, #1): The Old Man and the Sea, Life of Pi, Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1), Animal, Vegetable, Miracle: A Year of Food Life, Memoirs of a Geisha, Team of Rivals: The Political Genius of Abraham Lincoln, George, Till We Have Faces,
-Nearest to Atonement: Siddhartha, The Old Man and the Sea, Lord Loss (The Demonata, #1), To Kill a Mockingbird, Memoirs of a Geisha, Story of the Eye, Breakfast of Champions, Choke,
-Nearest to The Handmaid's Tale: Three Cups of Tea: One Man's Mission to Promote Peace ... One School at a Time, For Whom the Bell Tolls, The Mists of Avalon (Avalon, #1), The Portrait of a Lady, White Noise, No Country for Old Men, Wintersmith (Discworld, #35; Tiffany Aching, #3), Running with Scissors,
-Nearest to Animal Farm: Haunted, Gone with the Wind, Artemis Fowl (Artemis Fowl, #1), Killing Yourself to Live: 85% of a True Story, Gap Creek, Angels &amp;amp; Demons  (Robert Langdon, #1), Flat Stanley (Flat Stanley, #1), Black Hole,
-Nearest to The Ocean at the End of the Lane: The Complete Novels, Owl Moon, Unlimited Power : The New Science Of Personal Achievement, Ms. Marvel, Vol. 2: Generation Why, Z: A Novel of Zelda Fitzgerald, The Runaway King (The Ascendance Trilogy, #2), Rogues, One More Chance (Rosemary Beach, #8; Chance, #2),
-Nearest to Outlander (Outlander, #1): The Mermaid Chair, Leven Thumps and the Eyes of the Want (Leven Thumps, #3), A God in Ruins, Ender's Game (Ender's Saga, #1), Redshirts, When Calls the Heart (Canadian West, #1), The Golden Compass (His Dark Materials, #1), Father Mine (Black Dagger Brotherhood, #6.5),
-Nearest to The Poisonwood Bible: The Plot Against America, The Kite Runner, Mere Christianity, Harold and the Purple Crayon, Percy Jackson and the Sword of Hades (Percy Jackson and the Olympians, #4.5), Open Season, The First World War, Anil's Ghost,
-Nearest to 1984: The God Delusion, Rosencrantz and Guildenstern Are Dead, Slaughterhouse-Five, Lolita, Guns, Germs, and Steel: The Fates of Human Societies, The Red Knight (The Traitor Son Cycle, #1), The Time Traveler's Wife, Magic Steps (The Circle Opens, #1),
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: Slaughterhouse-Five, The Joke, Salt: A World History, The Hobbit, Interpreter of Maladies, The Panther  (John Corey, #6), The Hammer of Thor (Magnus Chase and the Gods of Asgard, #2), Complete Poems, 1904-1962,
-Nearest to The Maze Runner (Maze Runner, #1): Trojan Odyssey (Dirk Pitt, #17), The 39 Steps (Richard Hannay, #1), The Body Finder (The Body Finder, #1), Moriarty (Sherlock Holmes #2), Apathy and Other Small Victories, Assholes Finish First (Tucker Max, #2), Brotherhood in Death (In Death, #42), The Soldier's Wife,
-Average loss at step  22000 :  3.99871511078
-Average loss at step  24000 :  3.91173057818
-Average loss at step  26000 :  3.85994793272
-Average loss at step  28000 :  3.77732089114
-Average loss at step  30000 :  3.83034379864
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): Purple Cow: Transform Your Business by Being Remarkable, Rat Queens, Vol. 1: Sass &amp;amp; Sorcery, Midnight Sun (Twilight, #1.5), The Highlander's Touch (Highlander, #3), Gerald's Game, The Prince of Tides, The Sirens of Titan, Treasure Island,
-Nearest to Lord of the Flies: Crime and Punishment, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, The Great Gatsby, The Quiet American, 1984, The Shining (The Shining #1), The Source of Magic (Xanth, #2), The Holy Bible: English Standard Version,
-Nearest to Bossypants: Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), The Expats, State of Wonder, In the Garden of Beasts: Love, Terror, and an American Family in Hitler's Berlin, Rapture (Fallen, #4), Barbarians at the Gate: The Fall of RJR Nabisco, A Trick of the Light (Chief Inspector Armand Gamache, #7), Chanakya's Chant,
-Nearest to City of Bones (The Mortal Instruments, #1): One Day, The Help, Chains (Seeds of America, #1), Clockwork Angel (The Infernal Devices, #1), Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer, Graceling (Graceling Realm, #1), Best Friends Forever, City of Glass (The Mortal Instruments, #3),
-Nearest to Jane Eyre: The Subtle Knife (His Dark Materials, #2), The Lovely Bones, Eat, Pray, Love, Les Misérables, Memoirs of a Geisha, Extremely Loud and Incredibly Close, Beloved, A Long Way Gone: Memoirs of a Boy Soldier,
-Nearest to The Lovely Bones: The Secret Life of Bees, No Country for Old Men, Jane Eyre, Uglies (Uglies, #1), Two Ravens and One Crow (The Iron Druid Chronicles, #4.5), The Bookseller of Kabul, The House Girl, The Diary of a Young Girl,
-Nearest to The Giver (The Giver, #1): The Old Man and the Sea, Life of Pi, Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1), Animal, Vegetable, Miracle: A Year of Food Life, Memoirs of a Geisha, Till We Have Faces, Beloved, Prodigal Summer,
-Nearest to Atonement: Siddhartha, The Old Man and the Sea, To Kill a Mockingbird, Lord Loss (The Demonata, #1), Memoirs of a Geisha, Breakfast of Champions, Story of the Eye, Choke,
-Nearest to The Handmaid's Tale: Three Cups of Tea: One Man's Mission to Promote Peace ... One School at a Time, For Whom the Bell Tolls, White Noise, The Portrait of a Lady, The Mists of Avalon (Avalon, #1), No Country for Old Men, Dry, Running with Scissors,
-Nearest to Animal Farm: Haunted, Gone with the Wind, Killing Yourself to Live: 85% of a True Story, Artemis Fowl (Artemis Fowl, #1), Ishmael:A Novel, The Crucible, A Farewell to Arms, Black Hole,
-Nearest to The Ocean at the End of the Lane: Owl Moon, Brain on Fire: My Month of Madness, The Complete Novels, Z: A Novel of Zelda Fitzgerald, The Runaway King (The Ascendance Trilogy, #2), Ms. Marvel, Vol. 2: Generation Why, Unlimited Power : The New Science Of Personal Achievement, One More Chance (Rosemary Beach, #8; Chance, #2),
-Nearest to Outlander (Outlander, #1): The Mermaid Chair, Ender's Game (Ender's Saga, #1), Leven Thumps and the Eyes of the Want (Leven Thumps, #3), A God in Ruins, The Golden Compass (His Dark Materials, #1), When Calls the Heart (Canadian West, #1), Redshirts, A Thousand Splendid Suns,
-Nearest to The Poisonwood Bible: The Plot Against America, The Kite Runner, Mere Christianity, The Color Purple, Cloud Atlas, Anil's Ghost, Harold and the Purple Crayon, Guns, Germs, and Steel: The Fates of Human Societies,
-Nearest to 1984: The God Delusion, Slaughterhouse-Five, Rosencrantz and Guildenstern Are Dead, The Time Traveler's Wife, Lord of the Flies, Lolita, Ender's Game (Ender's Saga, #1), The Red Knight (The Traitor Son Cycle, #1),
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: Slaughterhouse-Five, The Joke, The Hammer of Thor (Magnus Chase and the Gods of Asgard, #2), Salt: A World History, Interpreter of Maladies, The Hobbit, The Panther  (John Corey, #6), The Man Who Mistook His Wife for a Hat and Other Clinical Tales,
-Nearest to The Maze Runner (Maze Runner, #1): The Body Finder (The Body Finder, #1), The 39 Steps (Richard Hannay, #1), Trojan Odyssey (Dirk Pitt, #17), Soulless (Parasol Protectorate, #1), Apathy and Other Small Victories, Beautiful Darkness (Caster Chronicles, #2), Beautiful Creatures (Caster Chronicles, #1), Boneshaker (The Clockwork Century, #1),
-Average loss at step  32000 :  3.72505885243
-Average loss at step  34000 :  3.67791794622
-Average loss at step  36000 :  3.65302069092
-Average loss at step  38000 :  3.60529408705
-Average loss at step  40000 :  3.57170747757
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): Midnight Sun (Twilight, #1.5), Purple Cow: Transform Your Business by Being Remarkable, The Sirens of Titan, The Graveyard Book, The Mote in God's Eye, The Prince of Tides, James and the Giant Peach, Outliers: The Story of Success,
-Nearest to Lord of the Flies: Crime and Punishment, The Great Gatsby, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, 1984, The Quiet American, The Shining (The Shining #1), The Source of Magic (Xanth, #2), Ulysses,
-Nearest to Bossypants: Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), State of Wonder, The Expats, In the Garden of Beasts: Love, Terror, and an American Family in Hitler's Berlin, Barbarians at the Gate: The Fall of RJR Nabisco, Rapture (Fallen, #4), A Trick of the Light (Chief Inspector Armand Gamache, #7), Chanakya's Chant,
-Nearest to City of Bones (The Mortal Instruments, #1): One Day, Chains (Seeds of America, #1), The Help, Graceling (Graceling Realm, #1), Clockwork Angel (The Infernal Devices, #1), Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer, City of Glass (The Mortal Instruments, #3), Best Friends Forever,
-Nearest to Jane Eyre: The Lovely Bones, Eat, Pray, Love, Memoirs of a Geisha, The Subtle Knife (His Dark Materials, #2), Les Misérables, Beloved, The Importance of Being Earnest, A Long Way Gone: Memoirs of a Boy Soldier,
-Nearest to The Lovely Bones: The Secret Life of Bees, Jane Eyre, No Country for Old Men, Uglies (Uglies, #1), The Diary of a Young Girl, The Bookseller of Kabul, Middlesex, The Memory Keeper's Daughter,
-Nearest to The Giver (The Giver, #1): Life of Pi, The Old Man and the Sea, Memoirs of a Geisha, Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1), Animal, Vegetable, Miracle: A Year of Food Life, Till We Have Faces, Catch-22, The Children of Húrin,
-Nearest to Atonement: Siddhartha, The Old Man and the Sea, To Kill a Mockingbird, Breakfast of Champions, Lord Loss (The Demonata, #1), Memoirs of a Geisha, Choke, Beloved,
-Nearest to The Handmaid's Tale: The Mists of Avalon (Avalon, #1), White Noise, The Portrait of a Lady, For Whom the Bell Tolls, Three Cups of Tea: One Man's Mission to Promote Peace ... One School at a Time, No Country for Old Men, Dry, The Hot Zone: The Terrifying True Story of the Origins of the Ebola Virus,
-Nearest to Animal Farm: Haunted, Gone with the Wind, Artemis Fowl (Artemis Fowl, #1), Ishmael:A Novel, The Crucible, Killing Yourself to Live: 85% of a True Story, Black Hole, A Farewell to Arms,
-Nearest to The Ocean at the End of the Lane: The Runaway King (The Ascendance Trilogy, #2), Owl Moon, Brain on Fire: My Month of Madness, Lone Wolf, The Twelve Tribes of Hattie, The Ship of Brides, Anya's Ghost, One More Chance (Rosemary Beach, #8; Chance, #2),
-Nearest to Outlander (Outlander, #1): The Mermaid Chair, Ender's Game (Ender's Saga, #1), Leven Thumps and the Eyes of the Want (Leven Thumps, #3), Life of Pi, A God in Ruins, The Golden Compass (His Dark Materials, #1), When Calls the Heart (Canadian West, #1), Cloud Atlas,
-Nearest to The Poisonwood Bible: The Kite Runner, The Plot Against America, Cloud Atlas, The Color Purple, Mere Christianity, Anil's Ghost, Jitterbug Perfume, Guns, Germs, and Steel: The Fates of Human Societies,
-Nearest to 1984: The God Delusion, Slaughterhouse-Five, Rosencrantz and Guildenstern Are Dead, The Time Traveler's Wife, Lolita, Lord of the Flies, Ender's Game (Ender's Saga, #1), Crime and Punishment,
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: The Joke, Slaughterhouse-Five, Salt: A World History, Interpreter of Maladies, The Hammer of Thor (Magnus Chase and the Gods of Asgard, #2), So Long, and Thanks for All the Fish (Hitchhiker's Guide to the Galaxy, #4), The Panther  (John Corey, #6), The Hobbit,
-Nearest to The Maze Runner (Maze Runner, #1): The Body Finder (The Body Finder, #1), The 39 Steps (Richard Hannay, #1), Trojan Odyssey (Dirk Pitt, #17), Infinity (Chronicles of Nick, #1), Beautiful Darkness (Caster Chronicles, #2), The Ugly Truth (Diary of a Wimpy Kid, #5), The Black Circle (The 39 Clues, #5), Soulless (Parasol Protectorate, #1),
-Average loss at step  42000 :  3.54164383775
-Average loss at step  44000 :  3.61175434327
-Average loss at step  46000 :  3.55967957151
-Average loss at step  48000 :  3.49804186225
-Average loss at step  50000 :  3.46732353914
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): Midnight Sun (Twilight, #1.5), James and the Giant Peach, The Graveyard Book, The Sirens of Titan, The Prince of Tides, Purple Cow: Transform Your Business by Being Remarkable, The Mote in God's Eye, Lock and Key,
-Nearest to Lord of the Flies: Crime and Punishment, 1984, The Great Gatsby, The Shining (The Shining #1), Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, The Quiet American, Memories of My Melancholy Whores, The Kite Runner,
-Nearest to Bossypants: Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), State of Wonder, The Expats, Barbarians at the Gate: The Fall of RJR Nabisco, In the Garden of Beasts: Love, Terror, and an American Family in Hitler's Berlin, A Trick of the Light (Chief Inspector Armand Gamache, #7), Unfamiliar Fishes, The Paris Wife,
-Nearest to City of Bones (The Mortal Instruments, #1): Graceling (Graceling Realm, #1), Chains (Seeds of America, #1), The Help, One Day, Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer, Clockwork Angel (The Infernal Devices, #1), City of Glass (The Mortal Instruments, #3), Best Friends Forever,
-Nearest to Jane Eyre: Les Misérables, The Lovely Bones, Eat, Pray, Love, Memoirs of a Geisha, The Subtle Knife (His Dark Materials, #2), To Kill a Mockingbird, Beloved, The Importance of Being Earnest,
-Nearest to The Lovely Bones: The Secret Life of Bees, Jane Eyre, Uglies (Uglies, #1), The Diary of a Young Girl, The Bookseller of Kabul, The Memory Keeper's Daughter, No Country for Old Men, Middlesex,
-Nearest to The Giver (The Giver, #1): The Old Man and the Sea, Life of Pi, Memoirs of a Geisha, Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1), Animal, Vegetable, Miracle: A Year of Food Life, The Children of Húrin, The Diary of a Young Girl, Catch-22,
-Nearest to Atonement: Siddhartha, The Old Man and the Sea, To Kill a Mockingbird, Breakfast of Champions, Lord Loss (The Demonata, #1), Choke, Memoirs of a Geisha, The Secret Life of Bees,
-Nearest to The Handmaid's Tale: The Mists of Avalon (Avalon, #1), White Noise, The Hot Zone: The Terrifying True Story of the Origins of the Ebola Virus, The Portrait of a Lady, Three Cups of Tea: One Man's Mission to Promote Peace ... One School at a Time, Fight Club, No Country for Old Men, Notes from Underground, White Nights, The Dream of a Ridiculous Man, and Selections from The House of the Dead,
-Nearest to Animal Farm: Haunted, Gone with the Wind, Killing Yourself to Live: 85% of a True Story, Ishmael:A Novel, The Crucible, The Book Thief, Artemis Fowl (Artemis Fowl, #1), Nineteen Minutes,
-Nearest to The Ocean at the End of the Lane: The Runaway King (The Ascendance Trilogy, #2), Owl Moon, Lone Wolf, The Ship of Brides, Brain on Fire: My Month of Madness, The Twelve Tribes of Hattie, Seating Arrangements, The Golem and the Jinni (The Golem and the Jinni, #1),
-Nearest to Outlander (Outlander, #1): The Mermaid Chair, Ender's Game (Ender's Saga, #1), The Golden Compass (His Dark Materials, #1), Gates of Fire: An Epic Novel of the Battle of Thermopylae, A God in Ruins, Leven Thumps and the Eyes of the Want (Leven Thumps, #3), Zero to One: Notes on Startups, or How to Build the Future, Life of Pi,
-Nearest to The Poisonwood Bible: The Plot Against America, The Kite Runner, The Color Purple, Cloud Atlas, Anil's Ghost, Mere Christianity, Jitterbug Perfume, The Historian,
-Nearest to 1984: Slaughterhouse-Five, The God Delusion, Lord of the Flies, The Time Traveler's Wife, Lolita, Ender's Game (Ender's Saga, #1), Rosencrantz and Guildenstern Are Dead, A Clockwork Orange,
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: The Joke, Slaughterhouse-Five, Interpreter of Maladies, Salt: A World History, The Hammer of Thor (Magnus Chase and the Gods of Asgard, #2), So Long, and Thanks for All the Fish (Hitchhiker's Guide to the Galaxy, #4), The Panther  (John Corey, #6), Please Kill Me: The Uncensored Oral History of Punk,
-Nearest to The Maze Runner (Maze Runner, #1): The Body Finder (The Body Finder, #1), The 39 Steps (Richard Hannay, #1), Trojan Odyssey (Dirk Pitt, #17), Infinity (Chronicles of Nick, #1), Beautiful Darkness (Caster Chronicles, #2), The Ugly Truth (Diary of a Wimpy Kid, #5), The Black Circle (The 39 Clues, #5), Matched (Matched, #1),
-Average loss at step  52000 :  3.43458542252
-Average loss at step  54000 :  3.4167132166
-Average loss at step  56000 :  3.39902982748
-Average loss at step  58000 :  3.47961636269
-Average loss at step  60000 :  3.46612338716
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): Midnight Sun (Twilight, #1.5), James and the Giant Peach, The Graveyard Book, Lock and Key, The Professor, The Prince of Tides, The Sirens of Titan, Purple Cow: Transform Your Business by Being Remarkable,
-Nearest to Lord of the Flies: 1984, Crime and Punishment, The Great Gatsby, Memories of My Melancholy Whores, The Kite Runner, The Quiet American, The Shining (The Shining #1), I Know Why the Caged Bird Sings,
-Nearest to Bossypants: Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), Barbarians at the Gate: The Fall of RJR Nabisco, The Expats, State of Wonder, In the Garden of Beasts: Love, Terror, and an American Family in Hitler's Berlin, Unfamiliar Fishes, A Trick of the Light (Chief Inspector Armand Gamache, #7), The Paris Wife,
-Nearest to City of Bones (The Mortal Instruments, #1): Graceling (Graceling Realm, #1), Chains (Seeds of America, #1), The Help, One Day, Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer, City of Glass (The Mortal Instruments, #3), Best Friends Forever, Clockwork Angel (The Infernal Devices, #1),
-Nearest to Jane Eyre: Les Misérables, The Lovely Bones, Memoirs of a Geisha, Eat, Pray, Love, The Subtle Knife (His Dark Materials, #2), To Kill a Mockingbird, Beloved, The Diary of a Young Girl,
-Nearest to The Lovely Bones: The Secret Life of Bees, Jane Eyre, The Diary of a Young Girl, Uglies (Uglies, #1), The Memory Keeper's Daughter, Middlesex, The Bookseller of Kabul, No Country for Old Men,
-Nearest to The Giver (The Giver, #1): The Old Man and the Sea, Life of Pi, Memoirs of a Geisha, The Children of Húrin, The Diary of a Young Girl, Catch-22, Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1), Animal, Vegetable, Miracle: A Year of Food Life,
-Nearest to Atonement: Siddhartha, The Old Man and the Sea, To Kill a Mockingbird, Breakfast of Champions, Memoirs of a Geisha, The Secret Life of Bees, Lord Loss (The Demonata, #1), Choke,
-Nearest to The Handmaid's Tale: The Hot Zone: The Terrifying True Story of the Origins of the Ebola Virus, White Noise, The Mists of Avalon (Avalon, #1), Fight Club, The Portrait of a Lady, Dry, The Tin Drum, No Country for Old Men,
-Nearest to Animal Farm: Haunted, Gone with the Wind, Ishmael:A Novel, The Crucible, Artemis Fowl (Artemis Fowl, #1), The Book Thief, Killing Yourself to Live: 85% of a True Story, Into Thin Air: A Personal Account of the Mount Everest Disaster,
-Nearest to The Ocean at the End of the Lane: The Runaway King (The Ascendance Trilogy, #2), The Ship of Brides, Lone Wolf, Owl Moon, The Twelve Tribes of Hattie, Brain on Fire: My Month of Madness, Never Fade (The Darkest Minds, #2), Lexicon,
-Nearest to Outlander (Outlander, #1): Ender's Game (Ender's Saga, #1), The Mermaid Chair, 1984, Life of Pi, Pilgrim at Tinker Creek, Gates of Fire: An Epic Novel of the Battle of Thermopylae, Reading Lolita in Tehran, The Golden Compass (His Dark Materials, #1),
-Nearest to The Poisonwood Bible: The Kite Runner, The Plot Against America, Cloud Atlas, Anil's Ghost, Jitterbug Perfume, The Alchemist, The Color Purple, Mere Christianity,
-Nearest to 1984: Slaughterhouse-Five, Lord of the Flies, The Time Traveler's Wife, The God Delusion, Lolita, Ender's Game (Ender's Saga, #1), A Clockwork Orange, Outlander (Outlander, #1),
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: The Joke, Slaughterhouse-Five, Salt: A World History, Interpreter of Maladies, The Hammer of Thor (Magnus Chase and the Gods of Asgard, #2), So Long, and Thanks for All the Fish (Hitchhiker's Guide to the Galaxy, #4), The Panther  (John Corey, #6), Please Kill Me: The Uncensored Oral History of Punk,
-Nearest to The Maze Runner (Maze Runner, #1): The Body Finder (The Body Finder, #1), The 39 Steps (Richard Hannay, #1), The Ugly Truth (Diary of a Wimpy Kid, #5), Beautiful Darkness (Caster Chronicles, #2), Infinity (Chronicles of Nick, #1), Trojan Odyssey (Dirk Pitt, #17), The Black Circle (The 39 Clues, #5), Torment (Fallen, #2),
-Average loss at step  62000 :  3.39424202061
-Average loss at step  64000 :  3.36651503634
-Average loss at step  66000 :  3.33070478445
-Average loss at step  68000 :  3.32326644897
-Average loss at step  70000 :  3.31573734951
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Graveyard Book, Midnight Sun (Twilight, #1.5), James and the Giant Peach, Lock and Key, The Professor, The Sirens of Titan, Islands in the Stream, Purple Cow: Transform Your Business by Being Remarkable,
-Nearest to Lord of the Flies: 1984, Crime and Punishment, The Great Gatsby, The Kite Runner, Memories of My Melancholy Whores, The Quiet American, Fahrenheit 451, The Time Traveler's Wife,
-Nearest to Bossypants: Barbarians at the Gate: The Fall of RJR Nabisco, Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), The Expats, In the Garden of Beasts: Love, Terror, and an American Family in Hitler's Berlin, State of Wonder, Unfamiliar Fishes, The Bedwetter: Stories of Courage, Redemption, and Pee, A Trick of the Light (Chief Inspector Armand Gamache, #7),
-Nearest to City of Bones (The Mortal Instruments, #1): Graceling (Graceling Realm, #1), The Help, City of Glass (The Mortal Instruments, #3), Chains (Seeds of America, #1), Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer, One Day, Best Friends Forever, Frostbite (Vampire Academy, #2),
-Nearest to Jane Eyre: The Lovely Bones, Memoirs of a Geisha, Les Misérables, Eat, Pray, Love, To Kill a Mockingbird, Beloved, A Thousand Splendid Suns, The Subtle Knife (His Dark Materials, #2),
-Nearest to The Lovely Bones: The Secret Life of Bees, Jane Eyre, Uglies (Uglies, #1), The Memory Keeper's Daughter, The Diary of a Young Girl, The Bookseller of Kabul, Middlesex, The Perks of Being a Wallflower,
-Nearest to The Giver (The Giver, #1): The Old Man and the Sea, Life of Pi, Memoirs of a Geisha, The Children of Húrin, Catch-22, Me Talk Pretty One Day, Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1), The Diary of a Young Girl,
-Nearest to Atonement: The Old Man and the Sea, Siddhartha, To Kill a Mockingbird, Breakfast of Champions, The Secret Life of Bees, Memoirs of a Geisha, Beloved, Lord Loss (The Demonata, #1),
-Nearest to The Handmaid's Tale: The Hot Zone: The Terrifying True Story of the Origins of the Ebola Virus, The Mists of Avalon (Avalon, #1), White Noise, Fight Club, The Tin Drum, The Book Thief, The Crying of Lot 49, Dry,
-Nearest to Animal Farm: Haunted, Gone with the Wind, Ishmael:A Novel, The Book Thief, Civil Disobedience and Other Essays, Artemis Fowl (Artemis Fowl, #1), The Crucible, Killing Yourself to Live: 85% of a True Story,
-Nearest to The Ocean at the End of the Lane: The Runaway King (The Ascendance Trilogy, #2), The Ship of Brides, The Twelve Tribes of Hattie, Lone Wolf, Owl Moon, Never Fade (The Darkest Minds, #2), The Golem and the Jinni (The Golem and the Jinni, #1), Lexicon,
-Nearest to Outlander (Outlander, #1): The Mermaid Chair, Ender's Game (Ender's Saga, #1), Pilgrim at Tinker Creek, 1984, Gates of Fire: An Epic Novel of the Battle of Thermopylae, Life of Pi, Cloud Atlas, Zero to One: Notes on Startups, or How to Build the Future,
-Nearest to The Poisonwood Bible: The Kite Runner, Cloud Atlas, The Plot Against America, The Color Purple, Anil's Ghost, Jitterbug Perfume, The Alchemist, Mere Christianity,
-Nearest to 1984: Lord of the Flies, Slaughterhouse-Five, The Time Traveler's Wife, The God Delusion, Ender's Game (Ender's Saga, #1), Lolita, The Hobbit, Sense and Sensibility,
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: The Joke, Salt: A World History, Slaughterhouse-Five, Interpreter of Maladies, The Hammer of Thor (Magnus Chase and the Gods of Asgard, #2), So Long, and Thanks for All the Fish (Hitchhiker's Guide to the Galaxy, #4), Please Kill Me: The Uncensored Oral History of Punk, The Panther  (John Corey, #6),
-Nearest to The Maze Runner (Maze Runner, #1): The Ugly Truth (Diary of a Wimpy Kid, #5), The Body Finder (The Body Finder, #1), Beautiful Darkness (Caster Chronicles, #2), The 39 Steps (Richard Hannay, #1), Infinity (Chronicles of Nick, #1), The Black Circle (The 39 Clues, #5), I Don't Know How She Does It, Torment (Fallen, #2),
-Average loss at step  72000 :  3.37959288603
-Average loss at step  74000 :  3.4224101547
-Average loss at step  76000 :  3.32037075186
-Average loss at step  78000 :  3.29888544989
-Average loss at step  80000 :  3.26403364515
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): James and the Giant Peach, Midnight Sun (Twilight, #1.5), The Graveyard Book, The Professor, Lock and Key, The Mote in God's Eye, The Sirens of Titan, The Prince of Tides,
-Nearest to Lord of the Flies: 1984, The Great Gatsby, Crime and Punishment, Memories of My Melancholy Whores, The Kite Runner, Slaughterhouse-Five, Fahrenheit 451, The Shining (The Shining #1),
-Nearest to Bossypants: Barbarians at the Gate: The Fall of RJR Nabisco, Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), The Expats, Pathfinder (Pathfinder, #1), Unfamiliar Fishes, State of Wonder, Save Me, The Bedwetter: Stories of Courage, Redemption, and Pee,
-Nearest to City of Bones (The Mortal Instruments, #1): Graceling (Graceling Realm, #1), City of Glass (The Mortal Instruments, #3), The Help, Chains (Seeds of America, #1), Marked (House of Night, #1), Best Friends Forever, Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer, Frostbite (Vampire Academy, #2),
-Nearest to Jane Eyre: The Lovely Bones, Memoirs of a Geisha, To Kill a Mockingbird, Les Misérables, Eat, Pray, Love, Beloved, The Diary of a Young Girl, A Thousand Splendid Suns,
-Nearest to The Lovely Bones: The Secret Life of Bees, Jane Eyre, Uglies (Uglies, #1), The Memory Keeper's Daughter, The Diary of a Young Girl, Middlesex, The Bookseller of Kabul, The Perks of Being a Wallflower,
-Nearest to The Giver (The Giver, #1): The Old Man and the Sea, Memoirs of a Geisha, Life of Pi, The Children of Húrin, Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1), The Lovely Bones, The Diary of a Young Girl, Me Talk Pretty One Day,
-Nearest to Atonement: To Kill a Mockingbird, The Old Man and the Sea, Siddhartha, The Secret Life of Bees, Breakfast of Champions, Choke, Memoirs of a Geisha, Beloved,
-Nearest to The Handmaid's Tale: The Hot Zone: The Terrifying True Story of the Origins of the Ebola Virus, The Mists of Avalon (Avalon, #1), The Tin Drum, Fight Club, White Noise, The Book Thief, The Crying of Lot 49, No Country for Old Men,
-Nearest to Animal Farm: Haunted, Gone with the Wind, Ishmael:A Novel, Civil Disobedience and Other Essays, The Crucible, Artemis Fowl (Artemis Fowl, #1), Into Thin Air: A Personal Account of the Mount Everest Disaster, Killing Yourself to Live: 85% of a True Story,
-Nearest to The Ocean at the End of the Lane: The Runaway King (The Ascendance Trilogy, #2), The Twelve Tribes of Hattie, The Ship of Brides, Lone Wolf, The Golem and the Jinni (The Golem and the Jinni, #1), Anna Karenina, Owl Moon, Seating Arrangements,
-Nearest to Outlander (Outlander, #1): The Mermaid Chair, Pilgrim at Tinker Creek, Life of Pi, 1984, Gates of Fire: An Epic Novel of the Battle of Thermopylae, Ender's Game (Ender's Saga, #1), Extremely Loud and Incredibly Close, The Miniaturist,
-Nearest to The Poisonwood Bible: The Plot Against America, The Kite Runner, Cloud Atlas, Anil's Ghost, The Color Purple, Jitterbug Perfume, Lolita, The Alchemist,
-Nearest to 1984: Slaughterhouse-Five, Lord of the Flies, The Time Traveler's Wife, Life of Pi, The God Delusion, Lolita, Outlander (Outlander, #1), A Clockwork Orange,
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: The Joke, Salt: A World History, Interpreter of Maladies, Slaughterhouse-Five, The Hammer of Thor (Magnus Chase and the Gods of Asgard, #2), Please Kill Me: The Uncensored Oral History of Punk, So Long, and Thanks for All the Fish (Hitchhiker's Guide to the Galaxy, #4), Night (The Night Trilogy #1),
-Nearest to The Maze Runner (Maze Runner, #1): The Ugly Truth (Diary of a Wimpy Kid, #5), The Body Finder (The Body Finder, #1), Beautiful Darkness (Caster Chronicles, #2), Infinity (Chronicles of Nick, #1), I Don't Know How She Does It, The 39 Steps (Richard Hannay, #1), The Black Circle (The 39 Clues, #5), Torment (Fallen, #2),
-Average loss at step  82000 :  3.25146297926
-Average loss at step  84000 :  3.25321617091
-Average loss at step  86000 :  3.29557959634
-Average loss at step  88000 :  3.39157348788
-Average loss at step  90000 :  3.27380904102
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): James and the Giant Peach, Midnight Sun (Twilight, #1.5), The Professor, The Graveyard Book, Lock and Key, Islands in the Stream, The Prince of Tides, Nefertiti,
-Nearest to Lord of the Flies: 1984, The Great Gatsby, The Kite Runner, Crime and Punishment, Memories of My Melancholy Whores, Slaughterhouse-Five, The Time Traveler's Wife, Fahrenheit 451,
-Nearest to Bossypants: Barbarians at the Gate: The Fall of RJR Nabisco, The Expats, Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), Unfamiliar Fishes, In the Garden of Beasts: Love, Terror, and an American Family in Hitler's Berlin, Teacher Man (Frank McCourt, #3), The Paris Wife, Save Me,
-Nearest to City of Bones (The Mortal Instruments, #1): Graceling (Graceling Realm, #1), City of Glass (The Mortal Instruments, #3), The Help, Chains (Seeds of America, #1), Marked (House of Night, #1), Best Friends Forever, Frostbite (Vampire Academy, #2), Twilight Director's Notebook : The Story of How We Made the Movie Based on the Novel by Stephenie Meyer,
-Nearest to Jane Eyre: The Lovely Bones, Memoirs of a Geisha, To Kill a Mockingbird, Les Misérables, Eat, Pray, Love, Beloved, A Thousand Splendid Suns, The Diary of a Young Girl,
-Nearest to The Lovely Bones: The Secret Life of Bees, Jane Eyre, The Memory Keeper's Daughter, Uglies (Uglies, #1), The Diary of a Young Girl, The Perks of Being a Wallflower, The Bookseller of Kabul, Middlesex,
-Nearest to The Giver (The Giver, #1): The Old Man and the Sea, Memoirs of a Geisha, Life of Pi, The Children of Húrin, The Lovely Bones, Catch-22, The Diary of a Young Girl, Me Talk Pretty One Day,
-Nearest to Atonement: To Kill a Mockingbird, The Old Man and the Sea, Siddhartha, The Secret Life of Bees, Breakfast of Champions, Memoirs of a Geisha, Beloved, Jane Eyre,
-Nearest to The Handmaid's Tale: The Hot Zone: The Terrifying True Story of the Origins of the Ebola Virus, The Book Thief, The Tin Drum, Fight Club, White Noise, The Mists of Avalon (Avalon, #1), The Crying of Lot 49, Winter's Tale,
-Nearest to Animal Farm: Haunted, Gone with the Wind, The Book Thief, Ishmael:A Novel, The Fellowship of the Ring (The Lord of the Rings, #1), Into Thin Air: A Personal Account of the Mount Everest Disaster, Artemis Fowl (Artemis Fowl, #1), Les Misérables,
-Nearest to The Ocean at the End of the Lane: The Runaway King (The Ascendance Trilogy, #2), The Ship of Brides, The Twelve Tribes of Hattie, Lone Wolf, Never Fade (The Darkest Minds, #2), The Golem and the Jinni (The Golem and the Jinni, #1), Anna Karenina, Lexicon,
-Nearest to Outlander (Outlander, #1): 1984, Pilgrim at Tinker Creek, The Mermaid Chair, Life of Pi, Ender's Game (Ender's Saga, #1), Gates of Fire: An Epic Novel of the Battle of Thermopylae, The Namesake, Extremely Loud and Incredibly Close,
-Nearest to The Poisonwood Bible: The Kite Runner, The Plot Against America, Cloud Atlas, Anil's Ghost, Lolita, The Alchemist, Jitterbug Perfume, The Color Purple,
-Nearest to 1984: Lord of the Flies, Slaughterhouse-Five, Lolita, The Time Traveler's Wife, Outlander (Outlander, #1), Life of Pi, A Clockwork Orange, Ender's Game (Ender's Saga, #1),
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: The Joke, Salt: A World History, Interpreter of Maladies, Slaughterhouse-Five, The Hammer of Thor (Magnus Chase and the Gods of Asgard, #2), So Long, and Thanks for All the Fish (Hitchhiker's Guide to the Galaxy, #4), Please Kill Me: The Uncensored Oral History of Punk, Night (The Night Trilogy #1),
-Nearest to The Maze Runner (Maze Runner, #1): The Ugly Truth (Diary of a Wimpy Kid, #5), Beautiful Darkness (Caster Chronicles, #2), The Body Finder (The Body Finder, #1), Infinity (Chronicles of Nick, #1), I Don't Know How She Does It, The 39 Steps (Richard Hannay, #1), The Black Circle (The 39 Clues, #5), Torment (Fallen, #2),
-Average loss at step  92000 :  3.245428859
-Average loss at step  94000 :  3.21859055138
-Average loss at step  96000 :  3.20974324721
-Average loss at step  98000 :  3.19917794842
-Average loss at step  100000 :  3.22653954786
-Nearest to The Girl with the Dragon Tattoo (Millennium, #1): James and the Giant Peach, Midnight Sun (Twilight, #1.5), The Graveyard Book, The Professor, Lock and Key, The Sirens of Titan, Purple Cow: Transform Your Business by Being Remarkable, Inkdeath (Inkworld, #3),
-Nearest to Lord of the Flies: 1984, The Great Gatsby, The Kite Runner, Crime and Punishment, Memories of My Melancholy Whores, Fahrenheit 451, Slaughterhouse-Five, The Time Traveler's Wife,
-Nearest to Bossypants: Barbarians at the Gate: The Fall of RJR Nabisco, Pathfinder (Pathfinder, #1), The Expats, Miss Peregrine’s Home for Peculiar Children (Miss Peregrine’s Peculiar Children, #1), Unfamiliar Fishes, Teacher Man (Frank McCourt, #3), Save Me, In the Garden of Beasts: Love, Terror, and an American Family in Hitler's Berlin,
-Nearest to City of Bones (The Mortal Instruments, #1): Graceling (Graceling Realm, #1), City of Glass (The Mortal Instruments, #3), Marked (House of Night, #1), The Help, Best Friends Forever, Chains (Seeds of America, #1), Frostbite (Vampire Academy, #2), Pride and Prejudice and Zombies (Pride and Prejudice and Zombies, #1),
-Nearest to Jane Eyre: Memoirs of a Geisha, The Lovely Bones, Beloved, To Kill a Mockingbird, Eat, Pray, Love, A Thousand Splendid Suns, Les Misérables, The Diary of a Young Girl,
-Nearest to The Lovely Bones: The Memory Keeper's Daughter, The Secret Life of Bees, Jane Eyre, Uglies (Uglies, #1), The Diary of a Young Girl, The Perks of Being a Wallflower, The Bookseller of Kabul, The Giver (The Giver, #1),
-Nearest to The Giver (The Giver, #1): The Old Man and the Sea, Memoirs of a Geisha, Life of Pi, Catch-22, The Children of Húrin, The Lovely Bones, The Diary of a Young Girl, Me Talk Pretty One Day,
-Nearest to Atonement: The Old Man and the Sea, To Kill a Mockingbird, Siddhartha, The Secret Life of Bees, Breakfast of Champions, Beloved, Memoirs of a Geisha, Choke,
-Nearest to The Handmaid's Tale: The Hot Zone: The Terrifying True Story of the Origins of the Ebola Virus, The Tin Drum, Fight Club, Winter's Tale, The Book Thief, White Noise, Running with Scissors, The Mists of Avalon (Avalon, #1),
-Nearest to Animal Farm: Haunted, Gone with the Wind, Ishmael:A Novel, Civil Disobedience and Other Essays, Artemis Fowl (Artemis Fowl, #1), Les Misérables, The Fellowship of the Ring (The Lord of the Rings, #1), Into Thin Air: A Personal Account of the Mount Everest Disaster,
-Nearest to The Ocean at the End of the Lane: The Runaway King (The Ascendance Trilogy, #2), The Twelve Tribes of Hattie, Lone Wolf, Never Fade (The Darkest Minds, #2), The Ship of Brides, Anna Karenina, The Golem and the Jinni (The Golem and the Jinni, #1), Promise of Blood (Powder Mage, #1),
-Nearest to Outlander (Outlander, #1): 1984, Pilgrim at Tinker Creek, The Mermaid Chair, Ender's Game (Ender's Saga, #1), The Namesake, Life of Pi, Gates of Fire: An Epic Novel of the Battle of Thermopylae, Cloud Atlas,
-Nearest to The Poisonwood Bible: The Kite Runner, Cloud Atlas, The Plot Against America, Anil's Ghost, The Omnivore's Dilemma: A Natural History of Four Meals, The Color Purple, The Alchemist, Lolita,
-Nearest to 1984: Lord of the Flies, Slaughterhouse-Five, The Time Traveler's Wife, Outlander (Outlander, #1), Ender's Game (Ender's Saga, #1), Lolita, A Clockwork Orange, Life of Pi,
-Nearest to The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America: The Joke, Salt: A World History, Interpreter of Maladies, Slaughterhouse-Five, The Hammer of Thor (Magnus Chase and the Gods of Asgard, #2), So Long, and Thanks for All the Fish (Hitchhiker's Guide to the Galaxy, #4), Night (The Night Trilogy #1), Please Kill Me: The Uncensored Oral History of Punk,
-Nearest to The Maze Runner (Maze Runner, #1): The Ugly Truth (Diary of a Wimpy Kid, #5), Beautiful Darkness (Caster Chronicles, #2), I Don't Know How She Does It, The Body Finder (The Body Finder, #1), Infinity (Chronicles of Nick, #1), The 39 Steps (Richard Hannay, #1), Torment (Fallen, #2), The Black Circle (The 39 Clues, #5),
+Average loss at step  0 :  201.053588867
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): Batman: The Dark Knight Returns (The Dark Knight Saga, #1), Selected Stories, If I Stay (If I Stay, #1),
+Nearest to Cinder (The Lunar Chronicles, #1): Eleven Minutes, The Five Love Languages of Children, Austenland (Austenland, #1),
+Nearest to The Kite Runner: The Rumor, Labyrinth (Languedoc, #1), The Sea of Trolls (Sea of Trolls, #1),
+Nearest to The Glass Castle: The Witch's Daughter (The Witch's Daughter, #1), The Love Dare, Holding Up the Universe,
+Nearest to Extremely Loud and Incredibly Close: Not My Daughter, The Buried Giant, The Andromeda Strain,
+Nearest to Love in the Time of Cholera: The Woodlanders, The Ringworld Engineers (Ringworld #2), One Fish, Two Fish, Red Fish, Blue Fish,
+Nearest to The Catcher in the Rye: Ancillary Sword (Imperial Radch, #2), I Shall Wear Midnight (Discworld, #38; Tiffany Aching, #4), The Sands of Time,
+Nearest to Crime and Punishment: Dairy Queen (Dairy Queen, #1), Among Others, Millennium Snow, Vol. 1,
+Nearest to Animal Farm: How to Save a Life, Officer Buckle &amp;amp; Gloria, The Perfect Storm: A True Story of Men Against the Sea,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): My Life, Salem Falls, The Ironwood Tree (The Spiderwick Chronicles, #4),
+Nearest to The Perks of Being a Wallflower: The Dragonslayer (Bone, #4), Deliverance, Rendezvous with Rama (Rama, #1),
+Nearest to War and Peace: East, The Elvenbane (Halfblood Chronicles, #1), Medium Raw: A Bloody Valentine to the World of Food and the People Who Cook,
+Nearest to Brave New World: On Mystic Lake, Fledgling, 77 Shadow Street (Pendleton, #1),
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), Player Piano, Angels Fall,
+Nearest to The Casual Vacancy: The Prayer of Jabez:  Breaking Through to the Blessed Life, The Weekenders, The Assassin's Blade (Throne of Glass, #0.1-0.5),
+Nearest to Lord of the Flies: Cloudy With a Chance of Meatballs, First Frost (Waverley Family, #2), Passing,
+Average loss at step  2000 :  50.8570902784
+Average loss at step  4000 :  8.48856670332
+Average loss at step  6000 :  5.50654278445
+Average loss at step  8000 :  4.89954230261
+Average loss at step  10000 :  4.66325466359
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): The Notebook (The Notebook, #1), Me Talk Pretty One Day, 20th Century Ghosts,
+Nearest to Cinder (The Lunar Chronicles, #1): The Five Love Languages of Children, Eleven Minutes, Bully (Fall Away, #1),
+Nearest to The Kite Runner: Tuesdays with Morrie, Catch-22, The Omnivore's Dilemma: A Natural History of Four Meals,
+Nearest to The Glass Castle: The Witch's Daughter (The Witch's Daughter, #1), In Cold Blood, Hot, Flat, and Crowded: Why We Need a Green Revolution--and How It Can Renew America,
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, The Buried Giant, The Andromeda Strain,
+Nearest to Love in the Time of Cholera: One Fish, Two Fish, Red Fish, Blue Fish, Little Women (Little Women, #1), The Red Garden,
+Nearest to The Catcher in the Rye: Ancillary Sword (Imperial Radch, #2), The Personal MBA: Master the Art of Business, I Shall Wear Midnight (Discworld, #38; Tiffany Aching, #4),
+Nearest to Crime and Punishment: Dairy Queen (Dairy Queen, #1), Catch-22, The Great Gatsby,
+Nearest to Animal Farm: How to Save a Life, Infinite Jest, The Perfect Storm: A True Story of Men Against the Sea,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): My Life, Atonement, Orphan X (Orphan X, #1),
+Nearest to The Perks of Being a Wallflower: Catch-22, Rendezvous with Rama (Rama, #1), The Dragonslayer (Bone, #4),
+Nearest to War and Peace: Everything, Everything, Medium Raw: A Bloody Valentine to the World of Food and the People Who Cook, East,
+Nearest to Brave New World: Fledgling, Outlander (Outlander, #1), Tuesdays with Morrie,
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), Dewey: The Small-Town Library Cat Who Touched the World, Story of O (Story of O #1),
+Nearest to The Casual Vacancy: The Weekenders, The Prayer of Jabez:  Breaking Through to the Blessed Life, Life and Other Near-Death Experiences,
+Nearest to Lord of the Flies: Passing, Snow, A Short History of Nearly Everything,
+Average loss at step  12000 :  4.49367789495
+Average loss at step  14000 :  4.3219834007
+Average loss at step  16000 :  4.2673389703
+Average loss at step  18000 :  4.09554072869
+Average loss at step  20000 :  4.04103688669
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): The Notebook (The Notebook, #1), Me Talk Pretty One Day, The Iliad,
+Nearest to Cinder (The Lunar Chronicles, #1): The Five Love Languages of Children, Delirium (Delirium, #1), The Fault in Our Stars,
+Nearest to The Kite Runner: Tuesdays with Morrie, The Omnivore's Dilemma: A Natural History of Four Meals, The House of the Spirits,
+Nearest to The Glass Castle: In Cold Blood, The Witch's Daughter (The Witch's Daughter, #1), The Bonesetter's Daughter,
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, The Widow of the South, The Memory Keeper's Daughter,
+Nearest to Love in the Time of Cholera: I Know Why the Caged Bird Sings, One Fish, Two Fish, Red Fish, Blue Fish, The Underground Railroad,
+Nearest to The Catcher in the Rye: Ancillary Sword (Imperial Radch, #2), Democracy in America , The Personal MBA: Master the Art of Business,
+Nearest to Crime and Punishment: Dairy Queen (Dairy Queen, #1), Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, The Great Gatsby,
+Nearest to Animal Farm: Infinite Jest, Julie and Julia: 365 Days, 524 Recipes, 1 Tiny Apartment Kitchen: How One Girl Risked Her Marriage, Her Job, and Her Sanity to Master the Art of Living, How to Save a Life,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): Atonement, I, Claudius (Claudius, #1), My Life,
+Nearest to The Perks of Being a Wallflower: Catch-22, Lolita, Rendezvous with Rama (Rama, #1),
+Nearest to War and Peace: Norwegian Wood, Everything, Everything, Medium Raw: A Bloody Valentine to the World of Food and the People Who Cook,
+Nearest to Brave New World: Tuesdays with Morrie, Blue Like Jazz: Nonreligious Thoughts on Christian Spirituality, Outlander (Outlander, #1),
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), Dewey: The Small-Town Library Cat Who Touched the World, The Housekeeper and the Professor,
+Nearest to The Casual Vacancy: The Fault in Our Stars, The Weekenders, The Prayer of Jabez:  Breaking Through to the Blessed Life,
+Nearest to Lord of the Flies: Passing, Snow, A Short History of Nearly Everything,
+Average loss at step  22000 :  3.99072129893
+Average loss at step  24000 :  3.90868891752
+Average loss at step  26000 :  3.8537153455
+Average loss at step  28000 :  3.77176816392
+Average loss at step  30000 :  3.82985007036
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): The Notebook (The Notebook, #1), Me Talk Pretty One Day, The Iliad,
+Nearest to Cinder (The Lunar Chronicles, #1): The Fault in Our Stars, Delirium (Delirium, #1), Ruby Red (Precious Stone Trilogy, #1),
+Nearest to The Kite Runner: Tuesdays with Morrie, The House of the Spirits, The Omnivore's Dilemma: A Natural History of Four Meals,
+Nearest to The Glass Castle: The Bonesetter's Daughter, The Other Boleyn Girl (The Plantagenet and Tudor Novels, #9), In Cold Blood,
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, The Widow of the South, The Memory Keeper's Daughter,
+Nearest to Love in the Time of Cholera: I Know Why the Caged Bird Sings, Atlas Shrugged, The Underground Railroad,
+Nearest to The Catcher in the Rye: Democracy in America , Ancillary Sword (Imperial Radch, #2), Everything We Keep (Everything We Keep, #1),
+Nearest to Crime and Punishment: Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, Slaughterhouse-Five, The Great Gatsby,
+Nearest to Animal Farm: The Good Earth (House of Earth, #1), Infinite Jest, Julie and Julia: 365 Days, 524 Recipes, 1 Tiny Apartment Kitchen: How One Girl Risked Her Marriage, Her Job, and Her Sanity to Master the Art of Living,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): Atonement, I, Claudius (Claudius, #1), Ender's Game (Ender's Saga, #1),
+Nearest to The Perks of Being a Wallflower: Catch-22, To Kill a Mockingbird, The Garden of Eden,
+Nearest to War and Peace: Norwegian Wood, Everything, Everything, Jonathan Strange &amp;amp; Mr Norrell,
+Nearest to Brave New World: Outlander (Outlander, #1), Tuesdays with Morrie, Blue Like Jazz: Nonreligious Thoughts on Christian Spirituality,
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), Dewey: The Small-Town Library Cat Who Touched the World, The Housekeeper and the Professor,
+Nearest to The Casual Vacancy: The Fault in Our Stars, The Prayer of Jabez:  Breaking Through to the Blessed Life, Wild: From Lost to Found on the Pacific Crest Trail,
+Nearest to Lord of the Flies: Snow, Passing, A Short History of Nearly Everything,
+Average loss at step  32000 :  3.72429895306
+Average loss at step  34000 :  3.67616319287
+Average loss at step  36000 :  3.65157854366
+Average loss at step  38000 :  3.60568102384
+Average loss at step  40000 :  3.5629105919
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): The Notebook (The Notebook, #1), Me Talk Pretty One Day, A Streetcar Named Desire,
+Nearest to Cinder (The Lunar Chronicles, #1): The Fault in Our Stars, Embrace (The Violet Eden Chapters, #1), Seven Deadly Wonders (Jack West Jr, #1),
+Nearest to The Kite Runner: Tuesdays with Morrie, The Omnivore's Dilemma: A Natural History of Four Meals, The House of the Spirits,
+Nearest to The Glass Castle: The Bonesetter's Daughter, The Other Boleyn Girl (The Plantagenet and Tudor Novels, #9), Peony in Love,
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, The Widow of the South, The Memory Keeper's Daughter,
+Nearest to Love in the Time of Cholera: I Know Why the Caged Bird Sings, Embrace the Night (Cassandra Palmer, #3), The Grapes of Wrath,
+Nearest to The Catcher in the Rye: Democracy in America , Ancillary Sword (Imperial Radch, #2), War and Peace,
+Nearest to Crime and Punishment: Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, Slaughterhouse-Five, To Have and Have Not,
+Nearest to Animal Farm: The Good Earth (House of Earth, #1), Infinite Jest, Julie and Julia: 365 Days, 524 Recipes, 1 Tiny Apartment Kitchen: How One Girl Risked Her Marriage, Her Job, and Her Sanity to Master the Art of Living,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): Ender's Game (Ender's Saga, #1), Atonement, I, Claudius (Claudius, #1),
+Nearest to The Perks of Being a Wallflower: Catch-22, To Kill a Mockingbird, The Garden of Eden,
+Nearest to War and Peace: Norwegian Wood, Jonathan Strange &amp;amp; Mr Norrell, Nine Stories,
+Nearest to Brave New World: Outlander (Outlander, #1), Blue Like Jazz: Nonreligious Thoughts on Christian Spirituality, Tuesdays with Morrie,
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), The Housekeeper and the Professor, Dewey: The Small-Town Library Cat Who Touched the World,
+Nearest to The Casual Vacancy: The Fault in Our Stars, The Prayer of Jabez:  Breaking Through to the Blessed Life, Wild: From Lost to Found on the Pacific Crest Trail,
+Nearest to Lord of the Flies: Snow, Harry Potter and the Deathly Hallows (Harry Potter, #7), A Short History of Nearly Everything,
+Average loss at step  42000 :  3.5407050733
+Average loss at step  44000 :  3.60401493472
+Average loss at step  46000 :  3.55708793867
+Average loss at step  48000 :  3.49812850416
+Average loss at step  50000 :  3.46880627728
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): The Notebook (The Notebook, #1), The Plot Against America, Me Talk Pretty One Day,
+Nearest to Cinder (The Lunar Chronicles, #1): The Fault in Our Stars, Seven Deadly Wonders (Jack West Jr, #1), Embrace (The Violet Eden Chapters, #1),
+Nearest to The Kite Runner: Tuesdays with Morrie, A Clockwork Orange, The Omnivore's Dilemma: A Natural History of Four Meals,
+Nearest to The Glass Castle: The Bonesetter's Daughter, Peony in Love, In Cold Blood,
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, The Widow of the South, Lolita,
+Nearest to Love in the Time of Cholera: I Know Why the Caged Bird Sings, The Catcher in the Rye, The Grapes of Wrath,
+Nearest to The Catcher in the Rye: Democracy in America , Ancillary Sword (Imperial Radch, #2), Love in the Time of Cholera,
+Nearest to Crime and Punishment: Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, Slaughterhouse-Five, To Have and Have Not,
+Nearest to Animal Farm: The Good Earth (House of Earth, #1), Infinite Jest, Gone with the Wind,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): Ender's Game (Ender's Saga, #1), Atonement, I, Claudius (Claudius, #1),
+Nearest to The Perks of Being a Wallflower: Catch-22, To Kill a Mockingbird, The Garden of Eden,
+Nearest to War and Peace: Norwegian Wood, Nine Stories, The God Delusion,
+Nearest to Brave New World: The Giver (The Giver, #1), Tuesdays with Morrie, The Old Man and the Sea,
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), The Housekeeper and the Professor, Dewey: The Small-Town Library Cat Who Touched the World,
+Nearest to The Casual Vacancy: The Fault in Our Stars, Wild: From Lost to Found on the Pacific Crest Trail, The Prayer of Jabez:  Breaking Through to the Blessed Life,
+Nearest to Lord of the Flies: Snow, Harry Potter and the Deathly Hallows (Harry Potter, #7), The Kite Runner,
+Average loss at step  52000 :  3.43265928054
+Average loss at step  54000 :  3.42167698848
+Average loss at step  56000 :  3.39775447059
+Average loss at step  58000 :  3.47592809737
+Average loss at step  60000 :  3.47204799223
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): Middlesex, A Clockwork Orange, The Notebook (The Notebook, #1),
+Nearest to Cinder (The Lunar Chronicles, #1): The Fault in Our Stars, Embrace (The Violet Eden Chapters, #1), Seven Deadly Wonders (Jack West Jr, #1),
+Nearest to The Kite Runner: Tuesdays with Morrie, A Clockwork Orange, 1984,
+Nearest to The Glass Castle: The Bonesetter's Daughter, Peony in Love, In Cold Blood,
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, The Widow of the South, Lolita,
+Nearest to Love in the Time of Cholera: I Know Why the Caged Bird Sings, The Divine Comedy, War and Peace,
+Nearest to The Catcher in the Rye: Ancillary Sword (Imperial Radch, #2), Love in the Time of Cholera, Democracy in America ,
+Nearest to Crime and Punishment: Slaughterhouse-Five, To Have and Have Not, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values,
+Nearest to Animal Farm: The Good Earth (House of Earth, #1), Gone with the Wind, Rabbit, Run (Rabbit Angstrom #1),
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): Ender's Game (Ender's Saga, #1), Atonement, 1984,
+Nearest to The Perks of Being a Wallflower: Catch-22, To Kill a Mockingbird, The Golden Compass (His Dark Materials, #1),
+Nearest to War and Peace: Nine Stories, Jonathan Strange &amp;amp; Mr Norrell, Harry Potter and the Deathly Hallows (Harry Potter, #7),
+Nearest to Brave New World: Middlesex, The Giver (The Giver, #1), Catch-22,
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), The Housekeeper and the Professor, Dewey: The Small-Town Library Cat Who Touched the World,
+Nearest to The Casual Vacancy: The Fault in Our Stars, Wild: From Lost to Found on the Pacific Crest Trail, The Prayer of Jabez:  Breaking Through to the Blessed Life,
+Nearest to Lord of the Flies: Snow, The Kite Runner, Harry Potter and the Deathly Hallows (Harry Potter, #7),
+Average loss at step  62000 :  3.3924072181
+Average loss at step  64000 :  3.36924781489
+Average loss at step  66000 :  3.33055694771
+Average loss at step  68000 :  3.31733061743
+Average loss at step  70000 :  3.31788296509
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): A Clockwork Orange, Catch-22, Middlesex,
+Nearest to Cinder (The Lunar Chronicles, #1): Seven Deadly Wonders (Jack West Jr, #1), Embrace (The Violet Eden Chapters, #1), The Fault in Our Stars,
+Nearest to The Kite Runner: Tuesdays with Morrie, A Clockwork Orange, 1984,
+Nearest to The Glass Castle: Peony in Love, The Bonesetter's Daughter, The Other Boleyn Girl (The Plantagenet and Tudor Novels, #9),
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, Lolita, The Omnivore's Dilemma: A Natural History of Four Meals,
+Nearest to Love in the Time of Cholera: The Catcher in the Rye, War and Peace, The Divine Comedy,
+Nearest to The Catcher in the Rye: Love in the Time of Cholera, Pride and Prejudice, Ancillary Sword (Imperial Radch, #2),
+Nearest to Crime and Punishment: Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, Slaughterhouse-Five, To Have and Have Not,
+Nearest to Animal Farm: The Good Earth (House of Earth, #1), Gone with the Wind, Infinite Jest,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): Ender's Game (Ender's Saga, #1), Atonement, The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1),
+Nearest to The Perks of Being a Wallflower: Catch-22, To Kill a Mockingbird, The Curious Incident of the Dog in the Night-Time,
+Nearest to War and Peace: Harry Potter and the Deathly Hallows (Harry Potter, #7), Jonathan Strange &amp;amp; Mr Norrell, The God Delusion,
+Nearest to Brave New World: Catch-22, Middlesex, To Kill a Mockingbird,
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), The Housekeeper and the Professor, Dewey: The Small-Town Library Cat Who Touched the World,
+Nearest to The Casual Vacancy: Wild: From Lost to Found on the Pacific Crest Trail, The Fault in Our Stars, The Prayer of Jabez:  Breaking Through to the Blessed Life,
+Nearest to Lord of the Flies: Snow, Harry Potter and the Deathly Hallows (Harry Potter, #7), The Kite Runner,
+Average loss at step  72000 :  3.37482465214
+Average loss at step  74000 :  3.42257392645
+Average loss at step  76000 :  3.31818997788
+Average loss at step  78000 :  3.29870229846
+Average loss at step  80000 :  3.26437604576
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): A Clockwork Orange, Catch-22, Middlesex,
+Nearest to Cinder (The Lunar Chronicles, #1): Seven Deadly Wonders (Jack West Jr, #1), The Fault in Our Stars, Embrace (The Violet Eden Chapters, #1),
+Nearest to The Kite Runner: Tuesdays with Morrie, A Clockwork Orange, Life of Pi,
+Nearest to The Glass Castle: The Bonesetter's Daughter, Peony in Love, The Other Boleyn Girl (The Plantagenet and Tudor Novels, #9),
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, Lolita, The Omnivore's Dilemma: A Natural History of Four Meals,
+Nearest to Love in the Time of Cholera: The Catcher in the Rye, Pride and Prejudice, The Grapes of Wrath,
+Nearest to The Catcher in the Rye: Love in the Time of Cholera, Pride and Prejudice, Ancillary Sword (Imperial Radch, #2),
+Nearest to Crime and Punishment: Slaughterhouse-Five, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, To Have and Have Not,
+Nearest to Animal Farm: The Good Earth (House of Earth, #1), Gone with the Wind, Infinite Jest,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): Ender's Game (Ender's Saga, #1), Atonement, The Secret Life of Bees,
+Nearest to The Perks of Being a Wallflower: To Kill a Mockingbird, Catch-22, The Curious Incident of the Dog in the Night-Time,
+Nearest to War and Peace: Harry Potter and the Deathly Hallows (Harry Potter, #7), Gravity's Rainbow, Nine Stories,
+Nearest to Brave New World: The Giver (The Giver, #1), Middlesex, Catch-22,
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), The Housekeeper and the Professor, Dewey: The Small-Town Library Cat Who Touched the World,
+Nearest to The Casual Vacancy: The Fault in Our Stars, The Prayer of Jabez:  Breaking Through to the Blessed Life, Barefoot Contessa Back to Basics,
+Nearest to Lord of the Flies: The Kite Runner, Snow, 1984,
+Average loss at step  82000 :  3.25000136065
+Average loss at step  84000 :  3.25605355531
+Average loss at step  86000 :  3.29702677715
+Average loss at step  88000 :  3.38729267067
+Average loss at step  90000 :  3.27407476926
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): A Clockwork Orange, Catch-22, Middlesex,
+Nearest to Cinder (The Lunar Chronicles, #1): Seven Deadly Wonders (Jack West Jr, #1), Embrace (The Violet Eden Chapters, #1), The Fault in Our Stars,
+Nearest to The Kite Runner: Tuesdays with Morrie, A Clockwork Orange, Lolita,
+Nearest to The Glass Castle: The Bonesetter's Daughter, Peony in Love, A Tree Grows in Brooklyn,
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, Lolita, The Omnivore's Dilemma: A Natural History of Four Meals,
+Nearest to Love in the Time of Cholera: Pride and Prejudice, The Catcher in the Rye, War and Peace,
+Nearest to The Catcher in the Rye: Love in the Time of Cholera, Pride and Prejudice, The Divine Comedy,
+Nearest to Crime and Punishment: Slaughterhouse-Five, To Have and Have Not, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values,
+Nearest to Animal Farm: The Good Earth (House of Earth, #1), Gone with the Wind, Infinite Jest,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): Ender's Game (Ender's Saga, #1), Atonement, The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1),
+Nearest to The Perks of Being a Wallflower: Catch-22, To Kill a Mockingbird, The Curious Incident of the Dog in the Night-Time,
+Nearest to War and Peace: Harry Potter and the Deathly Hallows (Harry Potter, #7), Gravity's Rainbow, Love in the Time of Cholera,
+Nearest to Brave New World: Catch-22, The Giver (The Giver, #1), To Kill a Mockingbird,
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), The Housekeeper and the Professor, Dewey: The Small-Town Library Cat Who Touched the World,
+Nearest to The Casual Vacancy: Wonder, The Fault in Our Stars, The Prayer of Jabez:  Breaking Through to the Blessed Life,
+Nearest to Lord of the Flies: The Kite Runner, 1984, Pilgrim at Tinker Creek,
+Average loss at step  92000 :  3.24749968338
+Average loss at step  94000 :  3.21547119522
+Average loss at step  96000 :  3.20347243738
+Average loss at step  98000 :  3.19260094315
+Average loss at step  100000 :  3.22952575564
+Nearest to The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1): A Clockwork Orange, Catch-22, Middlesex,
+Nearest to Cinder (The Lunar Chronicles, #1): Seven Deadly Wonders (Jack West Jr, #1), The Fault in Our Stars, Embrace (The Violet Eden Chapters, #1),
+Nearest to The Kite Runner: Tuesdays with Morrie, A Clockwork Orange, 1984,
+Nearest to The Glass Castle: The Bonesetter's Daughter, Peony in Love, A Tree Grows in Brooklyn,
+Nearest to Extremely Loud and Incredibly Close: The Poisonwood Bible, Lolita, The Omnivore's Dilemma: A Natural History of Four Meals,
+Nearest to Love in the Time of Cholera: The Catcher in the Rye, Pride and Prejudice, The Great Gatsby,
+Nearest to The Catcher in the Rye: Love in the Time of Cholera, Pride and Prejudice, War and Peace,
+Nearest to Crime and Punishment: Slaughterhouse-Five, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values, To Have and Have Not,
+Nearest to Animal Farm: The Good Earth (House of Earth, #1), Gone with the Wind, Infinite Jest,
+Nearest to Wicked: The Life and Times of the Wicked Witch of the West (The Wicked Years, #1): Ender's Game (Ender's Saga, #1), The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1), Atonement,
+Nearest to The Perks of Being a Wallflower: Catch-22, To Kill a Mockingbird, The Curious Incident of the Dog in the Night-Time,
+Nearest to War and Peace: Harry Potter and the Deathly Hallows (Harry Potter, #7), Gravity's Rainbow, The Unbearable Lightness of Being,
+Nearest to Brave New World: The Giver (The Giver, #1), Catch-22, The Old Man and the Sea,
+Nearest to The Girl with the Dragon Tattoo (Millennium, #1): The Secret of the Unicorn (Tintin, #11), Dewey: The Small-Town Library Cat Who Touched the World, Love, Rosie,
+Nearest to The Casual Vacancy: Barefoot Contessa Back to Basics, The Fault in Our Stars, Wild: From Lost to Found on the Pacific Crest Trail,
+Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral History of the Zombie War,
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;h2 id=&quot;step-4-save-the-final-embeddings-for-recommendation&quot;&gt;Step 4. Save the final embeddings for recommendation&lt;/h2&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;final_embeddings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -2019,172 +2183,6 @@ Nearest to The Maze Runner (Maze Runner, #1): The Ugly Truth (Diary of a Wimpy K
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(9951, 128)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">As a data analyst, I’m always looking for ways to leverage massive data set to automate customer-facing experiences.</summary></entry><entry><title type="html">Two layer neural network</title><link href="https://orange-ape.cloudvent.net//deep-learning-with-numpy/Two-Layder-Neural-Network/" rel="alternate" type="text/html" title="Two layer neural network" /><published>2018-01-15T00:00:00+08:00</published><updated>2018-01-15T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//deep-learning-with-numpy/Two-Layder-Neural-Network</id><content type="html" xml:base="https://orange-ape.cloudvent.net//deep-learning-with-numpy/Two-Layder-Neural-Network/">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;utils&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;np&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# import inspect&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# lines = inspect.getsourcelines(utils.load_data)&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# print(&quot;&quot;.join(lines[0]))&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# import importlib&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# importlib.reload(utils)&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# help(utils)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;utils&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;../Titanic/data.npy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;X shape: (7, 891)
-y shape: (1, 891)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sigmoid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;layer_sizes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;n_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;n_y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;    
-    &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# we set up a seed so that your output matches ours although the initialization is random.&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                  &lt;span class=&quot;s&quot;&gt;&quot;b1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                  &lt;span class=&quot;s&quot;&gt;&quot;W2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                  &lt;span class=&quot;s&quot;&gt;&quot;b2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;    
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;forward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Z1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;A1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tanh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Z1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Z2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sigmoid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Z2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Z1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Z1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-             &lt;span class=&quot;s&quot;&gt;&quot;A1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-             &lt;span class=&quot;s&quot;&gt;&quot;Z2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Z2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-             &lt;span class=&quot;s&quot;&gt;&quot;A2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;    
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;compute_cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# number of example&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;logprobs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;logprobs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;squeeze&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;backward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;A1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;A1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;A2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;dZ2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;dW2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dZ2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;db2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dZ2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keepdims&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;dZ1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dZ2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;power&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;dW1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dZ1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;db1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dZ1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keepdims&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dW1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dW1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-             &lt;span class=&quot;s&quot;&gt;&quot;db1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;db1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-             &lt;span class=&quot;s&quot;&gt;&quot;dW2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dW2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-             &lt;span class=&quot;s&quot;&gt;&quot;db2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;db2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;    
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;update_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;learning_rate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;dW1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dW1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;db1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;db1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;dW2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dW2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;db2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;db2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;learning_rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dW1&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;learning_rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;db1&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;learning_rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dW2&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;learning_rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;db2&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                  &lt;span class=&quot;s&quot;&gt;&quot;b1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                  &lt;span class=&quot;s&quot;&gt;&quot;W2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                  &lt;span class=&quot;s&quot;&gt;&quot;b2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;    
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;nn_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_cost&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;n_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;layer_sizes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;n_y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;layer_sizes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialize_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;W2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute_cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_cost&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Cost after iteration &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;i: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nn_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_cost&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Accuracy: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Cost after iteration 0: 0.693124
-Cost after iteration 1000: 0.393405
-Cost after iteration 2000: 0.386318
-Cost after iteration 3000: 0.383217
-Cost after iteration 4000: 0.381450
-Cost after iteration 5000: 0.380165
-Cost after iteration 6000: 0.379095
-Cost after iteration 7000: 0.378206
-Cost after iteration 8000: 0.377509
-Cost after iteration 9000: 0.376949
-Accuracy: 83%
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;hidden_layer_sizes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hidden_layer_sizes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nn_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;accuracy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Accuracy for {} hidden units: {} &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;accuracy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Accuracy for 1 hidden units: 78.78787878787878 %
-Accuracy for 2 hidden units: 80.58361391694724 %
-Accuracy for 3 hidden units: 83.5016835016835 %
-Accuracy for 4 hidden units: 83.27721661054994 %
-Accuracy for 5 hidden units: 83.9506172839506 %
-Accuracy for 20 hidden units: 86.19528619528619 %
-Accuracy for 50 hidden units: 87.09315375982042 %
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">```python import utils import numpy as np</summary></entry></feed>
+&lt;p&gt;Code for recommendation based on cosine similarity  »&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">As a data analyst, I’m always looking for ways to leverage massive dataset to automate customer-facing experiences. Recently I’m focusing on using word2vec to power a recommendation engine.</summary></entry></feed>

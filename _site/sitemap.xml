@@ -61,6 +61,10 @@
 <lastmod>2018-01-22T00:00:00+08:00</lastmod>
 </url>
 <url>
+<loc>https://orange-ape.cloudvent.net//recommender/Word2Vec-Gensim/</loc>
+<lastmod>2018-01-22T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>https://orange-ape.cloudvent.net//machine-learning/Categorical-feature-engineering/</loc>
 <lastmod>2018-01-25T00:00:00+08:00</lastmod>
 </url>
@@ -114,5 +118,9 @@
 </url>
 <url>
 <loc>https://orange-ape.cloudvent.net//category/top-4-kaggle-solution/</loc>
+</url>
+<url>
+<loc>https://orange-ape.cloudvent.net//pybook/toxic/text_classification-master/multi-label-classification.pdf</loc>
+<lastmod>2017-10-26T19:39:36+08:00</lastmod>
 </url>
 </urlset>
