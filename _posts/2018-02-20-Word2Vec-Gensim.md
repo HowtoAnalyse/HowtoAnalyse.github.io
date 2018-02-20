@@ -13,7 +13,7 @@ Recommender engines powered by Word2Vec are able to learn user preference adapti
 
 This notebook gives an example using Gensim. 
 
-For a more detailed implementation using Tensorflow:
+For a more detailed implementation using Tensorflow >> https://howtoanalyse.github.io/recommender/Word2Vec/
 
 ## Step 1. Make every user's to-read list as a sentence and feed it into word2vec
 
