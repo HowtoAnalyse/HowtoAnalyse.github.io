@@ -11,13 +11,9 @@ baseurl: ""
 
 # SNS settings
 RSS: false
-weibo_username:     sarapro
-zhihu_username:     sarapro
-github_username:    sarapro
-twitter_username:   sarapro
+github_username:    HowtoAnalyse
 #facebook_username:  sarapro
-# linkedin_username:  firstname-lastname-idxxxx
-
+linkedin_username:  sara-zeng
 
 
 # Build settings

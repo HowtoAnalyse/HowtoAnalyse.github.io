@@ -3,10 +3,10 @@
   <channel>
     <title>Sara's Blog</title>
     <description>5am - The hour when Legends are waking up, or going to sleep</description>
-    <link>https://howtoanalyse.github.io/</link>
-    <atom:link href="https://howtoanalyse.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Feb 2018 10:37:35 +0800</pubDate>
-    <lastBuildDate>Wed, 21 Feb 2018 10:37:35 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 21 Feb 2018 10:47:13 +0800</pubDate>
+    <lastBuildDate>Wed, 21 Feb 2018 10:47:13 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -604,8 +604,8 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 21 Feb 2018 10:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/02/21/Word2Vec/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/21/Word2Vec/</guid>
+        <link>http://localhost:4000/2018/02/21/Word2Vec/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Word2Vec/</guid>
         
         <category>Recommender</category>
         
@@ -755,8 +755,8 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 06 Feb 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</guid>
+        <link>http://localhost:4000/2018/02/06/Deep-Neural-Network/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/06/Deep-Neural-Network/</guid>
         
         <category>Deep-Learning-with-Numpy</category>
         
@@ -814,8 +814,8 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/machine-learning-recap/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/machine-learning-recap/</guid>
+        <link>http://localhost:4000/2018/01/25/machine-learning-recap/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/machine-learning-recap/</guid>
         
         <category>Machine-Learning</category>
         
@@ -899,8 +899,8 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/Numeric-feature-engineering/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Numeric-feature-engineering/</guid>
+        <link>http://localhost:4000/2018/01/25/Numeric-feature-engineering/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Numeric-feature-engineering/</guid>
         
         <category>Machine-Learning</category>
         
@@ -947,8 +947,8 @@ c. Reconstruct values&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/Missing-data-imputation/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Missing-data-imputation/</guid>
+        <link>http://localhost:4000/2018/01/25/Missing-data-imputation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Missing-data-imputation/</guid>
         
         <category>Machine-Learning</category>
         
@@ -1016,8 +1016,8 @@ c. Reconstruct values&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/Generative-Discriminative/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Generative-Discriminative/</guid>
+        <link>http://localhost:4000/2018/01/25/Generative-Discriminative/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Generative-Discriminative/</guid>
         
         <category>Machine-Learning</category>
         
@@ -1103,8 +1103,8 @@ c. Reconstruct values&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/Categorical-feature-engineering/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Categorical-feature-engineering/</guid>
+        <link>http://localhost:4000/2018/01/25/Categorical-feature-engineering/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Categorical-feature-engineering/</guid>
         
         <category>Machine-Learning</category>
         
@@ -1194,8 +1194,8 @@ Shape of test X: (1459, 427)
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 22 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/22/PCA/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/22/PCA/</guid>
+        <link>http://localhost:4000/2018/01/22/PCA/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/22/PCA/</guid>
         
         <category>Top 4% Kaggle Solution</category>
         
@@ -1552,8 +1552,8 @@ Shape of test X: (1459, 427)
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 22 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/22/Model-Training/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/22/Model-Training/</guid>
+        <link>http://localhost:4000/2018/01/22/Model-Training/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/22/Model-Training/</guid>
         
         <category>Top 4% Kaggle Solution</category>
         
@@ -2270,8 +2270,8 @@ Name: PoolQC, dtype: int64
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 22 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/22/EDA/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/22/EDA/</guid>
+        <link>http://localhost:4000/2018/01/22/EDA/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/22/EDA/</guid>
         
         <category>Top 4% Kaggle Solution</category>
         
