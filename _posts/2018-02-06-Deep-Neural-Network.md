@@ -1,13 +1,19 @@
 ---
-date: 2018-02-06
-title: Deeper neural network
-description: Implement a shallow neural network using NumPy
-type: Document
-categories:
+layout:     post
+title:      "Deeper neural network"
+subtitle:   "Implement a shallow neural network using NumPy"
+date:       2018-02-06 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Deep-Learning-with-Numpy
 ---
 
-
+<div class="zh post-container">
+{% capture about_en %}
 ```python
 def initialize_parameters_deep(layer_dims):
     np.random.seed(3)
@@ -139,3 +145,11 @@ parameters = L_layer_model(train_x, train_y, layers_dims, num_iterations = 2500,
 pred_train = predict(train_x, train_y, parameters)
 pred_test = predict(test_x, test_y, parameters)
 ```
+
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
+
+<div class="en post-container">
+
+</div>

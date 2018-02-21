@@ -1,11 +1,19 @@
 ---
-date: 2018-01-25
-title: Feature Engineering on Categorical and Ordinal features"
-description: Feature Preprocessing and generation with respect to models
-categories:
+layout:     post
+title:      "Feature Engineering on Categorical and Ordinal features"
+subtitle:   "Feature Preprocessing and generation with respect to models"
+date:       2018-01-25 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Machine-Learning
 ---
 
+<div class="zh post-container">
+{% capture about_en %}
 Ordinal features refer to ordered categorical features. Examples include 
 * Driver's license: A,B,C,D
 * Education level: Bachelor, Master, Doctoral
@@ -65,3 +73,11 @@ Situations where we have a few important numeric features and hundreds of binary
 ### Feature interaction between several categorical features
 
 This method works well with non-tree based models.
+
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
+
+<div class="en post-container">
+
+</div>

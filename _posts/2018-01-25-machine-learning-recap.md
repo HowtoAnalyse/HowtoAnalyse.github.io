@@ -1,12 +1,19 @@
 ---
-date: 2018-01-15
-title: Machine Learning Recap
-description: Top 4 families of machine learning algorithms -- Linear Model, Tree-based methods, k-Nearest Neighbors and Neural Nets
-type: Document
-categories:
+layout:     post
+title:      "Machine Learning Recap"
+subtitle:   "Top 4 families of machine learning algorithms -- Linear Model, Tree-based methods, k-Nearest Neighbors and Neural Nets"
+date:       2018-01-25 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Machine-Learning
 ---
 
+<div class="zh post-container">
+{% capture about_en %}
 ## No Free Lunch Theorem
 
 Basically, No Free Lunch Theorem states that there is no methods which outperform all others on all tasks. 
@@ -44,3 +51,11 @@ The intuition behind k-NN is very simple. Closer objects will likely to have sam
 ## Neural Networks
 
 Neural Nets is a special class of machine learning models, which deserve a separate topic.
+
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
+
+<div class="en post-container">
+
+</div>

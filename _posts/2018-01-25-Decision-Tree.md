@@ -1,12 +1,19 @@
 ---
-date: 2018-01-15
-title: Decision Trees
-description: What is decision trees in machine learning?
-type: Document
-categories:
+layout:     post
+title:      "Decision Trees"
+subtitle:   "What is decision trees in machine learning?"
+date:       2018-01-15 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Machine-Learning
 ---
 
+<div class="zh post-container">
+{% capture about_en %}
 Decision tree classifiers are incredibly simple in theory. In their simplest form, decision tree classifiers ask a series of Yes/No questions about the data — each time getting closer to finding out the class of each entry — until they either classify the data set perfectly or simply can't differentiate a set of entries. Think of it like a game of Twenty Questions, except the computer is much, much better at it.
 
 The nice part about decision tree classifiers is that they are scale-invariant, i.e., the scale of the features does not affect their performance.
@@ -29,3 +36,11 @@ For Random Forest, the order of trees does not matter in RandomForest and perfor
 For GBDT:
 * if we drop first tree, sum of all the rest trees will be biased and overall performance should drop. 
 * if we drop the last tree, sum of all previous tree won't be affected, and therefore performance will change insignificantly (in case we have enough trees)
+
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
+
+<div class="en post-container">
+
+</div>

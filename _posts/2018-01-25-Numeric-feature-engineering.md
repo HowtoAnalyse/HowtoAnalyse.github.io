@@ -1,12 +1,19 @@
 ---
-date: 2018-01-25
-title: Feature Engineering on Numeric features
-description: Feature Preprocessing and generation with respect to models
-categories:
+layout:     post
+title:      "Feature Engineering on Numeric Features"
+subtitle:   "Feature Processing and Generation with respect to models"
+date:       2018-01-25 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Machine-Learning
 ---
 
-
+<div class="zh post-container">
+{% capture about_en %}
 ## Feature Preprocessing
 
 ### Scaling
@@ -62,3 +69,11 @@ Apart from examples like adding, multiplications, divisions, and other features 
 3. A new feature indicating fractional part of these prices. For example, if some product costs 2.49, the fractional part of its price is 0.49. This feature can help the model utilize the differences in people's perception of these prices.
 
 Also, we can find similar patterns in tasks which require distinguishing between a human and a robot. For example, if we will have some kind of financial data like auctions, we could observe that people tend to set round numbers as prices, and there are something like 0.935, blah, blah,, blah, very long number here. Or, if we are trying to find spambots on social networks, we can be sure that no human ever read messages with an exact interval of one second.
+
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
+
+<div class="en post-container">
+
+</div>

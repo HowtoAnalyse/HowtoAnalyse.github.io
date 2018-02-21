@@ -1,13 +1,19 @@
 ---
-date: 2018-01-22
-title: Stacking in Machine Learning
-description: How weak regressors beat builky ones
-type: Document
-categories:
+layout:     post
+title:      "Stacking in Machine Learning"
+subtitle:   "How weak regressors beat bulky ones"
+date:       2018-01-22 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Top 4% Kaggle Solution
 ---
 
-
+<div class="zh post-container">
+{% capture about_en %}
 There are methods that are common in machine learning projects like cross validation, grid searching and stacking.
 
 So I wrapped them into a common module in helper.py. 
@@ -365,6 +371,10 @@ sub.to_csv(submName, index=False)
 ```
 
 
-```python
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
 
-```
+<div class="en post-container">
+
+</div>

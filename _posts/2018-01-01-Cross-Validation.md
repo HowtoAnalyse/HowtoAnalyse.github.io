@@ -1,12 +1,20 @@
 ---
-date: 2018-01-15
-title: Cross Validation
-description: What is cross-validation and How to do it right
-type: Document
-categories:
+layout:     post
+title:      "Cross Validation"
+subtitle:   "What is cross-validation and How to do it right
+type: Document"
+date:       2018-01-15 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Machine-Learning
 ---
 
+<div class="zh post-container">
+{% capture about_en %}
 ## What is cross-validation?
 
 It's a model validation technique for assessing how the results of a statistical analysis will generalize to an independent data set. 
@@ -86,3 +94,10 @@ RMSLE penalizes an under-predicted estimate greater than an over-predicted estim
 3. Weighted Mean Absolute Error
 
 The weighted average of absolute errors. MAE and RMSE consider that each prediction provides equally precise information about the error variation, i.e. the standard variation of the error term is constant over all the predictions. Examples: recommender systems (differences between past and recent products)
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
+
+<div class="en post-container">
+
+</div>

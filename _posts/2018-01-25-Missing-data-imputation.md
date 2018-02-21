@@ -1,12 +1,19 @@
 ---
-date: 2018-01-25
-title: Feature Engineering Part II -- Missing Values
-description: "Feature Preprocessing and generation with respect to models. Approaches to fill NA"
-type: Document
-categories:
+layout:     post
+title:      "Feature Engineering Part II -- Missing Values"
+subtitle:   "Feature processing and generation with respect to models. Approaches to fill NA"
+date:       2018-01-25 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Machine-Learning
 ---
 
+<div class="zh post-container">
+{% capture about_en %}
 ## Imputation
 
 a. Replace it with a number outside the normal range like -999 
@@ -35,5 +42,11 @@ As an alternative, we may have a try on frequency encoding with missing values a
 ## Xgboost can handle NaN. 
 
 
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
 
+<div class="en post-container">
+
+</div>
 

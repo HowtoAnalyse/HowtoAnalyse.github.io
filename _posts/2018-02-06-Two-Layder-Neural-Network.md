@@ -1,13 +1,19 @@
 ---
-date: 2018-01-15
-title: Two layer neural network
-description: Implement a shallow neural network using NumPy
-type: Document
-categories:
+layout:     post
+date: 2018-01-15 12:00:00
+title: "Two layer neural network"
+subtitle: "Implement a shallow neural network using NumPy"
+author:     "Hux"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Deep-Learning-with-Numpy
 ---
 
-
+<div class="zh post-container">
+{% capture about_en %}
 
 ```python
 import utils
@@ -176,7 +182,10 @@ for i, n_h in enumerate(hidden_layer_sizes):
 
 
 
-```python
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
 
-```
+<div class="en post-container">
 
+</div>

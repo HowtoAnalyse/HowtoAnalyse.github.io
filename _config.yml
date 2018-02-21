@@ -1,92 +1,110 @@
-# ----
-# Site
-
-title: Sara
-url: 
-baseurl:
-google_analytics_key: UA-96859607-3
-disqus_shortname: greendata-1
-newsletter_action:
-
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Domain knowledge powered by engineering
-author: 
-  name: Sara
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: 
-  links:
-
-# -----
-# Build
-
-permalink: /:categories/:title/
-
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-archives
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
-
-collections:
-  sets:
+# Site settings
+title: Sara's Blog
+SEOTitle: 新一的博客 | Sara's Blog
+header-img: img/home-bg.jpg
+email: 14123142d@connect.polyu.hk
+description: "5am - The hour when Legends are waking up, or going to sleep"
+keyword: "sara, machine learning, python"
+url: "https://howtoanalyse.github.io"          
+baseurl: ""                            
 
 
-jekyll-archives:
-  enabled: ['categories']
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true
-  -
-    scope:
-      type: "sets"
-    values:
-      _hide_content: true
-  -
-    scope:
-      path: "index.html"
-    values:
-      body_class: "show_hero_search"
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - Email
-  - RSS
-
-types:
-  - Document
-  - Video
-
-_comments:
+# SNS settings
+RSS: false
+weibo_username:     sarapro
+zhihu_username:     sarapro
+github_username:    sarapro
+twitter_username:   sarapro
+#facebook_username:  sarapro
+# linkedin_username:  firstname-lastname-idxxxx
 
 
-google_author:             'https://plus.google.com/u/0/102228507571089869174'
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: greendata-1
+
+# Netease setttings
+netease_comment: false
+
+
+# Google Analytics
+ga_track_id: 'UA-96859607-3'            # Format: UA-xxxxxx-xx
+ga_domain: howtoanalyse.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: ""
+sidebar-avatar: /img/avatar-sara.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+# friends: [
+#     {
+#     #     title: "Su",
+#     #     href: "http://su.gallery/"
+#     # },{
+#         title: "乱序",
+#         href: "http://mida.re/"
+#     },{
+#         title: "前端外刊评论",
+#         href: "http://qianduan.guru/"
+#     },{
+#         title: "天镶的博客",
+#         href: "http://lingyu.wang/"
+#     },{
+#         title: "Luke 的自留地",
+#         href: "http://hmqk1995.github.io"
+#     },{
+#         title: "Ebn's Blog",
+#         href: "http://ebnbin.com/"
+#     },{
+#         title: "SmdCn's Blog",
+#         href: "http://blog.smdcn.net"
+#     },{
+#         title: "解旻的博客",
+#         href: "http://xieminis.me/"
+#     },{
+#         title: "DHong Say",
+#         href: "http://dhong.co"
+#     },{
+#         title: "尹峰以为",
+#         href: "http://ingf.github.io/"
+#     },{
+#         title: "前端神盾局",
+#         href: "http://wepiaofei.github.io/blog/"
+#     }
+# ]

@@ -1,12 +1,19 @@
 ---
-date: 2018-01-15
-title: Bias Variance Tradeoff
-description: What is Bias Variance Tradeoff?
-type: Document
-categories:
+layout:     post
+title:      "Bias Variance Tradeoff"
+subtitle:   "What is Bias Variance Tradeoff?"
+date:       2018-01-15 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Machine-Learning
 ---
 
+<div class="zh post-container">
+{% capture about_en %}
 In short, 
 * bias is how far away a model's predictions are from true values, 
 * variance is how scattered these predictions are among model iterations.
@@ -22,3 +29,11 @@ Error due to Bias: The error due to bias is taken as the difference between the 
 >
 Error due to Variance: The error due to variance is taken as the variability of a model prediction for a given data point. Again, imagine you can repeat the entire model building process multiple times. The variance is how much the predictions for a given point vary between different realizations of the model.
 <cite>Scott Fortmann-Roe</cite>
+
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
+
+<div class="en post-container">
+
+</div>

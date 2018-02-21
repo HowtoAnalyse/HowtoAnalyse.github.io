@@ -1,12 +1,19 @@
 ---
-date: 2018-01-15
-title: Generative vs. Discriminative
-description: What is the difference between the Generative and Discriminative models?
-type: Document
-categories:
+layout:     post
+title:      "Generative vs. Discriminative"
+subtitle:   "What is the difference between the Generative and Discriminative models"
+date:       2018-01-25 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Machine-Learning
 ---
 
+<div class="zh post-container">
+{% capture about_en %}
 The fundamental distinction between discriminative models and generative models is:
 
 * Discriminative models learn the (hard or soft) boundary between classes
@@ -35,3 +42,11 @@ To sum up:
 | learn the (hard or soft) boundary between classes  | model the distribution of individual classes  |
 | generally do not function for outlier detection  | generally function for outlier detection  |
 | do not offer clear representations of relations between features and classes in the dataset  | offer rich representations of the independence relations in the dataset  | 
+
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
+
+<div class="en post-container">
+
+</div>

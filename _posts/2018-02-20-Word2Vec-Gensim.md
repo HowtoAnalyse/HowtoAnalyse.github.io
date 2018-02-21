@@ -1,14 +1,20 @@
 ---
-date: 2018-01-22
-title: Build a Recommender Engine with Gensim
-description: Recoemmend to-read books using Gensim
-type: Document
-categories:
-  - Recommender
+layout:     post
+title: "Build a Recommender Engine with Gensim"
+subtitle:   "Recoemmend to-read books using Gensim"
+date:       2017-02-09 12:00:00
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
+    - Recommender
 ---
 
 
-
+<div class="zh post-container">
+{% capture about_en %}
 Recommender engines powered by Word2Vec are able to learn user preference adaptively based on previous interactions.
 
 This notebook gives an example using Gensim. 
@@ -205,6 +211,11 @@ old_vectors.most_similar_cosmul(positive=['A Hundred Summers','The Stand'],negat
 
 
 
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
 
+<div class="en post-container">
 
+</div>
 

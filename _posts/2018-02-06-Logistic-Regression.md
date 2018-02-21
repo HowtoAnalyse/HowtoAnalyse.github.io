@@ -1,13 +1,19 @@
 ---
-date: 2018-01-15
-title: Logistic Regression
-description: Implement logistic regression using NumPy
-type: Document
-categories:
+date: 2018-01-15 12:00:00
+title: "Logistic Regression"
+subtitle: "Implement logistic regression using NumPy"
+layout: post
+author:     "Sara"
+header-img: "img/post-bg-nextgen-web-pwa.jpg"
+header-mask: 0.3
+catalog:    true
+multilingual: true
+tags:
   - Deep-Learning-with-Numpy
 ---
 
-
+<div class="zh post-container">
+{% capture about_en %}
 
 ```python
 import numpy as np
@@ -194,6 +200,10 @@ plt.show()
 
 
 
-```python
+{% endcapture %}
+{{ about_en | markdownify }}
+</div>
 
-```
+<div class="en post-container">
+
+</div>
