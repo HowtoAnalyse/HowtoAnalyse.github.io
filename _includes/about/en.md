@@ -5,9 +5,10 @@
 
 Hi, I am *@sara* (Sara, Z.), a data analyst with 1-year experience on recommender systems and natural language processing.
 
-My restuarant recommender system project have been implemented into production. I'm sure millions of users from Hong Kong and Tai Wan will benefit from it. 
+My restaurant recommendation system project has been applied onto a website with 9,666,051 monthly unique visitors.
+<!-- utomating the search process of millions of users from Hong Kong and Tai Wan.  -->
 
-Meanwhile, I actively apply machine learning techniques into Kaggle competitions to obtain a more thorough understanding on algorithms. 
+Meanwhile, I actively apply machine learning techniques into Kaggle competitions to obtain a more thorough understanding on algorithms. In the competition [House Prices](https://www.kaggle.com/ssssara), my ensembled model acheives RMSE 0.11421, ranks top 4% on the learderboard.
 
 Before starting my career, I worked in a research lab focusing on clinical trials after BSc in Chemical Technology from [the Hong Kong Polytechnic University](https://www.polyu.edu.hk)
 
