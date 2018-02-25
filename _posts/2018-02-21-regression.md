@@ -2,7 +2,7 @@
 layout:     post
 title: "Project Summary on House Prices"
 subtitle:   ""
-date:       2017-02-20 12:00:00
+date:       2018-02-20 12:00:00
 author:     "Sara"
 header-img: "img/post-bg-nextgen-web-pwa.jpg"
 header-mask: 0.3

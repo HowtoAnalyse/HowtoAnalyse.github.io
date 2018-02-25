@@ -184,6 +184,64 @@
             ">
     			
 <div class="post-preview">
+    <a href="/2018/02/24/Epoch-Batch-sizes-Iterations/">
+        <h2 class="post-title">
+            Epoch vs. Batch sizes vs. Iterations
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+
+
+Epoch
+
+One epoch is when an entire dataset is passed forward and backward through the neural net only once.
+
+Gradient descent is an iterative process, so we need to feed the entire dataset multi...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Sara on February 24, 2018
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2018/02/21/Text-Classification-Summary/">
+        <h2 class="post-title">
+            Project Summary on Text Classification
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+
+
+Code structure
+
+
+├── base
+│   └── base_model.py        - the abstract class of the model.
+│ 
+├── model                    - neural nets
+│   │── fastText_model.py    - fastText model
+│   └── cnn_...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Sara on February 21, 2018
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     <a href="/2018/02/21/Word2Vec/">
         <h2 class="post-title">
             From Word2Vec to Item Recommendation
@@ -204,6 +262,37 @@ Fol...
     </a>
     <p class="post-meta">
         Posted by Sara on February 21, 2018
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2018/02/20/regression/">
+        <h2 class="post-title">
+            Project Summary on House Prices
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+
+
+Helper Functions
+
+import numpy as np
+import pandas as pd
+from ggplot import *
+from scipy.stats import skew
+
+from sklearn.base import BaseEstimator, TransformerMixin, RegressorMixin, clone
+from s...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Sara on February 20, 2018
     </p>
 </div>
 <hr>
@@ -380,86 +469,6 @@ Difference between Numeric and Ordinal F...
 </div>
 <hr>
 
-<div class="post-preview">
-    <a href="/2018/01/22/PCA/">
-        <h2 class="post-title">
-            PCA can do more than dimension reduction
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Apply pca on generated features
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-I was at first inspired by a discussion on Kaggle forum that doing PCA helps obtain a big boost on leaderboard.
-
-import numpy as np
-from sklearn.preprocessing import RobustScaler, Imputer
-from s...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on January 22, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/01/22/Model-Training/">
-        <h2 class="post-title">
-            Stacking in Machine Learning
-        </h2>
-        
-        <h3 class="post-subtitle">
-            How weak regressors beat bulky ones
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-There are methods that are common in machine learning projects like cross validation, grid searching and stacking.
-
-So I wrapped them into a common module in helper.py.
-
-In this script, I will c...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on January 22, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/01/22/EDA/">
-        <h2 class="post-title">
-            From Exploratory Analysis to Feature Engineering
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Generated hundres of features based on exploratory data analysis
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-Following can be considered as a routinue for me every time I start doing exploratory analysis for a new machine learning project:
-
-  What is the problem I’m going to solve?
-  Know more about de...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on January 22, 2018
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -496,12 +505,6 @@ Following can be considered as a routinue for me every time I start doing explor
                             
                         
                             
-                                <a href="/tags/#NLP" title="NLP" rel="3">
-                                    NLP
-                                </a>
-                            
-                        
-                            
                                 <a href="/tags/#Machine-Learning" title="Machine-Learning" rel="12">
                                     Machine-Learning
                                 </a>
@@ -516,6 +519,12 @@ Following can be considered as a routinue for me every time I start doing explor
                             
                                 <a href="/tags/#Top 4% Kaggle Solution" title="Top 4% Kaggle Solution" rel="3">
                                     Top 4% Kaggle Solution
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#NLP" title="NLP" rel="3">
+                                    NLP
                                 </a>
                             
                         
