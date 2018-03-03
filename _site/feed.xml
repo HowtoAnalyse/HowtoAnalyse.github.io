@@ -3,10 +3,10 @@
   <channel>
     <title>Sara's Blog</title>
     <description>5am - The hour when Legends are waking up, or going to sleep</description>
-    <link>https://howtoanalyse.github.io/</link>
-    <atom:link href="https://howtoanalyse.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 26 Feb 2018 20:54:47 +0800</pubDate>
-    <lastBuildDate>Mon, 26 Feb 2018 20:54:47 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 03 Mar 2018 10:40:19 +0800</pubDate>
+    <lastBuildDate>Sat, 03 Mar 2018 10:40:19 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -51,8 +51,8 @@
 
 </description>
         <pubDate>Sat, 24 Feb 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/02/24/Epoch-Batch-sizes-Iterations/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/24/Epoch-Batch-sizes-Iterations/</guid>
+        <link>http://localhost:4000/2018/02/24/Epoch-Batch-sizes-Iterations/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/24/Epoch-Batch-sizes-Iterations/</guid>
         
         <category>NLP</category>
         
@@ -183,8 +183,8 @@
 
 </description>
         <pubDate>Wed, 21 Feb 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/02/21/Text-Classification-Summary/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/21/Text-Classification-Summary/</guid>
+        <link>http://localhost:4000/2018/02/21/Text-Classification-Summary/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Text-Classification-Summary/</guid>
         
         <category>NLP</category>
         
@@ -786,8 +786,8 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 21 Feb 2018 10:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/02/21/Word2Vec/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/21/Word2Vec/</guid>
+        <link>http://localhost:4000/2018/02/21/Word2Vec/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Word2Vec/</guid>
         
         <category>Recommender</category>
         
@@ -1500,10 +1500,208 @@ NameError: name 'strftime' is not defined
 
 </description>
         <pubDate>Tue, 20 Feb 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/02/20/regression/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/20/regression/</guid>
+        <link>http://localhost:4000/2018/02/20/regression/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/20/regression/</guid>
         
         <category>NLP</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Build a Recommender Engine with Gensim</title>
+        <description>&lt;div class=&quot;zh post-container&quot;&gt;
+
+
+&lt;p&gt;Recommender engines powered by Word2Vec are able to learn user preference adaptively based on previous interactions.&lt;/p&gt;
+
+&lt;p&gt;This notebook gives an example using Gensim.&lt;/p&gt;
+
+&lt;p&gt;For a more detailed implementation using Tensorflow » https://howtoanalyse.github.io/recommender/Word2Vec/&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-make-every-users-to-read-list-as-a-sentence-and-feed-it-into-word2vec&quot;&gt;Step 1. Make every user’s to-read list as a sentence and feed it into word2vec&lt;/h2&gt;
+
+&lt;p&gt;Given a dataset large enough, it can find out similar books&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pd&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;gensim.models&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Word2Vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyedVectors&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'to_read.csv'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'books.csv'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'book_id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'book_id'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style&gt;
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;user_id&lt;/th&gt;
+      &lt;th&gt;book_id&lt;/th&gt;
+      &lt;th&gt;title&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;102338&lt;/th&gt;
+      &lt;td&gt;25663&lt;/td&gt;
+      &lt;td&gt;67&lt;/td&gt;
+      &lt;td&gt;A Thousand Splendid Suns&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;631930&lt;/th&gt;
+      &lt;td&gt;25250&lt;/td&gt;
+      &lt;td&gt;7629&lt;/td&gt;
+      &lt;td&gt;Auschwitz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;790848&lt;/th&gt;
+      &lt;td&gt;32567&lt;/td&gt;
+      &lt;td&gt;5442&lt;/td&gt;
+      &lt;td&gt;Vicious (Villains, #1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;475377&lt;/th&gt;
+      &lt;td&gt;9423&lt;/td&gt;
+      &lt;td&gt;6239&lt;/td&gt;
+      &lt;td&gt;Royal Blood (Vampire Kisses, #6)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;94525&lt;/th&gt;
+      &lt;td&gt;28268&lt;/td&gt;
+      &lt;td&gt;33&lt;/td&gt;
+      &lt;td&gt;Memoirs of a Geisha&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;548850&lt;/th&gt;
+      &lt;td&gt;19543&lt;/td&gt;
+      &lt;td&gt;4290&lt;/td&gt;
+      &lt;td&gt;Whose Body?  (Lord Peter Wimsey, #1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;652391&lt;/th&gt;
+      &lt;td&gt;28523&lt;/td&gt;
+      &lt;td&gt;649&lt;/td&gt;
+      &lt;td&gt;1Q84&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;813174&lt;/th&gt;
+      &lt;td&gt;10051&lt;/td&gt;
+      &lt;td&gt;4499&lt;/td&gt;
+      &lt;td&gt;The Paris Architect&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;831203&lt;/th&gt;
+      &lt;td&gt;39958&lt;/td&gt;
+      &lt;td&gt;1511&lt;/td&gt;
+      &lt;td&gt;The Slow Regard of Silent Things (The Kingkill...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;45407&lt;/th&gt;
+      &lt;td&gt;37147&lt;/td&gt;
+      &lt;td&gt;317&lt;/td&gt;
+      &lt;td&gt;I Know Why the Caged Bird Sings&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;raw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;groupby&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'user_id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nunique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sentences&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Word2Vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sentences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;workers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Word2Vec(vocab=9676, size=128, alpha=0.025)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vocab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;step-2-store-and-query-book-vectors&quot;&gt;Step 2. Store and Query book vectors&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;book_vectors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wv&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gmtime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strftime&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'vectors_'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strftime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gmtime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;book_vectors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;old_vectors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyedVectors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'vectors_20180220'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Say, a user bookmarked &lt;em&gt;A Hundred Summers&lt;/em&gt; and &lt;em&gt;The Stand&lt;/em&gt; on his to-do list and disliked &lt;em&gt;The Silver Star&lt;/em&gt;, the recommendation engine will suggest a list of books as following:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;old_vectors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;most_similar_cosmul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;positive&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'A Hundred Summers'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'The Stand'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;negative&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'The Silver Star'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[('Preludes &amp;amp; Nocturnes (The Sandman #1)', 1.1122468709945679),
+ ('The Gods Themselves', 1.1107063293457031),
+ ('Preacher, Volume 1: Gone to Texas', 1.1103928089141846),
+ ('Snow Crash', 1.1093586683273315),
+ ('Gateway (Heechee Saga, #1)', 1.109340786933899),
+ ('Doomsday Book (Oxford Time Travel, #1)', 1.1071699857711792),
+ ('The Fountains of Paradise', 1.1049118041992188),
+ ('Sundiver (The Uplift Saga, #1)', 1.1040676832199097),
+ ('Soon I Will Be Invincible', 1.1027390956878662),
+ ('The Children of Húrin', 1.1015183925628662)]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class=&quot;en post-container&quot;&gt;
+
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 09 Feb 2018 20:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/02/09/Word2Vec-Gensim/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/09/Word2Vec-Gensim/</guid>
+        
+        <category>Recommender</category>
         
         
       </item>
@@ -1651,8 +1849,8 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 06 Feb 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</guid>
+        <link>http://localhost:4000/2018/02/06/Deep-Neural-Network/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/02/06/Deep-Neural-Network/</guid>
         
         <category>Deep-Learning-with-Numpy</category>
         
@@ -1710,8 +1908,8 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/machine-learning-recap/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/machine-learning-recap/</guid>
+        <link>http://localhost:4000/2018/01/25/machine-learning-recap/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/machine-learning-recap/</guid>
         
         <category>Machine-Learning</category>
         
@@ -1795,8 +1993,8 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/Numeric-feature-engineering/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Numeric-feature-engineering/</guid>
+        <link>http://localhost:4000/2018/01/25/Numeric-feature-engineering/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Numeric-feature-engineering/</guid>
         
         <category>Machine-Learning</category>
         
@@ -1843,8 +2041,8 @@ c. Reconstruct values&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/Missing-data-imputation/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Missing-data-imputation/</guid>
+        <link>http://localhost:4000/2018/01/25/Missing-data-imputation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Missing-data-imputation/</guid>
         
         <category>Machine-Learning</category>
         
@@ -1912,95 +2110,8 @@ c. Reconstruct values&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/Generative-Discriminative/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Generative-Discriminative/</guid>
-        
-        <category>Machine-Learning</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Feature Engineering on Categorical and Ordinal features</title>
-        <description>&lt;div class=&quot;zh post-container&quot;&gt;
-
-
-&lt;p&gt;Ordinal features refer to ordered categorical features. Examples include&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Driver’s license: A,B,C,D&lt;/li&gt;
-  &lt;li&gt;Education level: Bachelor, Master, Doctoral&lt;/li&gt;
-  &lt;li&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;difference-between-numeric-and-ordinal-features-with-values-123&quot;&gt;Difference between Numeric and Ordinal Features with values 1,2,3…&lt;/h3&gt;
-
-&lt;p&gt;For numerical features with values 1,2,3…, we can conclude that the distance between first, and the second class is equal to the distance between second and the third class, but because for ordinal features, we can’t tell which distance is bigger.&lt;/p&gt;
-
-&lt;p&gt;As these numeric features, we can’t sort and integrate an ordinal feature the other way, and expect to get similar performance.&lt;/p&gt;
-
-&lt;h3 id=&quot;label-encoding&quot;&gt;Label Encoding&lt;/h3&gt;
-
-&lt;p&gt;The simplest way to encode a categorical feature is to map it’s unique values to different numbers.&lt;/p&gt;
-
-&lt;p&gt;There are different method. Be creative in constructing them&lt;/p&gt;
-
-&lt;p&gt;Following are three examples:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Sorted alphabetical order
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sklearn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;preprocessing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LabelEncoding&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Order of appearance
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pandas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;factorize&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;frequency-encoding&quot;&gt;Frequency Encoding&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;groupby&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'col1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'enc'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Label encoding and frequency encoding work fine with tree-based models because models can split feature, and extract most of the useful values in categories on its own.&lt;/p&gt;
-
-&lt;p&gt;But linear models might get confused by non linear dependence of categorical features. The non-linear dependence refers to cases like:
-+——+————+———–+
-| id   | Cat       | target    |
-+——+————+———–+
-| 5    | 1 | 1       |
-| 6    | 2 | 0     |
-| 7    | 3 | 1       |
-| 8    | 4 | 1       |
-+——+————+———–+&lt;/p&gt;
-
-&lt;h3 id=&quot;one-hot-encoding&quot;&gt;One-hot Encoding&lt;/h3&gt;
-
-&lt;p&gt;One-hot Encoding creates a new column for each unique value of our categorical feature and put one in the appropriate place. Everything else will be 0. This works well for linear models, k-NN and Neural Nets.&lt;/p&gt;
-
-&lt;p&gt;Situations where we have a few important numeric features and hundreds of binary features generated by one-hot encoding may slow down tree-based models, not always improving their results.&lt;/p&gt;
-
-&lt;h2 id=&quot;feature-generation&quot;&gt;Feature Generation&lt;/h2&gt;
-
-&lt;h3 id=&quot;feature-interaction-between-several-categorical-features&quot;&gt;Feature interaction between several categorical features&lt;/h3&gt;
-
-&lt;p&gt;This method works well with non-tree based models.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;div class=&quot;en post-container&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/2018/01/25/Categorical-feature-engineering/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Categorical-feature-engineering/</guid>
+        <link>http://localhost:4000/2018/01/25/Generative-Discriminative/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Generative-Discriminative/</guid>
         
         <category>Machine-Learning</category>
         

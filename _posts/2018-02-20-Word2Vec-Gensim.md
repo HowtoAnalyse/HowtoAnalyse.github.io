@@ -2,7 +2,7 @@
 layout:     post
 title: "Build a Recommender Engine with Gensim"
 subtitle:   "Recoemmend to-read books using Gensim"
-date:       2017-02-09 12:00:00
+date:       2018-02-09 12:00:00
 author:     "Sara"
 header-img: "img/post-bg-nextgen-web-pwa.jpg"
 header-mask: 0.3
