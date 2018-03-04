@@ -36,7 +36,7 @@ A confidence level at 95% implies that we will make Type I error (False positive
 
 A smaller standard error indicates a more powerful statistical test. There are 3 methods useful to reduce it:
 
-1. Choose OEC with inherently lower variability. For example: conversion rate has lower sd than purchase count, which in turn has lower sd than reevenue.
+1. Choose OEC with inherently lower variability. For example: conversion rate has lower sd than purchase count, which in turn has lower sd than revenue.
 
 2. Increase the sample size.
 
@@ -50,22 +50,33 @@ It usually adds up variability of the OEC to include users who are not directly 
 
 Conducting a controlled experiment on apps or websites can be divided into 3 steps:
 
-### 1. Randomization
+1. Randomization: mapping users to variants
+2. Assignment: uses the output of the randomization to determine the experience that each user will see on the website
+3. Data aggregation and analysis
 
-Randomization refers to the process that maps users to variants.
-
-### 2. Assignment
-
-Assignment step uses the output of the randomization to determine the experience that each user will see on the website.
-
-#### Treatment Ramp-up
+#### Best Practice 1: Treatment Ramp-up
 
 Before exposing a new feature to millions of users, we could start from a 99.9%/0.1% split and then increase the treatment size to 0.5% to 2.5%, etc., and finally 50%. It is suggested to run each step for a couple of hours.
 
-### 3. Data aggregation and analysis
+#### Best Practice 2: Mine the data
 
+User response is not the only data we have to determine where the difference in OEC is statistically significant. For example:
 
-## Performance Metrics
+##### 1. System bug. 
+
+An experiement showed no significant result. After data mining, you found that a population of users with a specific operating system version, say Android 8, response suspeciously worse for the treatment because there exists a bug of new feature for Android 8. What I will do is to exclude this population from analysis, and do a retesting once the bug is fixed.
+
+##### 2. Seasonality
+
+Traffic of online platforms, especially those in entertainment, shows clear patterns weekly or quaterly. It is suggested to do a preliminary exploration on traffic data, and choose a period that is enough to represent your user population. It varies from one week to 3 months.
+
+#### Best Practice 3: Run continuous A/A tests
+
+No matter what assignment method is employed: server-side, API-side or client-side, there is a chance that traffic is not splitted properly. So A/A tests are worth conducting to check whether the results are non-significant 95% of the time, traffic has been splitted according the expected percentages, etc.
+
+Additionally, the variability of OECs of A/A tests can help determine the minimum sample size.
+
+[//]: # (Performance Metrics)
 
 
 
