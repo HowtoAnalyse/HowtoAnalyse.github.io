@@ -24,7 +24,7 @@ where r is the number of variants, $$\sigma$$ is the standard deviation of the O
 
 Statistical power of a binary hypothesis test is the probability that the test correctly rejects the null hypothesis $$(H_0)$$ when a specific althernative hypothesis ($$H_1$$) is true. Commonly set to be around 80-95%. 
 
-$$Power = Pr(reject H_0 | H_1 is true)$$
+$$Power = Pr(\text{reject }H_0 | H_1\text{ is true})$$
 
 It is reversely related to Type II error (False negative).
 
@@ -36,15 +36,11 @@ A confidence level at 95% implies that we will make Type I error (False positive
 
 A smaller standard error indicates a more powerful statistical test. There are 3 methods useful to reduce it:
 
-1. Choose OEC with inherently lower variability. For example: conversion rate has lower sd than purchase count, which in turn has lower sd than revenue.
+1. **Choose OEC with inherently lower variability.** For example: conversion rate has lower sd than purchase count, which in turn has lower sd than revenue.
 
-2. Increase the sample size.
+2. **Increase the sample size.** It usually **doesn't work well in practice**. Because larger sample size requires longer experiment period, which is not a desired requirement for a platform with strong seasonality.
 
-It usually **doesn't work well in practice**. Because larger sample size requires longer experiment period, which is not a desired requirement for a platform with strong seasonality.
-
-3. Detect noise and filter them out
-
-It usually adds up variability of the OEC to include users who are not directly involved in experiments, like those who have not visited the page you are testing on.
+3. **Detect noise and filter them out.** It usually adds up variability of the OEC to include users who are not directly involved in experiments, like those who have not visited the page you are testing on.
 
 ## Best Practices
 

@@ -3,11 +3,128 @@
   <channel>
     <title>Sara's Blog</title>
     <description>5am - The hour when Legends are waking up, or going to sleep</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 03 Mar 2018 10:40:19 +0800</pubDate>
-    <lastBuildDate>Sat, 03 Mar 2018 10:40:19 +0800</lastBuildDate>
+    <link>https://howtoanalyse.github.io/</link>
+    <atom:link href="https://howtoanalyse.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 04 Mar 2018 21:29:32 +0800</pubDate>
+    <lastBuildDate>Sun, 04 Mar 2018 21:29:32 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>A practical summary on A/B Testing</title>
+        <description>&lt;div class=&quot;zh post-container&quot;&gt;
+
+
+&lt;h1 id=&quot;context&quot;&gt;Context&lt;/h1&gt;
+
+&lt;p&gt;As a data analyst, statistical inference and hypothesis testing are ingrained in my daily work, and controlled experiments are used heavily in back-end algorithms in terms of recommendations and search relevance. An appreciation of randomness informs much of our decision making.&lt;/p&gt;
+
+&lt;p&gt;However, &lt;strong&gt;on-line&lt;/strong&gt; A/B tests &lt;strong&gt;at scale&lt;/strong&gt; present challenges not common in traditional experiments of human preference.&lt;/p&gt;
+
+&lt;p&gt;Here I’m going to review AB testing in a web environment for later reference:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Statistical power and sample size&lt;/li&gt;
+  &lt;li&gt;Best practices&lt;/li&gt;
+  &lt;li&gt;Performance Metrics&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;statistical-power-and-sample-size&quot;&gt;Statistical power and sample size&lt;/h2&gt;
+
+&lt;p&gt;In online experiementation platforms, we choose experiments with significant successful OECs to launch to the product.&lt;/p&gt;
+
+&lt;p&gt;The following formula approximates the desired sample size with confidence level at 95% and power as 90%:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;n = (\frac{4r\sigma}{\delta})^2&lt;/script&gt;
+
+&lt;p&gt;where r is the number of variants, &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt; is the standard deviation of the OEC and &lt;script type=&quot;math/tex&quot;&gt;\delta&lt;/script&gt; is the minimum difference between the OECs.&lt;/p&gt;
+
+&lt;h4 id=&quot;power&quot;&gt;Power.&lt;/h4&gt;
+
+&lt;p&gt;Statistical power of a binary hypothesis test is the probability that the test correctly rejects the null hypothesis &lt;script type=&quot;math/tex&quot;&gt;(H_0)&lt;/script&gt; when a specific althernative hypothesis (&lt;script type=&quot;math/tex&quot;&gt;H_1&lt;/script&gt;) is true. Commonly set to be around 80-95%.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Power = Pr(\text{reject }H_0 | H_1\text{ is true})&lt;/script&gt;
+
+&lt;p&gt;It is reversely related to Type II error (False negative).&lt;/p&gt;
+
+&lt;h4 id=&quot;confidence-level&quot;&gt;Confidence level&lt;/h4&gt;
+
+&lt;p&gt;A confidence level at 95% implies that we will make Type I error (False positive) 5% of the time.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-to-reduce-standard-error&quot;&gt;How to reduce Standard Error&lt;/h4&gt;
+
+&lt;p&gt;A smaller standard error indicates a more powerful statistical test. There are 3 methods useful to reduce it:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Choose OEC with inherently lower variability.&lt;/strong&gt; For example: conversion rate has lower sd than purchase count, which in turn has lower sd than revenue.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Increase the sample size.&lt;/strong&gt; It usually &lt;strong&gt;doesn’t work well in practice&lt;/strong&gt;. Because larger sample size requires longer experiment period, which is not a desired requirement for a platform with strong seasonality.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Detect noise and filter them out.&lt;/strong&gt; It usually adds up variability of the OEC to include users who are not directly involved in experiments, like those who have not visited the page you are testing on.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;best-practices&quot;&gt;Best Practices&lt;/h2&gt;
+
+&lt;p&gt;Conducting a controlled experiment on apps or websites can be divided into 3 steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Randomization: mapping users to variants&lt;/li&gt;
+  &lt;li&gt;Assignment: uses the output of the randomization to determine the experience that each user will see on the website&lt;/li&gt;
+  &lt;li&gt;Data aggregation and analysis&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;best-practice-1-treatment-ramp-up&quot;&gt;Best Practice 1: Treatment Ramp-up&lt;/h4&gt;
+
+&lt;p&gt;Before exposing a new feature to millions of users, we could start from a 99.9%/0.1% split and then increase the treatment size to 0.5% to 2.5%, etc., and finally 50%. It is suggested to run each step for a couple of hours.&lt;/p&gt;
+
+&lt;h4 id=&quot;best-practice-2-mine-the-data&quot;&gt;Best Practice 2: Mine the data&lt;/h4&gt;
+
+&lt;p&gt;User response is not the only data we have to determine where the difference in OEC is statistically significant. For example:&lt;/p&gt;
+
+&lt;h5 id=&quot;1-system-bug&quot;&gt;1. System bug.&lt;/h5&gt;
+
+&lt;p&gt;An experiement showed no significant result. After data mining, you found that a population of users with a specific operating system version, say Android 8, response suspeciously worse for the treatment because there exists a bug of new feature for Android 8. What I will do is to exclude this population from analysis, and do a retesting once the bug is fixed.&lt;/p&gt;
+
+&lt;h5 id=&quot;2-seasonality&quot;&gt;2. Seasonality&lt;/h5&gt;
+
+&lt;p&gt;Traffic of online platforms, especially those in entertainment, shows clear patterns weekly or quaterly. It is suggested to do a preliminary exploration on traffic data, and choose a period that is enough to represent your user population. It varies from one week to 3 months.&lt;/p&gt;
+
+&lt;h4 id=&quot;best-practice-3-run-continuous-aa-tests&quot;&gt;Best Practice 3: Run continuous A/A tests&lt;/h4&gt;
+
+&lt;p&gt;No matter what assignment method is employed: server-side, API-side or client-side, there is a chance that traffic is not splitted properly. So A/A tests are worth conducting to check whether the results are non-significant 95% of the time, traffic has been splitted according the expected percentages, etc.&lt;/p&gt;
+
+&lt;p&gt;Additionally, the variability of OECs of A/A tests can help determine the minimum sample size.&lt;/p&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://ai.stanford.edu/users/ronnyk/2007GuideControlledExperiments.pdf&quot;&gt;Kohavi, Ron, Randal M. Henne, and Dan Sommerfield. “Practical Guide to Controlled Experiments on the Web: Listen to Your Customers not to the HiPPO.” (2007).&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://medium.com/airbnb-engineering/selection-bias-in-online-experimentation-c3d67795cceb&quot;&gt;Selection Bias in Online Experimentation&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class=&quot;en post-container&quot;&gt;
+
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 02 Mar 2018 20:00:00 +0800</pubDate>
+        <link>https://howtoanalyse.github.io/2018/03/02/ab-testing/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/03/02/ab-testing/</guid>
+        
+        <category>Statistics</category>
+        
+        
+      </item>
     
       <item>
         <title>Epoch vs. Batch sizes vs. Iterations</title>
@@ -51,8 +168,8 @@
 
 </description>
         <pubDate>Sat, 24 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/24/Epoch-Batch-sizes-Iterations/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/24/Epoch-Batch-sizes-Iterations/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/24/Epoch-Batch-sizes-Iterations/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/24/Epoch-Batch-sizes-Iterations/</guid>
         
         <category>NLP</category>
         
@@ -183,8 +300,8 @@
 
 </description>
         <pubDate>Wed, 21 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/21/Text-Classification-Summary/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Text-Classification-Summary/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/21/Text-Classification-Summary/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/21/Text-Classification-Summary/</guid>
         
         <category>NLP</category>
         
@@ -786,8 +903,8 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 21 Feb 2018 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/21/Word2Vec/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Word2Vec/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/21/Word2Vec/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/21/Word2Vec/</guid>
         
         <category>Recommender</category>
         
@@ -1500,8 +1617,8 @@ NameError: name 'strftime' is not defined
 
 </description>
         <pubDate>Tue, 20 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/20/regression/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/20/regression/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/20/regression/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/20/regression/</guid>
         
         <category>NLP</category>
         
@@ -1698,8 +1815,8 @@ NameError: name 'strftime' is not defined
 
 </description>
         <pubDate>Fri, 09 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/09/Word2Vec-Gensim/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/09/Word2Vec-Gensim/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/09/Word2Vec-Gensim/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/09/Word2Vec-Gensim/</guid>
         
         <category>Recommender</category>
         
@@ -1849,8 +1966,8 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 06 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/06/Deep-Neural-Network/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/06/Deep-Neural-Network/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</guid>
         
         <category>Deep-Learning-with-Numpy</category>
         
@@ -1908,8 +2025,8 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/01/25/machine-learning-recap/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/25/machine-learning-recap/</guid>
+        <link>https://howtoanalyse.github.io/2018/01/25/machine-learning-recap/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/machine-learning-recap/</guid>
         
         <category>Machine-Learning</category>
         
@@ -1993,8 +2110,8 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/01/25/Numeric-feature-engineering/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Numeric-feature-engineering/</guid>
+        <link>https://howtoanalyse.github.io/2018/01/25/Numeric-feature-engineering/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Numeric-feature-engineering/</guid>
         
         <category>Machine-Learning</category>
         
@@ -2041,77 +2158,8 @@ c. Reconstruct values&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/01/25/Missing-data-imputation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Missing-data-imputation/</guid>
-        
-        <category>Machine-Learning</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Generative vs. Discriminative</title>
-        <description>&lt;div class=&quot;zh post-container&quot;&gt;
-
-
-&lt;p&gt;The fundamental distinction between discriminative models and generative models is:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Discriminative models learn the (hard or soft) boundary between classes&lt;/li&gt;
-  &lt;li&gt;Generative models model the distribution of individual classes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;discriminative&quot;&gt;Discriminative&lt;/h4&gt;
-
-&lt;p&gt;SVMs and decision trees are discriminative because they learn explicit boundaries between classes.&lt;/p&gt;
-
-&lt;p&gt;SVM is a maximal margin classifier, meaning that it learns a decision boundary that maximizes the distance between samples of the two classes, given a kernel. The distance between a sample and the learned decision boundary can be used to make the SVM a “soft” classifier.&lt;/p&gt;
-
-&lt;p&gt;Decision trees learn the decision boundary by recursively partitioning the space in a manner that maximizes the information gain (or another criterion).&lt;/p&gt;
-
-&lt;h4 id=&quot;generative&quot;&gt;Generative&lt;/h4&gt;
-
-&lt;p&gt;Generative models are typically specified as probabilistic graphical models. They offer rich representations of the independence relations in the dataset.&lt;/p&gt;
-
-&lt;p&gt;Discriminative models do not offer such clear representations of relations between features and classes in the dataset. Instead of using resources to fully model each class, they focus on richly modeling the boundary between classes. Given the same amount of capacity (say, bits in a computer program executing the model), a discriminative model thus may yield more complex representations of this boundary than a generative model.&lt;/p&gt;
-
-&lt;p&gt;When you are dealing with non-stationary distributions where the online test data may be generated by different underlying distributions than the training data, it is typically more straightforward to detect distribution changes and update a generative model accordingly than do this for a decision boundary in an SVM, especially if the online updates need to be unsupervised.&lt;/p&gt;
-
-&lt;p&gt;To sum up:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Discriminative models&lt;/th&gt;
-      &lt;th&gt;Generative models&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;learn the (hard or soft) boundary between classes&lt;/td&gt;
-      &lt;td&gt;model the distribution of individual classes&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;generally do not function for outlier detection&lt;/td&gt;
-      &lt;td&gt;generally function for outlier detection&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;do not offer clear representations of relations between features and classes in the dataset&lt;/td&gt;
-      &lt;td&gt;offer rich representations of the independence relations in the dataset&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;/div&gt;
-
-&lt;div class=&quot;en post-container&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/01/25/Generative-Discriminative/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Generative-Discriminative/</guid>
+        <link>https://howtoanalyse.github.io/2018/01/25/Missing-data-imputation/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Missing-data-imputation/</guid>
         
         <category>Machine-Learning</category>
         
