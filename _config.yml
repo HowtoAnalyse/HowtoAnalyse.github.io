@@ -7,7 +7,8 @@ description: "5am - The hour when Legends are waking up, or going to sleep"
 keyword: "sara zeng, machine learning, python, data analyst, hku, polyu"
 url: "https://howtoanalyse.github.io"          
 baseurl: ""                            
-
+gems:
+  - jekyll-sitemap
 
 # SNS settings
 RSS: false
@@ -64,7 +65,6 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
-
 
 
 # Friends
