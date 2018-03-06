@@ -3,10 +3,10 @@
   <channel>
     <title>Sara's Blog</title>
     <description>5am - The hour when Legends are waking up, or going to sleep</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 07 Mar 2018 00:06:31 +0800</pubDate>
-    <lastBuildDate>Wed, 07 Mar 2018 00:06:31 +0800</lastBuildDate>
+    <link>https://howtoanalyse.github.io/</link>
+    <atom:link href="https://howtoanalyse.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 07 Mar 2018 00:14:34 +0800</pubDate>
+    <lastBuildDate>Wed, 07 Mar 2018 00:14:34 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -14,19 +14,23 @@
         <description>&lt;div class=&quot;zh post-container&quot;&gt;
 
 
-&lt;p&gt;Finally I decided to leave my current company. Let me use S instead of the company name.&lt;/p&gt;
+&lt;p&gt;I have a story of a girl. Her name is Sara.&lt;/p&gt;
 
-&lt;p&gt;The reason why I hesitate to leave is that S has been offering a great platform for me to gain practical experience on big data solutions and I have learned a lot. So I want to stay at S and make it better with my sincere gratitude.&lt;/p&gt;
+&lt;p&gt;Finally Sara decided to leave her current company. Let me use S instead of the company name.&lt;/p&gt;
 
-&lt;p&gt;The reason why I finally handed in my resignation letter is – money.&lt;/p&gt;
+&lt;p&gt;She hesitated for a long time.&lt;/p&gt;
+
+&lt;p&gt;S has been offering a great platform for her to gain practical experience on big data solutions and she has learned a lot. So she wants to stay at S and make it better with her sincerest gratitude.&lt;/p&gt;
+
+&lt;p&gt;The reason why she finally handed in her resignation letter is – money.&lt;/p&gt;
 
 &lt;p&gt;S is lucky to have so many users. But S doesn’t cherish them. “Users are tools to make money.” In S, that’s all about the definition of users.&lt;/p&gt;
 
-&lt;p&gt;I have used up my passion on building recommendation systems for S, without rewards to refill me. After setting up recommender systems comes a money-driven requirement – to insert sponsor items into users’ lists, without notifying them. no matter they like it or not.&lt;/p&gt;
+&lt;p&gt;Sara has used up her passion on building recommendation systems for S, without rewards to refill her. After setting up recommender systems comes a money-driven requirement – to insert sponsor items into users’ lists, without notifying them. no matter they like it or not.&lt;/p&gt;
 
-&lt;p&gt;I refuse to do so. And here is the result – database access has been limited; piles of chores like settling network issues are waiting for me every day at work to keep me away from data projects.&lt;/p&gt;
+&lt;p&gt;She refuses to do so. And here is the result – database access has been limited; piles of chores like settling network issues are waiting for her every day at work to keep her away from data projects.&lt;/p&gt;
 
-&lt;p&gt;So I’m eager to find a place where I have more freedom on data analysis. Making positive contribution to the society is all I want.&lt;/p&gt;
+&lt;p&gt;She’s now eager to find a place where she has more freedom on data analysis. Making positive contribution to the society is all she wants.&lt;/p&gt;
 
 &lt;p&gt;Wish us a better society.&lt;/p&gt;
 
@@ -41,8 +45,8 @@
 
 </description>
         <pubDate>Mon, 05 Mar 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/03/05/from-sara-with-love/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/05/from-sara-with-love/</guid>
+        <link>https://howtoanalyse.github.io/2018/03/05/from-sara-with-love/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/03/05/from-sara-with-love/</guid>
         
         <category>Random Thoughts</category>
         
@@ -158,8 +162,8 @@
 
 </description>
         <pubDate>Fri, 02 Mar 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/03/02/ab-testing/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/02/ab-testing/</guid>
+        <link>https://howtoanalyse.github.io/2018/03/02/ab-testing/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/03/02/ab-testing/</guid>
         
         <category>Statistics</category>
         
@@ -208,8 +212,8 @@
 
 </description>
         <pubDate>Sat, 24 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/24/Epoch-Batch-sizes-Iterations/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/24/Epoch-Batch-sizes-Iterations/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/24/Epoch-Batch-sizes-Iterations/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/24/Epoch-Batch-sizes-Iterations/</guid>
         
         <category>NLP</category>
         
@@ -340,8 +344,8 @@
 
 </description>
         <pubDate>Wed, 21 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/21/Text-Classification-Summary/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Text-Classification-Summary/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/21/Text-Classification-Summary/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/21/Text-Classification-Summary/</guid>
         
         <category>NLP</category>
         
@@ -943,8 +947,8 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 21 Feb 2018 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/21/Word2Vec/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Word2Vec/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/21/Word2Vec/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/21/Word2Vec/</guid>
         
         <category>Recommender</category>
         
@@ -1657,8 +1661,8 @@ NameError: name 'strftime' is not defined
 
 </description>
         <pubDate>Tue, 20 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/20/regression/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/20/regression/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/20/regression/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/20/regression/</guid>
         
         <category>NLP</category>
         
@@ -1855,8 +1859,8 @@ NameError: name 'strftime' is not defined
 
 </description>
         <pubDate>Fri, 09 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/09/Word2Vec-Gensim/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/09/Word2Vec-Gensim/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/09/Word2Vec-Gensim/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/09/Word2Vec-Gensim/</guid>
         
         <category>Recommender</category>
         
@@ -2006,8 +2010,8 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 06 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/06/Deep-Neural-Network/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/06/Deep-Neural-Network/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</guid>
         
         <category>Deep-Learning-with-Numpy</category>
         
@@ -2065,8 +2069,8 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/01/25/machine-learning-recap/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/25/machine-learning-recap/</guid>
+        <link>https://howtoanalyse.github.io/2018/01/25/machine-learning-recap/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/machine-learning-recap/</guid>
         
         <category>Machine-Learning</category>
         
@@ -2150,8 +2154,8 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/01/25/Numeric-feature-engineering/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Numeric-feature-engineering/</guid>
+        <link>https://howtoanalyse.github.io/2018/01/25/Numeric-feature-engineering/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/01/25/Numeric-feature-engineering/</guid>
         
         <category>Machine-Learning</category>
         
