@@ -1,20 +1,20 @@
 ---
 layout:     post
-title: "From Sara with love"
+title: "Parameter Tuning"
 subtitle:   ""
-date:       2018-03-05 12:00:00
+date:       2018-03-10 12:00:00
 author:     "Sara"
-header-img: "img/post-bg-rwd.jpg"
+header-img: "img/post-bg-unix-linux.jpg"
 header-mask: 0.3
 catalog:    true
 multilingual: true
 tags:
-    - Random Thoughts
+    - Machine-Learning
 ---
 
 <div class="zh post-container">
 {% capture about_en %}
-{% include posts/fromSaraWithLove.md %}
+{% include posts/parameterTuning.md %}
 
 {% endcapture %}
 {{ about_en | markdownify }}
