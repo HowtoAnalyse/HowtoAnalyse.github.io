@@ -3,11 +3,159 @@
   <channel>
     <title>Sara's Blog</title>
     <description>5am - The hour when Legends are waking up, or going to sleep</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 11 Mar 2018 22:20:30 +0800</pubDate>
-    <lastBuildDate>Sun, 11 Mar 2018 22:20:30 +0800</lastBuildDate>
+    <link>https://howtoanalyse.github.io/</link>
+    <atom:link href="https://howtoanalyse.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 24 Mar 2018 16:03:58 +0800</pubDate>
+    <lastBuildDate>Sat, 24 Mar 2018 16:03:58 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Reddit Weekly Digests</title>
+        <description>&lt;p&gt;I visit &lt;a href=&quot;https://www.reddit.com/&quot;&gt;Reddit&lt;/a&gt; frequently in order to stay on top of news in my areas of interest. It will be much more efficient if I can design and automate a process to generate weekly digests of my most visited subreddits.&lt;/p&gt;
+
+&lt;p&gt;Following are the most voted Reddit posts I scraped on subreddits:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;datascience&lt;/li&gt;
+  &lt;li&gt;python&lt;/li&gt;
+  &lt;li&gt;programming&lt;/li&gt;
+  &lt;li&gt;machinelearning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+
+&lt;h6 id=&quot;facebook-can-simultaneously-measure-everything-about-us-and-control-the-information-we-consume-when-you-have-access-to-both-perception-and-action-youre-looking-at-an-ai-problem-you-can-start-establishing-an-optimization-loop-for-human-behavior-a-rl-loop&quot;&gt;&lt;a href=&quot;https://twitter.com/fchollet/status/976565723597176832&quot;&gt;Facebook can simultaneously measure everything about us, and control the information we consume. When you have access to both perception and action, you’re looking at an AI problem. You can start establishing an optimization loop for human behavior. A RL loop.&lt;/a&gt;&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;score: 627&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;why-do-people-write-bad-articles-on-which-they-have-no-clue-about&quot;&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/860311/dwhy_do_people_write_bad_articles_on_which_they/&quot;&gt;Why do people write Bad articles on which they have no clue about?&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 508&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;baidu-releases-apollo-scape-possibly-the-worlds-largest-dataset-for-autonomous-driving&quot;&gt;&lt;a href=&quot;https://medium.com/@Synced/baidu-apollo-releases-massive-self-driving-dataset-teams-up-with-berkeley-deepdrive-5e785ab4053b&quot;&gt;Baidu releases Apollo Scape, possibly the world’s largest dataset for autonomous driving&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 457&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;self-driving-uber-kills-arizona-woman-in-first-fatal-crash-involving-pedestrian&quot;&gt;&lt;a href=&quot;https://www.theguardian.com/technology/2018/mar/19/uber-self-driving-car-kills-woman-arizona-tempe&quot;&gt;Self-driving Uber kills Arizona woman in first fatal crash involving pedestrian&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 436&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;simple-gan-using-numpy&quot;&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/86ipxh/p_simple_gan_using_numpy/&quot;&gt;Simple GAN using numpy&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 434&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;a-quick-tour-of-python-37s-new-breakpoint-feature&quot;&gt;&lt;a href=&quot;https://medium.com/@anthonypjshaw/python-3-7s-new-builtin-breakpoint-a-quick-tour-4f1aebc444c&quot;&gt;A quick tour of Python 3.7’s new breakpoint feature&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 426&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;the-ultimate-guide-to-speech-recognition-with-python&quot;&gt;&lt;a href=&quot;https://realpython.com/python-speech-recognition/&quot;&gt;The Ultimate Guide To Speech Recognition With Python&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 361&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;just-realized-kelsos-dad-was-a-data-scientist&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=TdqRqRXeS-Q&quot;&gt;Just realized Kelso’s dad was a data scientist&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 282&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;fast-pandas-a-benchmarked-pandas-cheat-sheet-for-optimal-performance&quot;&gt;&lt;a href=&quot;https://github.com/mm-mansour/Fast-Pandas&quot;&gt;[Fast Pandas]: A Benchmarked Pandas Cheat Sheet for Optimal Performance.&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 251&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;building-apis-with-django-and-django-rest-framework-free-short-book-about-building-apis-continues-from-where-the-django-polls-tutorial-ends&quot;&gt;&lt;a href=&quot;https://books.agiliq.com/projects/django-api-polls-tutorial/en/latest/&quot;&gt;Building APIs with Django and Django Rest Framework: Free, short book about building APIs. Continues from where the Django “polls” tutorial ends.&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 247&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;web-scraping-with-python-illustration-with-cia-world-factbook&quot;&gt;&lt;a href=&quot;https://www.kdnuggets.com/2018/03/web-scraping-python-cia-world-factbook.html&quot;&gt;Web Scraping with Python: Illustration with CIA World Factbook&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 238&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;well-written-paper-examples&quot;&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/85cwiu/d_wellwritten_paper_examples/&quot;&gt;Well-written paper examples&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 227&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;one-of-the-most-complete-guides-on-how-to-use-hdf5-with-python&quot;&gt;&lt;a href=&quot;https://www.uetke.com/blog/python/how-to-use-hdf5-files-in-python/&quot;&gt;One of the most complete guides on how to use HDF5 with Python&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 222&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;the-great-python-refactor-of-2017-and-also-2018&quot;&gt;&lt;a href=&quot;https://engineering.khanacademy.org/posts/python-refactor-1.htm&quot;&gt;The Great Python Refactor of 2017 And Also 2018&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 206&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;makesitepy---simple-lightweight-and-magic-free-static-siteblog-generator-for-python-coders--120-lines-of-code&quot;&gt;&lt;a href=&quot;https://github.com/sunainapai/makesite&quot;&gt;makesite.py - Simple, lightweight, and magic-free static site/blog generator for Python coders (&amp;lt; 120 lines of code)&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 192&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;using-python-pyaudio-module-inside-blender-to-perform-realtime-processing-interesting-to-try-for-python-coders&quot;&gt;&lt;a href=&quot;https://www.youtube.com/attribution_link?a=2KVoCVUE6rI&amp;amp;u=%2Fwatch%3Fv%3DqhWqNugLXpY%26feature%3Dshare&quot;&gt;Using Python PyAudio module inside Blender to perform realtime processing. Interesting to try for Python coders.&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 191&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;the-zen-of-empty-lists&quot;&gt;&lt;a href=&quot;http://www.pythondoeswhat.com/2018/03/the-zen-of-empty-lists.html&quot;&gt;The Zen of Empty Lists&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 183&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;nlp-in-python&quot;&gt;&lt;a href=&quot;https://dzone.com/articles/nlp-in-python&quot;&gt;NLP in Python&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 179&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;pygame-on-pypy-usable-05x-to-30x-the-speed&quot;&gt;&lt;a href=&quot;http://renesd.blogspot.com/2018/03/pygame-on-pypy-usable.html&quot;&gt;pygame on pypy usable. 0.5x to 30x the speed.&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 171&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24
+    &lt;h6 id=&quot;overwatch-stats-scraper-written-in-python&quot;&gt;&lt;a href=&quot;https://github.com/v0dot9/OverPy&quot;&gt;Overwatch stats scraper written in Python&lt;/a&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+  &lt;li&gt;score: 171&lt;/li&gt;
+  &lt;li&gt;Date published: 2018-03-24&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 23 Mar 2018 20:00:00 +0800</pubDate>
+        <link>https://howtoanalyse.github.io/2018/03/23/reddit-weekly-digests/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/03/23/reddit-weekly-digests/</guid>
+        
+        <category>Web-Scraping</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Text Cleaning</title>
+        <description>&lt;div class=&quot;zh post-container&quot;&gt;
+
+
+&lt;p&gt;Data cleaning and normalization can largely improve the efficiency of text analysis while they also bring us challenges.&lt;/p&gt;
+
+&lt;h2 id=&quot;encoding&quot;&gt;Encoding&lt;/h2&gt;
+
+&lt;p&gt;A string in Python is seen as a Unicode covering the number from 0 through 0x10FFFF(1,114,111 decimal). Then the sequence has to be represented as a set of bytes (values from 0 to 255) in memory. The rules for translating a Unicode string into a sequence of bytes are called encoding.&lt;/p&gt;
+
+&lt;p&gt;As a rule of thumb data should be always normalized to UTF-8, which can handle any type of character.&lt;/p&gt;
+
+&lt;h2 id=&quot;data-structure&quot;&gt;Data Structure&lt;/h2&gt;
+
+&lt;p&gt;List is not a efficient format for large datasets. I prefer pandas dataframe to store the data. It has several advantages such as :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Rows are indexed, so search operations become faster.&lt;/li&gt;
+  &lt;li&gt;A row can contain multiple fields with metadata about verbatims, which are useful in analysis.&lt;/li&gt;
+  &lt;li&gt;Optimized processing methods of different kind are available. We can also optimize our own processing by using functional programming.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Since datasets in pandas must fit into RAM memory, it is suggested to use SFrames for larger ones.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class=&quot;en post-container&quot;&gt;
+
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 11 Mar 2018 20:00:00 +0800</pubDate>
+        <link>https://howtoanalyse.github.io/2018/03/11/text-cleaning/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/03/11/text-cleaning/</guid>
+        
+        <category>NLP</category>
+        
+        
+      </item>
     
       <item>
         <title>Parameter Tuning</title>
@@ -49,8 +197,8 @@
 
 </description>
         <pubDate>Sat, 10 Mar 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/03/10/parameter-tuning/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/10/parameter-tuning/</guid>
+        <link>https://howtoanalyse.github.io/2018/03/10/parameter-tuning/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/03/10/parameter-tuning/</guid>
         
         <category>Machine-Learning</category>
         
@@ -166,8 +314,8 @@
 
 </description>
         <pubDate>Fri, 02 Mar 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/03/02/ab-testing/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/02/ab-testing/</guid>
+        <link>https://howtoanalyse.github.io/2018/03/02/ab-testing/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/03/02/ab-testing/</guid>
         
         <category>Statistics</category>
         
@@ -216,8 +364,8 @@
 
 </description>
         <pubDate>Sat, 24 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/24/Epoch-Batch-sizes-Iterations/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/24/Epoch-Batch-sizes-Iterations/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/24/Epoch-Batch-sizes-Iterations/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/24/Epoch-Batch-sizes-Iterations/</guid>
         
         <category>NLP</category>
         
@@ -348,8 +496,8 @@
 
 </description>
         <pubDate>Wed, 21 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/21/Text-Classification-Summary/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Text-Classification-Summary/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/21/Text-Classification-Summary/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/21/Text-Classification-Summary/</guid>
         
         <category>NLP</category>
         
@@ -951,8 +1099,8 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 21 Feb 2018 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/21/Word2Vec/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/21/Word2Vec/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/21/Word2Vec/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/21/Word2Vec/</guid>
         
         <category>Recommender</category>
         
@@ -1665,8 +1813,8 @@ NameError: name 'strftime' is not defined
 
 </description>
         <pubDate>Tue, 20 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/20/regression/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/20/regression/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/20/regression/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/20/regression/</guid>
         
         <category>NLP</category>
         
@@ -1863,8 +2011,8 @@ NameError: name 'strftime' is not defined
 
 </description>
         <pubDate>Fri, 09 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/09/Word2Vec-Gensim/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/09/Word2Vec-Gensim/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/09/Word2Vec-Gensim/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/09/Word2Vec-Gensim/</guid>
         
         <category>Recommender</category>
         
@@ -2014,154 +2162,10 @@ NameError: name 'strftime' is not defined
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 06 Feb 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/02/06/Deep-Neural-Network/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/02/06/Deep-Neural-Network/</guid>
+        <link>https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/2018/02/06/Deep-Neural-Network/</guid>
         
         <category>Deep-Learning-with-Numpy</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Machine Learning Recap</title>
-        <description>&lt;div class=&quot;zh post-container&quot;&gt;
-
-
-&lt;h2 id=&quot;no-free-lunch-theorem&quot;&gt;No Free Lunch Theorem&lt;/h2&gt;
-
-&lt;p&gt;Basically, No Free Lunch Theorem states that there is no methods which outperform all others on all tasks.&lt;/p&gt;
-
-&lt;p&gt;The reason behind is that every method relies on certain assumptions about data or task. If these assumptions fail, it will perform poorly.&lt;/p&gt;
-
-&lt;p&gt;For us, this means that we cannot every competition with just a single algorithm. So it is important for us to have a clear mind map of various models based off different assumptions.&lt;/p&gt;
-
-&lt;p&gt;Then let’s start getting familiar with the four popular families of machine learning algorithms.&lt;/p&gt;
-
-&lt;h2 id=&quot;linear-model&quot;&gt;Linear Model&lt;/h2&gt;
-
-&lt;p&gt;Linear models try to separate objects with a plane which divides space into two parts.&lt;/p&gt;
-
-&lt;p&gt;With 2 sets of points, it is quite intuitive to separate them using a line. This approach can be generalized for a higher dimensional space. This is the main idea behind linear models.&lt;/p&gt;
-
-&lt;p&gt;Logistic regression or SVM are all linear models withdifferent loss functions.&lt;/p&gt;
-
-&lt;h3 id=&quot;linear-models-are-especially-good-for-sparse-high-dimensional-data&quot;&gt;Linear models are especially good for sparse high dimensional data.&lt;/h3&gt;
-
-&lt;h2 id=&quot;tree-based-methods&quot;&gt;Tree-Based Methods&lt;/h2&gt;
-
-&lt;p&gt;In general, tree-based models are very powerful and can be a good default method for tabular data.&lt;/p&gt;
-
-&lt;p&gt;Intuitively, a single decision tree can be considered as dividing space into boxes and approximating data with a constant inside of these boxes. It uses divide-and-conquer approach to recur sub-split spaces into sub-spaces.&lt;/p&gt;
-
-&lt;p&gt;The way of true axis splits and corresponding constants produces several approaches for building decision trees. Moreover, such trees can be combined together in a lot of ways. All this leads to a wide variety of tree-based algorithms, most famous of them being random forest and Gradient Boosted Decision Trees.&lt;/p&gt;
-
-&lt;p&gt;Scikit-Learn contains quite good implementation of random forest. For gradient boost decision trees, you may find XGBoost and LightGBM with higher speed and accuracy.&lt;/p&gt;
-
-&lt;h2 id=&quot;k-nearest-neighbors-k-nn&quot;&gt;k-Nearest Neighbors (k-NN)&lt;/h2&gt;
-
-&lt;p&gt;The intuition behind k-NN is very simple. Closer objects will likely to have same labels.&lt;/p&gt;
-
-&lt;h2 id=&quot;neural-networks&quot;&gt;Neural Networks&lt;/h2&gt;
-
-&lt;p&gt;Neural Nets is a special class of machine learning models, which deserve a separate topic.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;div class=&quot;en post-container&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/01/25/machine-learning-recap/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/25/machine-learning-recap/</guid>
-        
-        <category>Machine-Learning</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Feature Engineering on Numeric Features</title>
-        <description>&lt;div class=&quot;zh post-container&quot;&gt;
-
-
-&lt;h2 id=&quot;feature-preprocessing&quot;&gt;Feature Preprocessing&lt;/h2&gt;
-
-&lt;h3 id=&quot;scaling&quot;&gt;Scaling&lt;/h3&gt;
-
-&lt;p&gt;Scaling numeric features ensures that their initial impact on models are relatively the same.&lt;/p&gt;
-
-&lt;h3 id=&quot;winsorization-or-rank-transformation-to-deal-with-outliers&quot;&gt;Winsorization or Rank Transformation to deal with Outliers&lt;/h3&gt;
-
-&lt;p&gt;Outliers are not only exist in features but our target as well.&lt;/p&gt;
-
-&lt;h4 id=&quot;winsorization&quot;&gt;Winsorization&lt;/h4&gt;
-
-&lt;p&gt;To protect linear models from outliers, we can clip features values between two chosen values of lower bound and upper bound. We can choose them as some percentiles of that feature. For example, first and 99s percentiles. This procedure of clipping is known as winsorization&lt;/p&gt;
-
-&lt;h4 id=&quot;rank-transformation&quot;&gt;Rank Transformation&lt;/h4&gt;
-
-&lt;p&gt;Rank transformation sets spaces between properly assorted values to be equal. It can be a better choice than MinMaxScaler if we have outliers bacause it moves outliers closer to normal objects.&lt;/p&gt;
-
-&lt;p&gt;There are 2 choice while applying rank transformation to the test set:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;store the creative mapping from features values to their rank values&lt;/li&gt;
-  &lt;li&gt;concatenate train and test sets before applying the rank transformation.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scipy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rankdata&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;log-transformation&quot;&gt;Log transformation&lt;/h3&gt;
-
-&lt;p&gt;Log transformation acts as a representative of methametical transformations that often helps non-tree-based models and especially neural networks. As an alternative, you may extract a square root of the data.&lt;/p&gt;
-
-&lt;p&gt;Both of these transformations can:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;drive extremely big values closer to the features’ average value.&lt;/li&gt;
-  &lt;li&gt;make values near zero to be more distinguishable.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Despite the simplicity, one of these transformations can improve your neural network’s results significantly.&lt;/p&gt;
-
-&lt;p&gt;In conclusion, linear models, KNN, and neural networks can benefit hugely from this.&lt;/p&gt;
-
-&lt;h2 id=&quot;feature-generation&quot;&gt;Feature Generation&lt;/h2&gt;
-
-&lt;p&gt;Feature generation is a process of deriving new features using logic or knowledge derived after data exploration and hypothesis checking.&lt;/p&gt;
-
-&lt;p&gt;Examples:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Real Estate price and Real Estate squared area -&amp;gt; price per meter square&lt;/li&gt;
-  &lt;li&gt;Horizontal distance and the vertical difference in heights -&amp;gt; direct distance.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Such examples can be of help not only for linear models. For example, although gradient within decision tree is a very powerful model, it still experiences difficulties with approximation of multiplications and divisions. And adding size features explicitly can lead to a more robust model with less amount of trees.&lt;/p&gt;
-
-&lt;p&gt;Apart from examples like adding, multiplications, divisions, and other features interactions, we can also:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;A new feature indicating fractional part of these prices. For example, if some product costs 2.49, the fractional part of its price is 0.49. This feature can help the model utilize the differences in people’s perception of these prices.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Also, we can find similar patterns in tasks which require distinguishing between a human and a robot. For example, if we will have some kind of financial data like auctions, we could observe that people tend to set round numbers as prices, and there are something like 0.935, blah, blah,, blah, very long number here. Or, if we are trying to find spambots on social networks, we can be sure that no human ever read messages with an exact interval of one second.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;div class=&quot;en post-container&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 25 Jan 2018 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/01/25/Numeric-feature-engineering/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/25/Numeric-feature-engineering/</guid>
-        
-        <category>Machine-Learning</category>
         
         
       </item>
