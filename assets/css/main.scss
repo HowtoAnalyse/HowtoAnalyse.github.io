@@ -1,0 +1,38 @@
+---
+# Let's add a comment to make this file sass-y.
+# Change this file for any custom CSS.
+---
+
+/* We need to add display:inline in order to align the '>>' of the 'read more' link */
+.post-excerpt p {
+	display:inline;
+}
+
+.category-nav ul {
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  overflow-y:hidden;
+  overflow-x: scroll;
+  display:inline-flex;
+}
+
+
+.category-nav ul li {
+  display: inline-block;
+  padding: 5px;
+}
+.category-nav ul li a{
+text-decoration: none;
+color: gray;
+}
+.category-nav ul li a:hover{
+color: black;
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+	"syntax"
+;

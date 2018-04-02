@@ -1,755 +1,979 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="5am - The hour when Legends are waking up, or going to sleep">
-    <meta name="keywords"  content="sara zeng, machine learning, python, data analyst, hku, polyu">
-    <meta name="theme-color" content="#000000">
-    <meta name="google-site-verification" content="DPTnFaYDjWJIjdYxSKf76z6WYf-zYJCYoKxW10adC_s" />
-    <title>新一的博客 | Sara's Blog</title>
-
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/pwa/manifest.json">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google-site-verification" content="DPTnFaYDjWJIjdYxSKf76z6WYf-zYJCYoKxW10adC_s" />
+<link rel="icon" href="/assets/images/logo.png">    
+<title>Home | SaraLovesDog</title>
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://howtoanalyse.github.io/">
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/sara-blog.min.css">
-
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
-
-    <!-- Custom Fonts -->
-    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- Hux change font-awesome CDN to qiniu -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
-    <!-- Hux Delete, sad but pending in China
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
-    css'>
-    -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96859607-3"></script>
-<script>
-  var _gaId = 'UA-96859607-3';
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', _gaId);
-</script>
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- ga & ba script hoook -->
-    <script></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="/assets/css/screen.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet">
 </head>
+    
 
+    
 
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="">
+<body class="layout-default">
 
-    <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Sara's Blog</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="huxblog_navbar">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/about/">Hello, World!</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/">Tags</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/wiki/wiki/">Wiki</a>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
-<script>
-    // Drop Bootstarp low-performance Navbar
-    // Use customize navbar with high-quality material design animation
-    // in high-perf jank-free CSS3 implementation
-    var $body   = document.body;
-    var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
-    var $collapse = document.querySelector('.navbar-collapse');
-
-    var __HuxNav__ = {
-        close: function(){
-            $navbar.className = " ";
-            // wait until animation end.
-            setTimeout(function(){
-                // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        },
-        open: function(){
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-        }
-    }
-
-    // Bind Event
-    $toggle.addEventListener('click', function(e){
-        if ($navbar.className.indexOf('in') > 0) {
-            __HuxNav__.close()
-        }else{
-            __HuxNav__.open()
-        }
-    })
-
-    /**
-     * Since Fastclick is used to delegate 'touchstart' globally
-     * to hack 300ms delay in iOS by performing a fake 'click',
-     * Using 'e.stopPropagation' to stop 'touchstart' event from 
-     * $toggle/$collapse will break global delegation.
-     * 
-     * Instead, we use a 'e.target' filter to prevent handler
-     * added to document close HuxNav.  
-     *
-     * Also, we use 'click' instead of 'touchstart' as compromise
-     */
-    document.addEventListener('click', function(e){
-        if(e.target == $toggle) return;
-        if(e.target.className == 'icon-bar') return;
-        __HuxNav__.close();
-    })
-</script>
-
-
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    
+<!-- Begin Menu Navigation
+================================================== -->
+<header class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Sara's Blog</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">5AM - The hour when Legends are waking up, or going to sleep</span>
+
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+        <img src="/assets/images/logo.png" alt="SaraLovesDog">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Begin Menu -->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <!-- Begin Menu -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">                
+                <a class="nav-link" href="/">Blog</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                <a target="_blank"  class="nav-link" href="https://github.com/HowtoAnalyse"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="nav-item">
+                <a target="_blank"  class="nav-link" href="https://www.linkedin.com/in/sara-zeng/"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>		
+        </div>
+        <!-- End Menu -->
+
+    </div>
+</header>
+<!-- End Menu Navigation
+================================================== -->
+    
+<div class="site-content">   
+<div class="container">
+    
+<!-- Site Title
+================================================== -->
+
+<div class="mainheading">
+    <h1 class="sitetitle">SaraLovesDog</h1>
+    <p class="lead">
+         Technical diary of a data analyst
+    </p>
+</div>
+    
+    
+<!-- Content
+================================================== --> 
+<div class="main-content">
+    <section class="category-nav">
+<ul>
+
+<li>
+<a href="/machine-learning/">Machine Learning</a>
+<li>
+
+<li>
+<a href="/data-science/">Data Science</a>
+<li>
+
+<li>
+<a href="/digest/">Digest</a>
+<li>
+
+<li>
+<a href="/programming/">Programming</a>
+<li>
+
+</ul>
+</section>
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+    <div class="row listfeaturedtag">
+        
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+<div class="col-md-6">
+<div class="card">
+    <div class="row">
+        <div class="col-md-5 wrapthumbnail">
+            <a href="https://howtoanalyse.github.io/A-practical-summary-on-AB-Testing/">
+            <div class="thumbnail" style="background-image:url(/assets/images/dogs/dog-hybrid-animal-lying-162349.jpeg);">
+            </div>
+            </a>
+        </div>
+        <div class="col-md-7">
+            <div class="card-block">
+                <h2 class="card-title"><a href="https://howtoanalyse.github.io/A-practical-summary-on-AB-Testing/">A practical summary on AB Testing</a></h2>
+                <h4 class="card-text">Context
+
+</h4>
+                <div class="metafooter">
+                    <div class="wrapfooter">
+                        
+                        <span class="meta-footer-thumb">
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                        </span>
+                        <span class="author-meta">
+                        <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                        
+                        <span class="post-date">28 Mar 2018</span>
+                        </span>
+                        <span class="post-read-more"><a href="https://howtoanalyse.github.io/A-practical-summary-on-AB-Testing/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</header>
+</div>
+</div>
+<!-- end post -->
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
         
 
-<!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    		<div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                postlist-container
-            ">
-    			
-<div class="post-preview">
-    <a href="/2018/03/31/oop/">
-        <h2 class="post-title">
-            Object and Class in Python3
-        </h2>
+    
+
         
-        <h3 class="post-subtitle">
-            
-        </h3>
+
+            <!-- begin post -->
+
+<div class="col-md-6">
+<div class="card">
+    <div class="row">
+        <div class="col-md-5 wrapthumbnail">
+            <a href="https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/">
+            <div class="thumbnail" style="background-image:url(/assets/images/dogs/pexels-photo-247937.jpeg);">
+            </div>
+            </a>
+        </div>
+        <div class="col-md-7">
+            <div class="card-block">
+                <h2 class="card-title"><a href="https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/">Epoch vs. Batch sizes vs. Iterations</a></h2>
+                <h4 class="card-text">Epoch
+
+</h4>
+                <div class="metafooter">
+                    <div class="wrapfooter">
+                        
+                        <span class="meta-footer-thumb">
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                        </span>
+                        <span class="author-meta">
+                        <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                        
+                        <span class="post-date">27 Mar 2018</span>
+                        </span>
+                        <span class="post-read-more"><a href="https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
         
-        <div class="post-content-preview">
-            
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+<div class="col-md-6">
+<div class="card">
+    <div class="row">
+        <div class="col-md-5 wrapthumbnail">
+            <a href="https://howtoanalyse.github.io/Generative-vs.-Discriminative/">
+            <div class="thumbnail" style="background-image:url(/assets/images/dogs/pexels-photo-144640.png);">
+            </div>
+            </a>
+        </div>
+        <div class="col-md-7">
+            <div class="card-block">
+                <h2 class="card-title"><a href="https://howtoanalyse.github.io/Generative-vs.-Discriminative/">Generative vs. Discriminative</a></h2>
+                <h4 class="card-text">The fundamental distinction between discriminative models and generative models is:
+
+</h4>
+                <div class="metafooter">
+                    <div class="wrapfooter">
+                        
+                        <span class="meta-footer-thumb">
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                        </span>
+                        <span class="author-meta">
+                        <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                        
+                        <span class="post-date">14 Mar 2018</span>
+                        </span>
+                        <span class="post-read-more"><a href="https://howtoanalyse.github.io/Generative-vs.-Discriminative/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+        
+    </div>
+</section>
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+    <div class="section-title">
+        <h2><span>All Stories</span></h2>
+    </div>
+    <div class="masonrygrid row listrecent">
+        
+    
+
+        
+
+            <!-- begin post -->
 
 
-Python, being a multi-paradigm programming language, supports different programming approach. Common programming paradigms include:
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Object-and-Class-in-Python3/">
+         <img class="img-fluid" src="/assets/images/dogs/pexels-photo-133069.jpeg" alt="Object and Class in Python3"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Object-and-Class-in-Python3/">Object and Class in Python3</a></h2>
+        <h4 class="card-text">Python, being a multi-paradigm programming language, supports different programming approach. Common programming paradigms include:
 
   Object-oriented
   Functional
   etc.
 
 
-I summarised Object-o...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on March 31, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/03/23/reddit-weekly-digests/">
-        <h2 class="post-title">
-            Reddit Weekly Digests
-        </h2>
-        
-        <h3 class="post-subtitle">
-            
-        </h3>
-        
-        <div class="post-content-preview">
-            I visit Reddit frequently in order to stay on top of news in my areas of interest. It will be much more efficient if I can design and automate a process to generate weekly digests of my most visite...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on March 23, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/03/11/text-cleaning/">
-        <h2 class="post-title">
-            Text Cleaning
-        </h2>
-        
-        <h3 class="post-subtitle">
-            
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-Data cleaning and normalization can largely improve the efficiency of text analysis while they also bring us challenges.
-
-Encoding
-
-A string in Python is seen as a Unicode covering the number fr...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on March 11, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/03/10/parameter-tuning/">
-        <h2 class="post-title">
-            Parameter Tuning
-        </h2>
-        
-        <h3 class="post-subtitle">
-            
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-Found some good sources to learn hypterparameter tuning today.
-
-Basically, there are 3 approaches:
-
-
-  
-    Grid Search
-  
-  
-    Random Search
-  
-  
-    Bayesian optimization
-  
-
-
-Grid search i...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on March 10, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/03/02/ab-testing/">
-        <h2 class="post-title">
-            A practical summary on A/B Testing
-        </h2>
-        
-        <h3 class="post-subtitle">
-            
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-Context
-
-As a data analyst, statistical inference and hypothesis testing are ingrained in my daily work, and controlled experiments are used heavily in back-end algorithms in terms of recommenda...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on March 2, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/02/24/Epoch-Batch-sizes-Iterations/">
-        <h2 class="post-title">
-            Epoch vs. Batch sizes vs. Iterations
-        </h2>
-        
-        <h3 class="post-subtitle">
-            
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-Epoch
-
-One epoch is when an entire dataset is passed forward and backward through the neural net only once.
-
-Gradient descent is an iterative process, so we need to feed the entire dataset multi...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on February 24, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/02/21/Text-Classification-Summary/">
-        <h2 class="post-title">
-            Project Summary on Text Classification
-        </h2>
-        
-        <h3 class="post-subtitle">
-            
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-Code structure
-
-
-├── base
-│   └── base_model.py        - the abstract class of the model.
-│ 
-├── model                    - neural nets
-│   │── fastText_model.py    - fastText model
-│   └── cnn_...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on February 21, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/02/21/Word2Vec/">
-        <h2 class="post-title">
-            From Word2Vec to Item Recommendation
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Recommendation system powered by Word2Vec
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-As a data analyst, I’m always looking for ways to leverage massive dataset to automate customer-facing experiences. Recently I’m focusing on using word2vec to power a recommendation engine.
-
-Fol...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on February 21, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/02/20/regression/">
-        <h2 class="post-title">
-            Project Summary on House Prices
-        </h2>
-        
-        <h3 class="post-subtitle">
-            
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-Helper Functions
-
-import numpy as np
-import pandas as pd
-from ggplot import *
-from scipy.stats import skew
-
-from sklearn.base import BaseEstimator, TransformerMixin, RegressorMixin, clone
-from s...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on February 20, 2018
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2018/02/09/Word2Vec-Gensim/">
-        <h2 class="post-title">
-            Build a Recommender Engine with Gensim
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Recoemmend to-read books using Gensim
-        </h3>
-        
-        <div class="post-content-preview">
-            
-
-
-Recommender engines powered by Word2Vec are able to learn user preference adaptively based on previous interactions.
-
-This notebook gives an example using Gensim.
-
-For a more detailed implementa...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Sara on February 9, 2018
-    </p>
-</div>
-<hr>
-
-
-<!-- Pager -->
-
-<ul class="pager">
-    
-    
-    <li class="next">
-        <a href="/page2">Older Posts &rarr;</a>
-    </li>
-    
-</ul>
-
-
-    		</div>
-    <!-- Sidebar Container -->
-            <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
-                <!-- Featured Tags -->
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
                 
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        
-                            
-                                <a href="/tags/#Machine-Learning" title="Machine-Learning" rel="13">
-                                    Machine-Learning
-                                </a>
-                            
-                        
-                            
-                                <a href="/tags/#Deep-Learning-with-Numpy" title="Deep-Learning-with-Numpy" rel="3">
-                                    Deep-Learning-with-Numpy
-                                </a>
-                            
-                        
-                            
-                                <a href="/tags/#Top 4% Kaggle Solution" title="Top 4% Kaggle Solution" rel="3">
-                                    Top 4% Kaggle Solution
-                                </a>
-                            
-                        
-                            
-                                <a href="/tags/#Recommender" title="Recommender" rel="2">
-                                    Recommender
-                                </a>
-                            
-                        
-                            
-                                <a href="/tags/#NLP" title="NLP" rel="4">
-                                    NLP
-                                </a>
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                    </div>
-                </section>
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
                 
-
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-                        
-                            <img src="/img/avatar-sara.jpg" />
-                        
-                        
-                            <p></p>
-                        
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://github.com/HowtoAnalyse">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            
-                            <li>
-                                <a target="_blank" href="https://www.linkedin.com/in/sara-zeng">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </section>
-                <!-- Friends Blog -->
-                
-    		</div>
-        
-	</div>
-</div>
-
-
-    <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    
-                    
-
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    
-                    
-
-
-                    
-                    
-                    <li>
-                        <a target="_blank" href="https://github.com/HowtoAnalyse">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/sara-zeng">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; Sara's Blog 2018
-                    <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
-                    </iframe>
-                </p>
+                <span class="post-date">01 Apr 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Object-and-Class-in-Python3/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Reddit-Weekly-Digests/">
+         <img class="img-fluid" src="/assets/images/dogs/pexels-photo-58997.jpeg" alt="Reddit Weekly Digests"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Reddit-Weekly-Digests/">Reddit Weekly Digests</a></h2>
+        <h4 class="card-text">I visit Reddit frequently in order to stay on top of news in my areas of interest. It will be much more efficient if I can design and automate a...</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">31 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Reddit-Weekly-Digests/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Text-Cleaning/">
+         <img class="img-fluid" src="/assets/images/dogs/dog-animal-puppy-siberian-huskies-67577.jpeg" alt="Text Cleaning"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Text-Cleaning/">Text Cleaning</a></h2>
+        <h4 class="card-text">Data cleaning and normalization can largely improve the efficiency of text analysis while they also bring us challenges.
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">30 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Text-Cleaning/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Parameter-Tuning/">
+         <img class="img-fluid" src="/assets/images/dogs/pexels-photo.jpg" alt="Parameter Tuning"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Parameter-Tuning/">Parameter Tuning</a></h2>
+        <h4 class="card-text">Found some good sources to learn hypterparameter tuning today.
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">29 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Parameter-Tuning/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Project-Summary-on-Text-Classification/">
+         <img class="img-fluid" src="/assets/images/dogs/pexels-photo-351406.jpeg" alt="Project Summary on Text Classification"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Project-Summary-on-Text-Classification/">Project Summary on Text Classification</a></h2>
+        <h4 class="card-text">Code structure
+
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">26 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Project-Summary-on-Text-Classification/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Project-Summary-on-House-Prices/">
+         <img class="img-fluid" src="/assets/images/dogs/animal-dog-pet-cute.jpg" alt="Project Summary on House Prices"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Project-Summary-on-House-Prices/">Project Summary on House Prices</a></h2>
+        <h4 class="card-text">Helper Functions
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">25 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Project-Summary-on-House-Prices/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Build-a-Recommender-Engine-with-Gensim/">
+         <img class="img-fluid" src="/assets/images/dogs/pexels-photo-332974.jpeg" alt="Build a Recommender Engine with Gensim"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Build-a-Recommender-Engine-with-Gensim/">Build a Recommender Engine with Gensim</a></h2>
+        <h4 class="card-text">Recommender engines powered by Word2Vec are able to learn user preference adaptively based on previous interactions.
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">24 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Build-a-Recommender-Engine-with-Gensim/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Two-layer-neural-network/">
+         <img class="img-fluid" src="/assets/images/dogs/leisure-wildlife-photography-pet-photography-dog-159557.jpeg" alt="Two layer neural network"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Two-layer-neural-network/">Two layer neural network</a></h2>
+        <h4 class="card-text">```python
+import utils
+import numpy as np
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">23 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Two-layer-neural-network/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Logistic-Regression/">
+         <img class="img-fluid" src="/assets/images/dogs/pet-dog-puppy-the-shy-52997.jpeg" alt="Logistic Regression"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Logistic-Regression/">Logistic Regression</a></h2>
+        <h4 class="card-text">```python
+import numpy as np
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">22 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Logistic-Regression/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Deeper-neural-network/">
+         <img class="img-fluid" src="/assets/images/dogs/pexels-photo-357275.jpeg" alt="Deeper neural network"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Deeper-neural-network/">Deeper neural network</a></h2>
+        <h4 class="card-text">```python
+def initialize_parameters_deep(layer_dims):
+    np.random.seed(3)
+    parameters = {}
+    L = len(layer_dims)
+    for l in range(1, L):
+        parameters[‘W’ + str(l)] = np.random.randn(layer_dims[l],layer_dims[l-1])*0.01
+        parameters[‘b’ + str(l)] = np.zeros((layer_dims[l],1))
+    return parameters
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">21 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Deeper-neural-network/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/PCA-can-do-more-than-dimension-reduction/">
+         <img class="img-fluid" src="/assets/images/dogs/wolf-predator-wildlife-montana-68669.jpeg" alt="PCA can do more than dimension reduction"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/PCA-can-do-more-than-dimension-reduction/">PCA can do more than dimension reduction</a></h2>
+        <h4 class="card-text">I was at first inspired by a discussion on Kaggle forum that doing PCA helps obtain a big boost on leaderboard.
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">20 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/PCA-can-do-more-than-dimension-reduction/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/Stacking-in-Machine-Learning/">
+         <img class="img-fluid" src="/assets/images/dogs/border-collie-jump-water-british-sheepdog-37860.jpeg" alt="Stacking in Machine Learning"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/Stacking-in-Machine-Learning/">Stacking in Machine Learning</a></h2>
+        <h4 class="card-text">There are methods that are common in machine learning projects like cross validation, grid searching and stacking.
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">19 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/Stacking-in-Machine-Learning/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+        
+
+            <!-- begin post -->
+
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="https://howtoanalyse.github.io/From-Exploratory-Analysis-to-Feature-Engineering/">
+         <img class="img-fluid" src="/assets/images/dogs/pexels-photo-248307.jpeg" alt="From Exploratory Analysis to Feature Engineering"> 
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="https://howtoanalyse.github.io/From-Exploratory-Analysis-to-Feature-Engineering/">From Exploratory Analysis to Feature Engineering</a></h2>
+        <h4 class="card-text">Following can be considered as a routinue for me every time I start doing exploratory analysis for a new machine learning project: What is the problem I’m going to solve?...</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&d=mm&r=x" alt="Sara">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://howtoanalyse.github.io">Sara</a></span><br/>
+                
+                <span class="post-date">18 Mar 2018</span>
+                </span>
+                <span class="post-read-more"><a href="https://howtoanalyse.github.io/From-Exploratory-Analysis-to-Feature-Engineering/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+        
+
+    
+
+    </div>
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    <nav class="pagination" role="pagination">
+    
+    <span class="page-number"> Page 1 of 2 </span>
+     
+        <a class="older-posts" href="/page2/" title="Next Page">Older Posts &raquo;</a>
+     
+</nav>
+</span>
+</div>
+
+
+</div>  
+    
+
+<!-- Categories Jumbotron
+================================================== --> 
+<div class="jumbotron fortags">
+	<div class="row">
+		<div class="col-md-4 align-self-center text-center">
+			<h2 class="hidden-sm-down">Explore →</h2>
+		</div>
+		<div class="col-md-8 align-self-center text-center">
+            
+          
+             
+              <a href="/category/Machine Learning">Machine learning (25)</a>
+             
+              <a href="/category/Data Science">Data science (3)</a>
+             
+              <a href="/category/Digest">Digest (1)</a>
+             
+              <a href="/category/Programming">Programming (1)</a>
+            
+          
+        
+
+		</div>
+	</div>
+</div>
+    
+
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <p class="pull-left">
+         Copyright © 2018 SaraLovesDog 
+    </p>
+    <div class="clearfix">
+    </div>
 </footer>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- End Footer
+================================================== -->
 
-<!-- jQuery -->
-<script src="/js/jquery.min.js "></script>
+</div><!-- /.container -->    
+</div> <!-- /.site-content>
 
-<!-- Bootstrap Core JavaScript -->
-<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
-<script src="/js/bootstrap.min.js "></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="/js/sara-blog.min.js "></script>
-
-<!-- Service Worker -->
-
-<script src="/js/snackbar.js "></script>
-<script src="/js/sw-registration.js "></script>
-
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
-
-<!--
-     Because of the native support for backtick-style fenced code blocks
-     right within the Markdown is landed in Github Pages,
-     From V1.6, There is no need for Highlight.js,
-     so Huxblog drops it officially.
-
-     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
-     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
-     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
--->
-<!--
-    <script>
-        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
-            hljs.initHighlightingOnLoad();
-        })
-    </script>
-    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
--->
-
-
-<!-- jquery.tagcloud.js -->
-<script>
-    // only load tagcloud.js in tag.html
-    if($('#tag_cloud').length !== 0){
-        async('/js/jquery.tagcloud.js',function(){
-            $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
-</script>
-
-<!--fastClick.js -->
-<script>
-    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
-        var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
-    })
-</script>
-
-
-<!-- Google Analytics -->
-
-<script>
-    var _gaId = 'UA-96859607-3';
-    var _gaDomain = 'howtoanalyse.github.io';
-
-    // Originial
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', _gaId, _gaDomain);
-    ga('send', 'pageview');
-</script>
-
-
-
-<!-- Baidu Tongji -->
-
-
-
-<!-- Side Catalog -->
-
-
-
-<!-- Multi-Lingual -->
-
-
-
-
-
-<!-- Image to hack wechat -->
-<img src="/img/icon_wechat.png" width="0" height="0" />
-<!-- Migrate from head to bottom, no longer block render and still work -->
-
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+    
+<script src="/assets/js/jquery.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script type='text/javascript' src='/assets/js/masonry.pkgd.min.js'></script>
+    
+<script src="/assets/js/mediumish.js"></script>
+    
+<script id="dsq-count-scr" src="//greendata-1.disqus.com/count.js" async></script>
 </body>
-
 </html>

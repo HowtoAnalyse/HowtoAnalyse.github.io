@@ -1,0 +1,31 @@
+---
+layout: default
+title: Archive
+---
+
+<section class="category-nav">
+<ul>
+{% for tag in site.categories %}
+<li>
+<a href="{{ site.baseurl }}/{{ tag[0] | slugify }}/">{{ tag[0] }}</a>
+<li>
+{% endfor %}
+</ul>
+</section>
+<!-- Begin List Posts
+================================================== -->
+<section class="recent-posts">
+<div class="section-title">
+    <h2>Archive of posts with <span>{{ page.type }} '{{ page.title }}'</span></h2>
+</div>
+<div class="masonrygrid row listrecent">
+
+{% for post in page.posts %}
+
+    {% include postbox.html %}
+
+{% endfor %}
+
+</div>
+</section>
+

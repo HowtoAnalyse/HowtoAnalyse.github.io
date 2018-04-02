@@ -1,67 +1,44 @@
-# Site settings
-title: Sara's Blog
-SEOTitle: 新一的博客 | Sara's Blog
-header-img: img/home-bg.jpg
-email: 14123142d@connect.polyu.hk
-description: "5am - The hour when Legends are waking up, or going to sleep"
-keyword: "sara zeng, machine learning, python, data analyst, hku, polyu"
-url: "https://howtoanalyse.github.io"          
-baseurl: ""                            
-gems:
-  - jekyll-sitemap
+# Site
+name: SaraLovesDog
+description: Technical diary of a data analyst
+meta_description: "Data science, Data engineering, DevOps, Machine Learning"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+paginate: 15
+url: "https://howtoanalyse.github.io"
+baseurl: 
+google_analytics: 'UA-96859607-3'
+disqus: 'greendata-1'
+mailchimp-list: 
 
-# SNS settings
-RSS: false
-github_username:    HowtoAnalyse
-#facebook_username:  sarapro
-linkedin_username:  sara-zeng
+permalink: '/:title/'
 
+# Authors
+authors:
+  sara:
+    name: Sara
+    display_name: Sara
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: bitit1994@gmail.com
+    web: https://howtoanalyse.github.io
+    twitter: 
+    description: "Data analyst for mental health"
 
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/:name/'
+    
+# Other
 highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
-
-
-# Disqus settings
-disqus_username: greendata-1
-
-# Netease setttings
-netease_comment: false
-
-
-# Google Analytics
-ga_track_id: 'UA-96859607-3'            # Format: UA-xxxxxx-xx
-ga_domain: howtoanalyse.github.io
-
-
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: ""
-sidebar-avatar: /img/avatar-sara.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
