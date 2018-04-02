@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <description>Technical diary of a data analyst</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 03 Apr 2018 00:04:34 +0800</pubDate>
-    <lastBuildDate>Tue, 03 Apr 2018 00:04:34 +0800</lastBuildDate>
+    <link>https://howtoanalyse.github.io/</link>
+    <atom:link href="https://howtoanalyse.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 03 Apr 2018 00:21:05 +0800</pubDate>
+    <lastBuildDate>Tue, 03 Apr 2018 00:21:05 +0800</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
@@ -88,8 +88,8 @@
 &lt;p&gt;When two classes have a common method with different functions, we can create a common interface that can take any object to handle different data types more efficiently.&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Apr 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Object-and-Class-in-Python3/</link>
-        <guid isPermaLink="true">http://localhost:4000/Object-and-Class-in-Python3/</guid>
+        <link>https://howtoanalyse.github.io/Object-and-Class-in-Python3/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Object-and-Class-in-Python3/</guid>
         
         
         <category>Programming</category>
@@ -194,8 +194,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 31 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Reddit-Weekly-Digests/</link>
-        <guid isPermaLink="true">http://localhost:4000/Reddit-Weekly-Digests/</guid>
+        <link>https://howtoanalyse.github.io/Reddit-Weekly-Digests/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Reddit-Weekly-Digests/</guid>
         
         
         <category>Digest</category>
@@ -225,8 +225,8 @@
 &lt;p&gt;Since datasets in pandas must fit into RAM memory, it is suggested to use SFrames for larger ones.&lt;/p&gt;
 </description>
         <pubDate>Fri, 30 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Text-Cleaning/</link>
-        <guid isPermaLink="true">http://localhost:4000/Text-Cleaning/</guid>
+        <link>https://howtoanalyse.github.io/Text-Cleaning/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Text-Cleaning/</guid>
         
         
         <category>Machine Learning</category>
@@ -263,8 +263,8 @@
 
 </description>
         <pubDate>Thu, 29 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Parameter-Tuning/</link>
-        <guid isPermaLink="true">http://localhost:4000/Parameter-Tuning/</guid>
+        <link>https://howtoanalyse.github.io/Parameter-Tuning/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Parameter-Tuning/</guid>
         
         
         <category>Machine Learning</category>
@@ -369,8 +369,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 28 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/A-practical-summary-on-AB-Testing/</link>
-        <guid isPermaLink="true">http://localhost:4000/A-practical-summary-on-AB-Testing/</guid>
+        <link>https://howtoanalyse.github.io/A-practical-summary-on-AB-Testing/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/A-practical-summary-on-AB-Testing/</guid>
         
         
         <category>Data Science</category>
@@ -408,8 +408,8 @@
 &lt;p&gt;Let’s say we divide a dataset with 50,000 training samples into batches of 1,000, then it needs 50 iterations to complete 1 epoch.&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Epoch-vs.-Batch-sizes-vs.-Iterations/</link>
-        <guid isPermaLink="true">http://localhost:4000/Epoch-vs.-Batch-sizes-vs.-Iterations/</guid>
+        <link>https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/</guid>
         
         
         <category>Machine Learning</category>
@@ -528,8 +528,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 26 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Project-Summary-on-Text-Classification/</link>
-        <guid isPermaLink="true">http://localhost:4000/Project-Summary-on-Text-Classification/</guid>
+        <link>https://howtoanalyse.github.io/Project-Summary-on-Text-Classification/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Project-Summary-on-Text-Classification/</guid>
         
         
         <category>Machine Learning</category>
@@ -1217,8 +1217,8 @@ NameError: name 'strftime' is not defined
 
 </description>
         <pubDate>Sun, 25 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Project-Summary-on-House-Prices/</link>
-        <guid isPermaLink="true">http://localhost:4000/Project-Summary-on-House-Prices/</guid>
+        <link>https://howtoanalyse.github.io/Project-Summary-on-House-Prices/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Project-Summary-on-House-Prices/</guid>
         
         
         <category>Machine Learning</category>
@@ -1390,8 +1390,8 @@ NameError: name 'strftime' is not defined
 
 </description>
         <pubDate>Sat, 24 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Build-a-Recommender-Engine-with-Gensim/</link>
-        <guid isPermaLink="true">http://localhost:4000/Build-a-Recommender-Engine-with-Gensim/</guid>
+        <link>https://howtoanalyse.github.io/Build-a-Recommender-Engine-with-Gensim/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Build-a-Recommender-Engine-with-Gensim/</guid>
         
         
         <category>Machine Learning</category>
@@ -1561,8 +1561,8 @@ Accuracy for 50 hidden units: 87.09315375982042 %
 
 </description>
         <pubDate>Fri, 23 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Two-layer-neural-network/</link>
-        <guid isPermaLink="true">http://localhost:4000/Two-layer-neural-network/</guid>
+        <link>https://howtoanalyse.github.io/Two-layer-neural-network/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Two-layer-neural-network/</guid>
         
         
         <category>Machine Learning</category>

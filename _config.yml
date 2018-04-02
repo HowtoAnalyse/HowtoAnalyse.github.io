@@ -25,7 +25,7 @@ authors:
     description: "Data analyst for mental health"
 
 # Plugins
-gems: 
+plugins: 
   - jekyll-paginate
   - jekyll-archives
   - jekyll-sitemap
