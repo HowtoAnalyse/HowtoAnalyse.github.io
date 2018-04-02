@@ -6,7 +6,7 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 paginate: 15
 url: "https://howtoanalyse.github.io"
-baseurl: 
+baseurl: ""
 google_analytics: 'UA-96859607-3'
 disqus: 'greendata-1'
 mailchimp-list: 
@@ -25,10 +25,13 @@ authors:
     description: "Data analyst for mental health"
 
 # Plugins
-plugins: 
+gems: 
   - jekyll-paginate
   - jekyll-archives
-    
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
 # Archives
 jekyll-archives:
   enabled:
