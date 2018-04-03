@@ -1,5 +1,5 @@
 # Site
-name: SaraLovesDog
+name: SaraLovesDogs
 description: Technical diary of a data analyst
 meta_description: "Data science, Data engineering, DevOps, Machine Learning"
 logo: 'assets/images/logo.png'
@@ -12,7 +12,7 @@ disqus: 'greendata-1'
 mailchimp-list: 
 
 permalink: '/:title/'
-
+exclude: ["README.md", "pybook"]
 # Authors
 authors:
   sara:
