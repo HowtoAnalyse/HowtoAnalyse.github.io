@@ -38,7 +38,7 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    category: '/:name/'
+    category: '/category/:name/'
     
 # Other
 highlighter: rouge

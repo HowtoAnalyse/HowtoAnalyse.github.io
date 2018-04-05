@@ -1,4 +1,6 @@
-_site
+!_site/
+_site/*
+!_site/category/
 pybook
 node_modules
 npm-debug.log
