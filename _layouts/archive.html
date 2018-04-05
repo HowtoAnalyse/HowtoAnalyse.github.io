@@ -7,7 +7,7 @@ title: Archive
 <ul>
 {% for tag in site.categories %}
 <li>
-<a href="{{ site.baseurl }}/{{ tag[0] | slugify }}/">{{ tag[0] }}</a>
+<a href="{{ site.baseurl }}/category/{{ tag[0] | slugify }}/">{{ tag[0] }}</a>
 <li>
 {% endfor %}
 </ul>
