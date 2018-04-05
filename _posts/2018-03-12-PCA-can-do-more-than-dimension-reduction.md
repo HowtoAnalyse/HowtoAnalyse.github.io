@@ -3,7 +3,7 @@ layout: post
 title: PCA can do more than dimension reduction
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/wolf-predator-wildlife-montana-68669.jpeg
+image: assets/images/dogs/pexels-photo-130763.jpeg
 featured: False
 ---
 

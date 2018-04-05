@@ -3,7 +3,7 @@ layout: post
 title: Feature Engineering on Numeric Features
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-236670.jpeg
+image: assets/images/dogs/pexels-photo-332974.jpeg
 featured: False
 ---
 

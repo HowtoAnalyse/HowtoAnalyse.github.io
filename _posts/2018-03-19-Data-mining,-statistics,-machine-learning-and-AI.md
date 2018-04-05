@@ -3,7 +3,7 @@ layout: post
 title: Data mining, statistics, machine learning and AI
 author: sara
 categories: [Data Science]
-image: assets/images/dogs/dog-training-joy-fun-159692.jpeg
+image: assets/images/dogs/pexels-photo-533079.jpeg
 featured: False
 ---
 

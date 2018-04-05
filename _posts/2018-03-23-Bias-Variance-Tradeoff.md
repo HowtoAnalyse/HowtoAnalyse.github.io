@@ -3,7 +3,7 @@ layout: post
 title: Bias Variance Tradeoff
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/retriever-canine-pet-animal-56012.jpeg
+image: assets/images/dogs/pexels-photo-58997.jpeg
 featured: False
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Ensemble Learning
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/dog-race-fun-animal-38632.jpeg
+image: assets/images/dogs/pet-dog-puppy-the-shy-52997.jpeg
 featured: False
 ---
 

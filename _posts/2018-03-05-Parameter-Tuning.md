@@ -3,7 +3,7 @@ layout: post
 title: Parameter Tuning
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo.jpg
+image: assets/images/dogs/border-collie-jump-water-british-sheepdog-37860.jpeg
 featured: False
 ---
 Found some good sources to learn hypterparameter tuning today. 

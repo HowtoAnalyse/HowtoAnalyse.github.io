@@ -3,7 +3,7 @@ layout: post
 title: Feature Engineering on Categorical and Ordinal features
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/theme-candid-portraits-smile-woman-girl-40064.jpeg
+image: assets/images/dogs/huskies-husky-blue-eye-dog-60050.jpeg
 featured: False
 ---
 

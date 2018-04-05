@@ -3,7 +3,7 @@ layout: post
 title: Bag of word
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-219772.jpeg
+image: assets/images/dogs/wolf-predator-wildlife-montana-68669.jpeg
 featured: False
 ---
 

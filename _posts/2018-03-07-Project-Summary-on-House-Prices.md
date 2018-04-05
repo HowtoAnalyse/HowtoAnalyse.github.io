@@ -3,7 +3,7 @@ layout: post
 title: Project Summary on House Prices
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/animal-dog-pet-cute.jpg
+image: assets/images/dogs/dog-hybrid-animal-lying-162349.jpeg
 featured: False
 ---
 

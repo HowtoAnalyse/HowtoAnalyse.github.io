@@ -3,7 +3,7 @@ layout: post
 title: A practical summary on AB Testing
 author: sara
 categories: [Data Science]
-image: assets/images/dogs/dog-hybrid-animal-lying-162349.jpeg
+image: assets/images/dogs/pexels-photo-289446.jpeg
 featured: True
 ---
 # Context

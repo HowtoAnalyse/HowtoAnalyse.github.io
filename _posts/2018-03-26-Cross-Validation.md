@@ -3,7 +3,7 @@ layout: post
 title: Cross Validation
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-545016.jpeg
+image: assets/images/dogs/pexels-photo-144640.png
 featured: False
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Build a Recommender Engine with Gensim
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-332974.jpeg
+image: assets/images/dogs/dog-animal-puppy-siberian-huskies-67577.jpeg
 featured: False
 ---
 

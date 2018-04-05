@@ -3,7 +3,7 @@ layout: post
 title: Text preprocessing
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/french-bulldog-summer-smile-joy-160846.jpeg
+image: assets/images/dogs/retriever-canine-pet-animal-56012.jpeg
 featured: False
 ---
 Text preprocessing

@@ -3,7 +3,7 @@ layout: post
 title: Deeper neural network
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-357275.jpeg
+image: assets/images/dogs/pexels-photo-731022.jpeg
 featured: False
 ---
 

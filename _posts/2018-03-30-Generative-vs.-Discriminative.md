@@ -3,7 +3,7 @@ layout: post
 title: Generative vs. Discriminative
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-144640.png
+image: assets/images/dogs/pexels-photo-179107.jpeg
 featured: True
 ---
 

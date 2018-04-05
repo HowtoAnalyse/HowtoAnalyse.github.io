@@ -3,7 +3,7 @@ layout: post
 title: Feature Engineering Part II -- Missing Values
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/huskies-husky-blue-eye-dog-60050.jpeg
+image: assets/images/dogs/pexels-photo-247937.jpeg
 featured: False
 ---
 

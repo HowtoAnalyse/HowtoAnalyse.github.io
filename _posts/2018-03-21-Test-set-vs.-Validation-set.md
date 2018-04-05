@@ -3,7 +3,7 @@ layout: post
 title: Test set vs. Validation set
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-215957.jpeg
+image: assets/images/dogs/theme-candid-portraits-smile-woman-girl-40064.jpeg
 featured: False
 ---
 

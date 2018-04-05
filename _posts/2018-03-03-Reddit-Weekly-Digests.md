@@ -3,7 +3,7 @@ layout: post
 title: Reddit Weekly Digests
 author: sara
 categories: [Digest]
-image: assets/images/dogs/pexels-photo-58997.jpeg
+image: assets/images/dogs/dog-race-fun-animal-38632.jpeg
 featured: False
 ---
 

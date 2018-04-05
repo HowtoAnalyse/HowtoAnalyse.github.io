@@ -3,7 +3,7 @@ layout: post
 title: Stacking in Machine Learning
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/border-collie-jump-water-british-sheepdog-37860.jpeg
+image: assets/images/dogs/leisure-wildlife-photography-pet-photography-dog-159557.jpeg
 featured: False
 ---
 

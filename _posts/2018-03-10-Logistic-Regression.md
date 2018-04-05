@@ -3,7 +3,7 @@ layout: post
 title: Logistic Regression
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pet-dog-puppy-the-shy-52997.jpeg
+image: assets/images/dogs/pexels-photo-215957.jpeg
 featured: False
 ---
 

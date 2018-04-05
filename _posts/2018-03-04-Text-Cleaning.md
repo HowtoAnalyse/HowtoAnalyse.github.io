@@ -3,7 +3,7 @@ layout: post
 title: Text Cleaning
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/dog-animal-puppy-siberian-huskies-67577.jpeg
+image: assets/images/dogs/dog-training-joy-fun-159692.jpeg
 featured: False
 ---
 Data cleaning and normalization can largely improve the efficiency of text analysis while they also bring us challenges.

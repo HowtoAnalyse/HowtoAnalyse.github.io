@@ -3,7 +3,7 @@ layout: post
 title: Feature Extraction
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-179107.jpeg
+image: assets/images/dogs/animal-dog-pet-cute.jpg
 featured: False
 ---
 Feature extraction (Tokens => Features)

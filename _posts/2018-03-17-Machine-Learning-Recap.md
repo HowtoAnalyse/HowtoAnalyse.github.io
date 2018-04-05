@@ -3,7 +3,7 @@ layout: post
 title: Machine Learning Recap
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-313979.jpeg
+image: assets/images/dogs/french-bulldog-summer-smile-joy-160846.jpeg
 featured: False
 ---
 

@@ -3,10 +3,9 @@ layout: post
 title: OSMI mental health in tech survey data analysis
 author: sara
 categories: [Data Science]
-image: assets/images/dogs/pexels-photo-289446.jpeg
+image: assets/images/dogs/2017-06-03-PHOTO-00000008.jpg
 featured: True
 ---
-
 # Data Collection
 
 The survey was distributed in 2016 by OSMI, a non-profit corporation providing support of metal wellness in the tech communities. Since it is an opt-in survey, people who are more interested in mental health are more likely to participate. Such resulting selection bias is worth noticing when making conclusions later.

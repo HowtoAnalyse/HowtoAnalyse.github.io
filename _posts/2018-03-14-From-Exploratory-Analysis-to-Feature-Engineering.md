@@ -3,7 +3,7 @@ layout: post
 title: From Exploratory Analysis to Feature Engineering
 author: sara
 categories: [Data Science]
-image: assets/images/dogs/pexels-photo-248307.jpeg
+image: assets/images/dogs/pexels-photo-319899.jpeg
 featured: False
 ---
 

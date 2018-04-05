@@ -3,7 +3,7 @@ layout: post
 title: Project Summary on Text Classification
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-351406.jpeg
+image: assets/images/dogs/pexels-photo-545016.jpeg
 featured: False
 ---
 # Code structure

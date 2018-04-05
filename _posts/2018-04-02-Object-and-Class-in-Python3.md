@@ -3,7 +3,7 @@ layout: post
 title: Object and Class in Python3
 author: sara
 categories: [Programming]
-image: assets/images/dogs/pexels-photo-133069.jpeg
+image: assets/images/dogs/pexels-photo-236670.jpeg
 featured: False
 ---
 

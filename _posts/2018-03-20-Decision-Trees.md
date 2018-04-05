@@ -3,7 +3,7 @@ layout: post
 title: Decision Trees
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/pexels-photo-319899.jpeg
+image: assets/images/dogs/pexels-photo-460823.jpeg
 featured: False
 ---
 

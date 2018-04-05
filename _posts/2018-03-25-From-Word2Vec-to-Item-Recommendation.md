@@ -3,7 +3,7 @@ layout: post
 title: From Word2Vec to Item Recommendation
 author: sara
 categories: [Machine Learning]
-image: assets/images/dogs/2017-06-03-PHOTO-00000008.jpg
+image: assets/images/dogs/pexels-photo-248307.jpeg
 featured: False
 ---
 
