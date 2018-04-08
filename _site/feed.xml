@@ -5,12 +5,12 @@
     <description>Technical diary of a data analyst</description>
     <link>https://howtoanalyse.github.io/</link>
     <atom:link href="https://howtoanalyse.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Apr 2018 18:38:54 +0800</pubDate>
-    <lastBuildDate>Thu, 05 Apr 2018 18:38:54 +0800</lastBuildDate>
+    <pubDate>Sun, 08 Apr 2018 22:16:08 +0800</pubDate>
+    <lastBuildDate>Sun, 08 Apr 2018 22:16:08 +0800</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
-        <title>Overview on Statistical Inference -- Significance Tests</title>
+        <title>Overview on Statistical Inference Significance Tests</title>
         <description>&lt;p&gt;There are two methods to make inferences about populations using sample data:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -31,7 +31,7 @@
 | 2. $H_0$ and $H_{\alpha}$: Null and alternative hypotheses | &lt;script type=&quot;math/tex&quot;&gt;H_0: \mu = \mu_0&lt;/script&gt; One sided: &lt;script type=&quot;math/tex&quot;&gt;H_{\alpha}: \mu != \mu_0&lt;/script&gt; Two sided: &lt;script type=&quot;math/tex&quot;&gt;H_{\alpha}: \mu != \mu_0&lt;/script&gt; &lt;script type=&quot;math/tex&quot;&gt;H_{\alpha}: \mu != \mu_0&lt;/script&gt; | &lt;script type=&quot;math/tex&quot;&gt;H_0: \pi = \pi_0&lt;/script&gt; One sided: &lt;script type=&quot;math/tex&quot;&gt;H_{\alpha}: \pi != \pi_0&lt;/script&gt; Two sided: &lt;script type=&quot;math/tex&quot;&gt;H_{\alpha}: \pi != \pi_0&lt;/script&gt; &lt;script type=&quot;math/tex&quot;&gt;H_{\alpha}: \pi != \pi_0&lt;/script&gt; |
 | 3. A test statistic                                        | &lt;script type=&quot;math/tex&quot;&gt;t=\frac{\bar{y}-\mu_0}{se}&lt;/script&gt; with $se=\frac{s}{\sqrt{n}},df=n-1$                                                                | &lt;script type=&quot;math/tex&quot;&gt;z=\frac{\hat{\pi}-\pi_0}{se_0}&lt;/script&gt; with $se_0 = \sqrt{\pi_0(1-\pi_0)/n}$                                                          |
 | 4. The P-value                                              &amp;lt;td colspan=2&amp;gt;The probability that the test statistic equals the observed value (one-sided) or a value even more extreme (two-sided)                                                                                                                                       &lt;br /&gt;
-| 5. Conclusions                                             &amp;lt;td colspan=2&amp;gt;Reject $H_0$ if P-value $\leq \alpha$ such as 0.05                                                                                                                                                                                                       &lt;br /&gt;
+| 5. Conclusions                                             | &amp;lt;td colspan=2&amp;gt;Reject $H_0$ if P-value $\leq \alpha$ such as 0.05                                                                                                                                                                                                       &lt;br /&gt;
 Following are more detailed illustration on the 5 parts of significance tests:&lt;/p&gt;
 
 &lt;h3 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h3&gt;
@@ -48,7 +48,7 @@ Following are more detailed illustration on the 5 parts of significance tests:&l
 
 &lt;p&gt;Two-sided t tests and confidence intervals are robust against violations of the normal population assumption while one-sided test doesn’t work well when n is small and the population distribution is highly skewed.&lt;/p&gt;
 
-&lt;h3 id=&quot;h_0-and-h_alpha&quot;&gt;$H_0$ and $H_{\alpha}$&lt;/h3&gt;
+&lt;h3 id=&quot;h_0-and-h_alpha&quot;&gt;H_0 and H_{\alpha}&lt;/h3&gt;
 
 &lt;p&gt;$\mu_0$ and $\pi_0$ denote values hypothesized for the parameters.&lt;/p&gt;
 
@@ -89,7 +89,7 @@ Following are more detailed illustration on the 5 parts of significance tests:&l
 &lt;p&gt;From the table above, we could know that the probability of a Type I error is the $\alpha$-level for the test.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 04 Apr 2018 00:00:00 +0800</pubDate>
+        <pubDate>Sat, 07 Apr 2018 00:00:00 +0800</pubDate>
         <link>https://howtoanalyse.github.io/Overview-on-Statistical-Inference-Significance-Tests/</link>
         <guid isPermaLink="true">https://howtoanalyse.github.io/Overview-on-Statistical-Inference-Significance-Tests/</guid>
         
@@ -1872,7 +1872,7 @@ Name: country_work, dtype: int64
 &lt;p&gt;2 rows × 71 columns&lt;/p&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Tue, 03 Apr 2018 00:00:00 +0800</pubDate>
+        <pubDate>Fri, 06 Apr 2018 00:00:00 +0800</pubDate>
         <link>https://howtoanalyse.github.io/OSMI-mental-health-in-tech-survey-data-analysis/</link>
         <guid isPermaLink="true">https://howtoanalyse.github.io/OSMI-mental-health-in-tech-survey-data-analysis/</guid>
         
@@ -1959,7 +1959,7 @@ Name: country_work, dtype: int64
 
 &lt;p&gt;When two classes have a common method with different functions, we can create a common interface that can take any object to handle different data types more efficiently.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 02 Apr 2018 00:00:00 +0800</pubDate>
+        <pubDate>Thu, 05 Apr 2018 00:00:00 +0800</pubDate>
         <link>https://howtoanalyse.github.io/Object-and-Class-in-Python3/</link>
         <guid isPermaLink="true">https://howtoanalyse.github.io/Object-and-Class-in-Python3/</guid>
         
@@ -2065,7 +2065,7 @@ Name: country_work, dtype: int64
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 01 Apr 2018 00:00:00 +0800</pubDate>
+        <pubDate>Wed, 04 Apr 2018 00:00:00 +0800</pubDate>
         <link>https://howtoanalyse.github.io/A-practical-summary-on-AB-Testing/</link>
         <guid isPermaLink="true">https://howtoanalyse.github.io/A-practical-summary-on-AB-Testing/</guid>
         
@@ -2104,7 +2104,7 @@ Name: country_work, dtype: int64
 
 &lt;p&gt;Let’s say we divide a dataset with 50,000 training samples into batches of 1,000, then it needs 50 iterations to complete 1 epoch.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 31 Mar 2018 00:00:00 +0800</pubDate>
+        <pubDate>Tue, 03 Apr 2018 00:00:00 +0800</pubDate>
         <link>https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/</link>
         <guid isPermaLink="true">https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/</guid>
         
@@ -2114,7 +2114,7 @@ Name: country_work, dtype: int64
       </item>
     
       <item>
-        <title>Generative vs. Discriminative</title>
+        <title>Generative vs. Discriminative models</title>
         <description>&lt;p&gt;The fundamental distinction between discriminative models and generative models is:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2164,9 +2164,9 @@ Name: country_work, dtype: int64
 &lt;/table&gt;
 
 </description>
-        <pubDate>Fri, 30 Mar 2018 00:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/Generative-vs.-Discriminative/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/Generative-vs.-Discriminative/</guid>
+        <pubDate>Mon, 02 Apr 2018 00:00:00 +0800</pubDate>
+        <link>https://howtoanalyse.github.io/Generative-vs.-Discriminative-models/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Generative-vs.-Discriminative-models/</guid>
         
         
         <category>Machine Learning</category>
@@ -2220,99 +2220,9 @@ However, it doesn’t reduce all forms like:&lt;/p&gt;
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Wed, 28 Mar 2018 00:00:00 +0800</pubDate>
+        <pubDate>Sat, 31 Mar 2018 00:00:00 +0800</pubDate>
         <link>https://howtoanalyse.github.io/Text-preprocessing/</link>
         <guid isPermaLink="true">https://howtoanalyse.github.io/Text-preprocessing/</guid>
-        
-        
-        <category>Machine Learning</category>
-        
-      </item>
-    
-      <item>
-        <title>Feature Extraction</title>
-        <description>&lt;p&gt;Feature extraction (Tokens =&amp;gt; Features)&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;BOW: does not preserve ordering&lt;/li&gt;
-  &lt;li&gt;n-grams: too many features =&amp;gt; 
-high frequency n-grams: stop-words and they won’t help us to discriminate texts&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Low frequency n-grams like typos may lead to overfit because our classifier can learn some independencies that are not there.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;TF-IDF&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;term-frequency-tf&quot;&gt;Term frequency (TF)&lt;/h3&gt;
-
-&lt;p&gt;tf(t,d) – frequency for term (or n-gram) t in document d
-Variants:
-weighting scheme| TF weight
-binary | 0,1
-raw count | f_{t,d}
-term frequency | f_{t,d} / \sum{f_{t^’,d}}
-log normalization | 1+log(f_{t,d})&lt;/p&gt;
-
-&lt;h3 id=&quot;inverse-document-frequency-idf&quot;&gt;Inverse document frequency (IDF)&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;N =&lt;/td&gt;
-      &lt;td&gt;D&lt;/td&gt;
-      &lt;td&gt;- total number of documents in corpus&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;{d\belong D: t \belong d}&lt;/td&gt;
-      &lt;td&gt;- number of documents where the term t appears&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;idf(t,D) = log\frac{N}{&lt;/td&gt;
-      &lt;td&gt;{d\belon D:t\belong d}&lt;/td&gt;
-      &lt;td&gt;}&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;tf-idf&quot;&gt;TF-IDF&lt;/h3&gt;
-
-&lt;p&gt;tfidf(t,d,D) = tf(t,d)\times idf(t,D)&lt;/p&gt;
-
-&lt;p&gt;A high weight in TF-IDF is reached by a high term frequency in the given document while a low document frequency of the term in the whole collection of documents.&lt;/p&gt;
-
-&lt;p&gt;BOW + TF-IDF&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;replace counters with TF-IDF&lt;/li&gt;
-  &lt;li&gt;Normalize the result row-wise (divide by L_2-norm)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Sentiment classification&lt;/p&gt;
-
-&lt;p&gt;Features:
-bag of 1-grams with TF-IDF values
-Models:
-For such sparse features, Naive Bayes and Linear models are faster than tree method (decision tree, gradient boosted trees) and work for millions of features.&lt;/p&gt;
-
-&lt;p&gt;Among linear classification modesl, we choose logistic regression here:
-p(y=1|x)=\sigma(w^Tx)
-can handle sparse data, fast to train, weights can be interpreted&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;n-grams, throw away n-grams seen less than 5 times&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Improvements: lr over bag of 1,2-grams with tf-idf&lt;/p&gt;
-
-&lt;p&gt;nlp gcp d3 stat scrapy&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 27 Mar 2018 00:00:00 +0800</pubDate>
-        <link>https://howtoanalyse.github.io/Feature-Extraction/</link>
-        <guid isPermaLink="true">https://howtoanalyse.github.io/Feature-Extraction/</guid>
         
         
         <category>Machine Learning</category>
@@ -2422,7 +2332,7 @@ AUC is the area under the ROC curve. Perfect classifier: AUC=1, fall on (0,1); 1
 
 &lt;p&gt;The weighted average of absolute errors. MAE and RMSE consider that each prediction provides equally precise information about the error variation, i.e. the standard variation of the error term is constant over all the predictions. Examples: recommender systems (differences between past and recent products)&lt;/p&gt;
 </description>
-        <pubDate>Mon, 26 Mar 2018 00:00:00 +0800</pubDate>
+        <pubDate>Thu, 29 Mar 2018 00:00:00 +0800</pubDate>
         <link>https://howtoanalyse.github.io/Cross-Validation/</link>
         <guid isPermaLink="true">https://howtoanalyse.github.io/Cross-Validation/</guid>
         
@@ -2999,9 +2909,63 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 &lt;p&gt;Code for recommendation based on cosine similarity  » https://howtoanalyse.github.io/recommender/Word2Vec-Gensim/&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 25 Mar 2018 00:00:00 +0800</pubDate>
+        <pubDate>Wed, 28 Mar 2018 00:00:00 +0800</pubDate>
         <link>https://howtoanalyse.github.io/From-Word2Vec-to-Item-Recommendation/</link>
         <guid isPermaLink="true">https://howtoanalyse.github.io/From-Word2Vec-to-Item-Recommendation/</guid>
+        
+        
+        <category>Machine Learning</category>
+        
+      </item>
+    
+      <item>
+        <title>Bag of word</title>
+        <description>&lt;p&gt;If text and images are the only data we got, it’s more convenient to apply specific approach for these types of data.&lt;/p&gt;
+
+&lt;p&gt;The common scenario is that we have text or images as additional data set, we need to grasp different features that can be input to machine learning models as a complementary to our main data frame of samples and features.&lt;/p&gt;
+
+&lt;h2 id=&quot;bag-of-words-bow&quot;&gt;Bag of words (BOW)&lt;/h2&gt;
+
+&lt;p&gt;Pipeline of applying BOW:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Preprocessing:
+ Lowercase, stemming, lemmatization, stopwords&lt;/li&gt;
+  &lt;li&gt;N-grams can help to use local context&lt;/li&gt;
+  &lt;li&gt;Postprocessing: TF-IDF&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;tf-idf&quot;&gt;TF-IDF&lt;/h3&gt;
+
+&lt;p&gt;Intuition: normalize data column-wise&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sklearn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature_extraction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TfidfVectorizer&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;term-frequency-tf&quot;&gt;Term Frequency (TF)&lt;/h4&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[:,&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;inverse-document-frequency-idf&quot;&gt;Inverse Document Frequency (IDF)&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;idf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idf&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;n-grams&quot;&gt;N-grams&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sklearn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature_extraction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CountVectorizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;Ngram_range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;analyzer&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you have 28 unique symbols, the number of all possible combinations is 28x28&lt;/p&gt;
+
+&lt;h2 id=&quot;next-embeddings&quot;&gt;Next: Embeddings&lt;/h2&gt;
+
+&lt;p&gt;Embeddings like Word2Vec&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Mar 2018 00:00:00 +0800</pubDate>
+        <link>https://howtoanalyse.github.io/Bag-of-word/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Bag-of-word/</guid>
         
         
         <category>Machine Learning</category>
