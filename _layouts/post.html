@@ -65,7 +65,7 @@ post_class: post-template
                     {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
                     <li>
-                     <a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category }}</a>
+                     <a href="{{ site.baseurl }}/category/#{{ category | slugify }}">{{ category }}</a>
                     </li>
                     {% endfor %}
 				</ul>
@@ -102,3 +102,5 @@ post_class: post-template
 </div>
 <!--End Comments
 ================================================== -->
+
+<div id="amzn-assoc-ad-97cb34ff-3868-4cdd-be96-01182ab11d87"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=97cb34ff-3868-4cdd-be96-01182ab11d87"></script>

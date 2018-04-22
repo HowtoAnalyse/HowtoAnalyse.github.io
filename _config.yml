@@ -1,7 +1,7 @@
 # Site
 name: SaraLovesDogs
 description: Technical diary of a data analyst
-meta_description: "Data science, Data engineering, DevOps, Machine Learning"
+meta_description: "Data science, Data engineering, DevOps, Machine Learning, Sara Zeng, Saralovesdogs"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 paginate: 15
@@ -27,18 +27,9 @@ authors:
 # Plugins
 plugins: 
   - jekyll-paginate
-  - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
-
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
     
 # Other
 highlighter: rouge
