@@ -3,11 +3,30 @@
   <channel>
     <title></title>
     <description>Technical diary of a data analyst</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Apr 2018 18:56:28 +0800</pubDate>
-    <lastBuildDate>Sun, 22 Apr 2018 18:56:28 +0800</lastBuildDate>
+    <link>https://howtoanalyse.github.io/</link>
+    <atom:link href="https://howtoanalyse.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 24 May 2018 19:49:53 +0800</pubDate>
+    <lastBuildDate>Thu, 24 May 2018 19:49:53 +0800</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>Recurrent Convolutional Neural Networks for Text Classification</title>
+        <description>&lt;p&gt;I’m recently working on a text classification problem. The paper, Recurrent Convolutional Neural Networks for Text Classification, is quite inspiring with many shining ideas worth sharing here.&lt;/p&gt;
+
+&lt;p&gt;In a recurrent convolutional neural network, a &lt;strong&gt;bi-directional recurrent structure&lt;/strong&gt; is applied to capture contextual information as far as possible and a &lt;strong&gt;max-pooling layer&lt;/strong&gt; to judge which words play key roles in text classification to capture the key components in texts.&lt;/p&gt;
+
+&lt;p&gt;By combining these two structures, it introduces considerably less noise compared to traditional window-based neural networks while maintaining the ability to determine discriminative phrases in a document. Additionaly, it exhibits a time complexity of $O(n)$, which is linearly correlated with the length of the text length.&lt;/p&gt;
+
+&lt;p&gt;I will later post my python code implementing this structure and evaluate its performance using Youtube comments data.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 May 2018 00:00:00 +0800</pubDate>
+        <link>https://howtoanalyse.github.io/RCNN/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/RCNN/</guid>
+        
+        
+        <category>Reading Notes</category>
+        
+      </item>
     
       <item>
         <title>Overview on Statistical Inference Significance Tests</title>
@@ -90,8 +109,8 @@ Following are more detailed illustration on the 5 parts of significance tests:&l
 
 </description>
         <pubDate>Sat, 07 Apr 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Overview-on-Statistical-Inference-Significance-Tests/</link>
-        <guid isPermaLink="true">http://localhost:4000/Overview-on-Statistical-Inference-Significance-Tests/</guid>
+        <link>https://howtoanalyse.github.io/Overview-on-Statistical-Inference-Significance-Tests/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Overview-on-Statistical-Inference-Significance-Tests/</guid>
         
         
         <category>Data Science</category>
@@ -1873,8 +1892,8 @@ Name: country_work, dtype: int64
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 06 Apr 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/OSMI-mental-health-in-tech-survey-data-analysis/</link>
-        <guid isPermaLink="true">http://localhost:4000/OSMI-mental-health-in-tech-survey-data-analysis/</guid>
+        <link>https://howtoanalyse.github.io/OSMI-mental-health-in-tech-survey-data-analysis/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/OSMI-mental-health-in-tech-survey-data-analysis/</guid>
         
         
         <category>Data Science</category>
@@ -1960,8 +1979,8 @@ Name: country_work, dtype: int64
 &lt;p&gt;When two classes have a common method with different functions, we can create a common interface that can take any object to handle different data types more efficiently.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Apr 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Object-and-Class-in-Python3/</link>
-        <guid isPermaLink="true">http://localhost:4000/Object-and-Class-in-Python3/</guid>
+        <link>https://howtoanalyse.github.io/Object-and-Class-in-Python3/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Object-and-Class-in-Python3/</guid>
         
         
         <category>Programming</category>
@@ -2066,8 +2085,8 @@ Name: country_work, dtype: int64
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 04 Apr 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/A-practical-summary-on-AB-Testing/</link>
-        <guid isPermaLink="true">http://localhost:4000/A-practical-summary-on-AB-Testing/</guid>
+        <link>https://howtoanalyse.github.io/A-practical-summary-on-AB-Testing/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/A-practical-summary-on-AB-Testing/</guid>
         
         
         <category>Data Science</category>
@@ -2105,8 +2124,8 @@ Name: country_work, dtype: int64
 &lt;p&gt;Let’s say we divide a dataset with 50,000 training samples into batches of 1,000, then it needs 50 iterations to complete 1 epoch.&lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Apr 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Epoch-vs.-Batch-sizes-vs.-Iterations/</link>
-        <guid isPermaLink="true">http://localhost:4000/Epoch-vs.-Batch-sizes-vs.-Iterations/</guid>
+        <link>https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/</guid>
         
         
         <category>Machine Learning</category>
@@ -2165,8 +2184,8 @@ Name: country_work, dtype: int64
 
 </description>
         <pubDate>Mon, 02 Apr 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Generative-vs.-Discriminative-models/</link>
-        <guid isPermaLink="true">http://localhost:4000/Generative-vs.-Discriminative-models/</guid>
+        <link>https://howtoanalyse.github.io/Generative-vs.-Discriminative-models/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Generative-vs.-Discriminative-models/</guid>
         
         
         <category>Machine Learning</category>
@@ -2221,8 +2240,8 @@ However, it doesn’t reduce all forms like:&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 31 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Text-preprocessing/</link>
-        <guid isPermaLink="true">http://localhost:4000/Text-preprocessing/</guid>
+        <link>https://howtoanalyse.github.io/Text-preprocessing/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Text-preprocessing/</guid>
         
         
         <category>Machine Learning</category>
@@ -2333,8 +2352,8 @@ AUC is the area under the ROC curve. Perfect classifier: AUC=1, fall on (0,1); 1
 &lt;p&gt;The weighted average of absolute errors. MAE and RMSE consider that each prediction provides equally precise information about the error variation, i.e. the standard variation of the error term is constant over all the predictions. Examples: recommender systems (differences between past and recent products)&lt;/p&gt;
 </description>
         <pubDate>Thu, 29 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Cross-Validation/</link>
-        <guid isPermaLink="true">http://localhost:4000/Cross-Validation/</guid>
+        <link>https://howtoanalyse.github.io/Cross-Validation/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/Cross-Validation/</guid>
         
         
         <category>Machine Learning</category>
@@ -2910,62 +2929,8 @@ Nearest to Lord of the Flies: The Kite Runner, 1984, World War Z: An Oral Histor
 
 </description>
         <pubDate>Wed, 28 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/From-Word2Vec-to-Item-Recommendation/</link>
-        <guid isPermaLink="true">http://localhost:4000/From-Word2Vec-to-Item-Recommendation/</guid>
-        
-        
-        <category>Machine Learning</category>
-        
-      </item>
-    
-      <item>
-        <title>Bag of word</title>
-        <description>&lt;p&gt;If text and images are the only data we got, it’s more convenient to apply specific approach for these types of data.&lt;/p&gt;
-
-&lt;p&gt;The common scenario is that we have text or images as additional data set, we need to grasp different features that can be input to machine learning models as a complementary to our main data frame of samples and features.&lt;/p&gt;
-
-&lt;h2 id=&quot;bag-of-words-bow&quot;&gt;Bag of words (BOW)&lt;/h2&gt;
-
-&lt;p&gt;Pipeline of applying BOW:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Preprocessing:
- Lowercase, stemming, lemmatization, stopwords&lt;/li&gt;
-  &lt;li&gt;N-grams can help to use local context&lt;/li&gt;
-  &lt;li&gt;Postprocessing: TF-IDF&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;tf-idf&quot;&gt;TF-IDF&lt;/h3&gt;
-
-&lt;p&gt;Intuition: normalize data column-wise&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sklearn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature_extraction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TfidfVectorizer&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;term-frequency-tf&quot;&gt;Term Frequency (TF)&lt;/h4&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[:,&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;inverse-document-frequency-idf&quot;&gt;Inverse Document Frequency (IDF)&lt;/h3&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;idf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idf&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;n-grams&quot;&gt;N-grams&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sklearn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature_extraction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CountVectorizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;Ngram_range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;analyzer&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you have 28 unique symbols, the number of all possible combinations is 28x28&lt;/p&gt;
-
-&lt;h2 id=&quot;next-embeddings&quot;&gt;Next: Embeddings&lt;/h2&gt;
-
-&lt;p&gt;Embeddings like Word2Vec&lt;/p&gt;
-</description>
-        <pubDate>Tue, 27 Mar 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/Bag-of-word/</link>
-        <guid isPermaLink="true">http://localhost:4000/Bag-of-word/</guid>
+        <link>https://howtoanalyse.github.io/From-Word2Vec-to-Item-Recommendation/</link>
+        <guid isPermaLink="true">https://howtoanalyse.github.io/From-Word2Vec-to-Item-Recommendation/</guid>
         
         
         <category>Machine Learning</category>
