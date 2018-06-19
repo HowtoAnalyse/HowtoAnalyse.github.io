@@ -1,7 +1,7 @@
 # Site
-name: SaraLovesDogs
+name: HowtoAnalyse
 description: Technical diary of a data analyst
-meta_description: "Data science, Data engineering, DevOps, Machine Learning, Sara Zeng, Saralovesdogs"
+meta_description: "Data science, Data engineering, DevOps, Machine Learning, Sara Zeng, Saralovesdogs, tutorial, How to analyse, HowtoAnalyse"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 paginate: 15
