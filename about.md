@@ -9,7 +9,7 @@ Hi, I am *@sara* (Sara, Z.), a data analyst with 1-year experience on recommende
 My restaurant recommendation system project has been applied onto a website with 9,666,051 monthly unique visitors.
 <!-- utomating the search process of millions of users from Hong Kong and Tai Wan.  -->
 
-Meanwhile, I actively apply machine learning techniques into Kaggle competitions to obtain a more thorough understanding on algorithms. In the competition [House Prices](https://www.kaggle.com/ssssara), my ensembled model acheives RMSE 0.11421, ranks top 4% on the learderboard.
+My AutoML pipeline acheives an RMSE 0.11687, ranks top 10% on the learderboard of a Kaggle competition [House Prices](https://www.kaggle.com/ssssara).
 
 Before starting my career, I worked in a research lab focusing on clinical trials after BSc in Chemical Technology from [the Hong Kong Polytechnic University](https://www.polyu.edu.hk)
 
