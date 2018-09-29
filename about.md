@@ -4,14 +4,14 @@ title: Hello World!
 comments: true
 ---
 
-Hi, I am *@sara* (Sara, Z.), a data analyst with 1-year experience on recommender systems and natural language processing.
+Hi, I am *@sara* (Sara, Z.), a data analyst with 1-year experience on recommender systems and [natural language processing](https://github.com/Xinyi2016/awesome-nlp).
 
-My restaurant recommendation system project has been applied onto a website with 9,666,051 monthly unique visitors.
+My restaurant [recommendation system](https://github.com/Xinyi2016/ml-servers) project has been applied onto a website with 9,666,051 monthly unique visitors.
 <!-- utomating the search process of millions of users from Hong Kong and Tai Wan.  -->
 
-My AutoML pipeline acheives an RMSE 0.11687, ranks top 10% on the learderboard of a Kaggle competition [House Prices](https://www.kaggle.com/ssssara).
+My [AutoML pipeline](https://github.com/Xinyi2016/awesome-docker) acheives an RMSE 0.11687, ranks top 10% on the learderboard of a Kaggle competition House Prices.
 
-Before starting my career, I worked in a research lab focusing on clinical trials after BSc in Chemical Technology from [the Hong Kong Polytechnic University](https://www.polyu.edu.hk)
+Before starting my career, I worked in a research lab focusing on clinical trials after BSc in Chemical Technology from the Hong Kong Polytechnic University.
 
 I love talking about data science. So never hesitate to shoot me an InMail on linkedin if you have questions.
 
